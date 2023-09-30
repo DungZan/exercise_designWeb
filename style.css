@@ -444,9 +444,10 @@ header ul li img {
 	text-decoration: none;
 	color: #000;
 	margin: 30px 5px;
-	min-width: 50px;
+	min-width: 55px;
 	display: inline-block;
 	font-size: 18px;
+  font-weight: 400;
 	background-color: #fff;
 	border-radius: 5px;
 	transition: 0.25s;
