@@ -408,7 +408,7 @@ header ul li img {
 	width: 120px;
 	height: 120px;
 	overflow: hidden;
-	transition: 0.25s;
+	transition: all 0.25s;
 	margin: 0 auto;
 	transform: translateY(25px);
 	border-radius: 50%;
@@ -437,13 +437,15 @@ header ul li img {
 }
 
 .card1 p {
+  margin-top: 15px;
 	color: var(--blue);
+  font-size: 18px;
 }
 
 .card__social a {
 	text-decoration: none;
 	color: #000;
-	margin: 30px 5px;
+	margin: 15px 5px 20px;
 	min-width: 55px;
 	display: inline-block;
 	font-size: 18px;
