@@ -1,0 +1,6 @@
+@media only screen and (max-width: 1050px) {
+    .bottom__title-section1 {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }

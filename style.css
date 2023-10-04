@@ -221,14 +221,32 @@ header ul li img {
 .top__title--links a img {
   width: 12px;
 }
-
+.center__title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.center__title-icon{
+  width: 280px;
+  height: 65px;
+}
 .bottom__title {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 35px;
-  text-align: center;
-  z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    text-align: center;
+    z-index: 3;
+}
+.bottom__title-section1{
+  position: absolute;
+    left: 13%;
+    transform: translateX(-50%);
+    bottom: 140px;
+    text-align: center;
+    z-index: 3;
+    transition: all 0.5s ease-in;
 }
 
 .bottom__title h2 {
@@ -266,7 +284,7 @@ header ul li img {
 }
 
 .section1 .background {
-  top: -13%;
+  top: -20%;
 }
 
 .section2 {
