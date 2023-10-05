@@ -101,7 +101,7 @@ header ul li img {
   line-height: 45px;
   margin-top: 50px;
 }
-.modal-header{
+.modal-header1{
   top: 0;
   right: 0;
   bottom: 0;
@@ -113,9 +113,15 @@ header ul li img {
   visibility: hidden;
   transition:all linear 0.5s;
 }
-.modal-header:target{
+.modal-dialog{
+  bottom: -30%;
+}
+.modal-header1:target{
   visibility: visible;
   transform: scale(1.1);
+}
+.modal-content{
+  border-radius: 15px;
 }
 .information_notification{
   position: absolute;
@@ -148,7 +154,6 @@ header ul li img {
   height: 40px;
   left: 10px;
   top: 10px;
-  background-color: var(--greyLight2);
   border-radius: 50px;
 }
 .information_notification-icon:hover{
@@ -158,6 +163,9 @@ header ul li img {
 #icon_times{
   display: flex;
   justify-content: center;
+  width: 27px;
+  height: 30px;
+  cursor: pointer;
 }
 .information img {
   width: 10px;
@@ -284,6 +292,7 @@ header ul li img {
 }
 
 .section1 .background {
+  background-image: url(./img/ip14promax.png);
   top: -20%;
 }
 
@@ -587,12 +596,6 @@ header ul li img {
 }
 .footer1__copyright p{
   margin-bottom: 0;
-}
-.footer1__copyright .links {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .footer1__copyright .links a {

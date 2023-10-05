@@ -4,3 +4,12 @@
       visibility: hidden;
     }
   }
+  @media only screen and (max-width: 781px) {
+    .section1 .background {
+        background-image: url(./img/iPhone12.jpg);
+        /* position: absolute; */
+        top: 3%;
+        transform: scale(1.2);
+      }
+      
+  }
