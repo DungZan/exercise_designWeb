@@ -13,3 +13,35 @@
       }
       
   }
+  @media only screen and (max-width: 415px) {
+    .section3 .background {
+      bottom: -27px;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    header{
+      overflow: hidden;
+    }
+    header ul{
+      display: flex;
+      flex-direction: column;
+    }
+    header ul li{
+      margin-top: 7px;
+      margin-bottom: 3px;
+    }
+  }
+  @keyframes zoomin {
+    to{
+        height: 330px;
+    }
+  }
+  @keyframes zoomout {
+    from{
+      height: 330px;
+    }
+    to{
+      height: 50px;
+    }
+    
+  }

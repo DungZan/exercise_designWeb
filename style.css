@@ -90,9 +90,6 @@ header ul li img {
   right: 0;
   padding-top: 25px;
 }
-.list1-item{
-  display: block;
-}
 .information {
   height: 45px;
   width: 100%;
@@ -399,7 +396,7 @@ header ul li img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 50px;
+  bottom: 465px;
 }
 
 .section4__item .one {
