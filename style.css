@@ -23,7 +23,9 @@ a {
   text-decoration: none;
   font-weight: 300;
 }
-
+ul{
+  padding-left: 0;
+}
 a:hover {
   text-decoration: underline;
 }
@@ -41,7 +43,7 @@ a:hover {
 }
 header {
   width: 100%;
-  height: 45px;
+  height: 50px;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
@@ -74,6 +76,10 @@ header ul li img {
   width: 18px;
   height: 18px;
 }
+.header__icon{
+  width: 170px;
+  height: 40px;
+}
 .header__mac{
   background-color: #333333;
   position: absolute;
@@ -93,7 +99,7 @@ header ul li img {
   background: var(--blue);
   text-align: center;
   line-height: 45px;
-  margin-top: 45px;
+  margin-top: 50px;
 }
 .modal-header{
   top: 0;
@@ -215,14 +221,32 @@ header ul li img {
 .top__title--links a img {
   width: 12px;
 }
-
+.center__title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.center__title-icon{
+  width: 280px;
+  height: 65px;
+}
 .bottom__title {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 35px;
-  text-align: center;
-  z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    text-align: center;
+    z-index: 3;
+}
+.bottom__title-section1{
+  position: absolute;
+    left: 13%;
+    transform: translateX(-50%);
+    bottom: 140px;
+    text-align: center;
+    z-index: 3;
+    transition: all 0.5s ease-in;
 }
 
 .bottom__title h2 {
@@ -260,7 +284,7 @@ header ul li img {
 }
 
 .section1 .background {
-  top: -13%;
+  top: -20%;
 }
 
 .section2 {
@@ -294,7 +318,7 @@ header ul li img {
 
 .section3 .background {
   width: 280px;
-  height: 450px;
+  height: 455px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -491,14 +515,15 @@ header ul li img {
 /* ------ */
 .footer1 {
   width: 100%;
-  height: 810px;
+  height: auto;
   background: var(--white);
   display: flex;
   justify-content: center;
+  margin-top: 15px;
 }
 
 .footer1__wrapper {
-  width: 970px;
+  width: 70%;
 }
 
 .footer1 ul {
@@ -527,7 +552,6 @@ header ul li img {
 .footer1__links--column-title {
   font-weight: 400;
   font-size: 12px;
-  margin-top: 18px;
   margin-bottom: 15px;
   letter-spacing: 0.5px;
 }
@@ -536,6 +560,7 @@ header ul li img {
   font-size: 12px;
   color: #515154;
   margin-bottom: 12px;
+  margin-top: 3px;
 }
 
 .footer1__more {
@@ -560,7 +585,9 @@ header ul li img {
   margin-top: 4px;
   position: relative;
 }
-
+.footer1__copyright p{
+  margin-bottom: 0;
+}
 .footer1__copyright .links {
   position: absolute;
   top: 50%;
