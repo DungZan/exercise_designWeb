@@ -604,3 +604,48 @@ header ul li img {
 .footer1__copyright .links a:nth-child(1) {
   border: none;
 }
+/* Css hover dropdown */
+/* Css hover dropdown */
+.dropdown {
+  padding-top: 15px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.dropdown-content {
+  position: fixed;
+  right: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  top: 100%;
+  width: 100vw;
+  z-index: 1;
+  transition: max-height 0.9s ease-in-out, opacity 0.9s ease-out;
+  background-color: #1f1f27;
+  border-radius: 2px;
+}
+
+li.dropdown-content a {
+  text-decoration: none;
+  text-align: left;
+  display: block;
+  cursor: pointer;
+  padding: 4% 2% 0 10%;
+  transition: all 0.3s ease-in;
+}
+
+@media only screen and (min-width: 600px) {
+  .dropdown:hover .dropdown-content {
+    max-height: 500px;
+    height: 500px;
+    opacity: 1;
+  }
+  li.dropdown-content a:hover {
+    color: #d6d6d6;
+    opacity: 1;
+  }
+}
+
+/* kết thúc hover dropdown */
