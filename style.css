@@ -623,7 +623,7 @@ header ul li img {
   width: 100vw;
   z-index: 1;
   transition: max-height 0.9s ease-in-out, opacity 0.9s ease-out;
-  background-color: #1f1f27;
+  background-color: #333333;
   border-radius: 2px;
 }
 
