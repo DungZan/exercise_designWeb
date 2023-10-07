@@ -26,6 +26,9 @@ a {
 ul{
   padding-left: 0;
 }
+hr{
+  margin: 5px 0;
+}
 a:hover {
   text-decoration: underline;
 }
@@ -90,9 +93,6 @@ header ul li img {
   right: 0;
   padding-top: 25px;
 }
-.list1-item{
-  display: block;
-}
 .information {
   height: 45px;
   width: 100%;
@@ -101,7 +101,7 @@ header ul li img {
   line-height: 45px;
   margin-top: 50px;
 }
-.modal-header{
+.modal-header1{
   top: 0;
   right: 0;
   bottom: 0;
@@ -113,9 +113,15 @@ header ul li img {
   visibility: hidden;
   transition:all linear 0.5s;
 }
-.modal-header:target{
+.modal-dialog{
+  bottom: -30%;
+}
+.modal-header1:target{
   visibility: visible;
   transform: scale(1.1);
+}
+.modal-content{
+  border-radius: 15px;
 }
 .information_notification{
   position: absolute;
@@ -148,7 +154,6 @@ header ul li img {
   height: 40px;
   left: 10px;
   top: 10px;
-  background-color: var(--greyLight2);
   border-radius: 50px;
 }
 .information_notification-icon:hover{
@@ -158,6 +163,9 @@ header ul li img {
 #icon_times{
   display: flex;
   justify-content: center;
+  width: 27px;
+  height: 30px;
+  cursor: pointer;
 }
 .information img {
   width: 10px;
@@ -284,6 +292,7 @@ header ul li img {
 }
 
 .section1 .background {
+  background-image: url(./img/ip14promax.png);
   top: -20%;
 }
 
@@ -341,7 +350,6 @@ header ul li img {
 
 .section4__item {
   height: 590px;
-  /* flex: 0.5; */
   position: relative;
   overflow: hidden;
   display: flex;
@@ -390,7 +398,7 @@ header ul li img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 50px;
+  bottom: 465px;
 }
 
 .section4__item .one {
@@ -429,6 +437,22 @@ header ul li img {
   text-align: center;
   padding-top: 20px;
 }
+.carousel1{
+  color: black;
+  bottom: 30%;
+  font-size: 20px;
+  width: 60%;
+  left: 20%;
+}
+.carousel2{
+color: black;
+font-size: 25px;
+bottom: 20%;
+}
+.carousel3{
+  color: white;
+  font-size: 18px;
+  }
 /* card product */
 .card1 {
 	width: 18rem;
@@ -566,8 +590,8 @@ header ul li img {
 .footer1__more {
   font-size: 13px;
   color: #86868b;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--greyLight);
+  /* padding-bottom: 10px;
+  border-bottom: 1px solid var(--greyLight); */
 }
 
 .footer1__more a {
@@ -588,12 +612,6 @@ header ul li img {
 .footer1__copyright p{
   margin-bottom: 0;
 }
-.footer1__copyright .links {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .footer1__copyright .links a {
   padding: 0 10px;
@@ -604,3 +622,50 @@ header ul li img {
 .footer1__copyright .links a:nth-child(1) {
   border: none;
 }
+/* Css hover dropdown */
+/* Css hover dropdown */
+.dropdown {
+  padding-top: 15px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.dropdown-content {
+  position: fixed;
+  right: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  top: 100%;
+  width: 100vw;
+  z-index: 1;
+  transition: max-height 0.9s ease-in-out, opacity 0.9s ease-out;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+li.dropdown-content a {
+  text-decoration: none;
+  font-weight: bold;
+  text-align: left;
+  display: block;
+  cursor: pointer;
+  padding: 4% 2% 0 10%;
+  transition: all 0.3s ease-in;
+}
+
+@media only screen and (min-width: 600px) {
+  .dropdown:hover .dropdown-content {
+    max-height: 500px;
+    height: 500px;
+    opacity: .99;
+  }
+  li.dropdown-content a:hover {
+    color: #d6d6d6;
+    opacity: 1;
+  }
+}
+/* kết thúc hover dropdown */
