@@ -33,12 +33,12 @@
   }
   @keyframes zoomin {
     to{
-        height: 330px;
+        height: 465px;
     }
   }
   @keyframes zoomout {
     from{
-      height: 330px;
+      height: 465px;
     }
     to{
       height: 50px;
