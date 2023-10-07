@@ -641,12 +641,15 @@ bottom: 20%;
   width: 100vw;
   z-index: 1;
   transition: max-height 0.9s ease-in-out, opacity 0.9s ease-out;
-  background-color: #333333;
-  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 li.dropdown-content a {
   text-decoration: none;
+  font-weight: bold;
   text-align: left;
   display: block;
   cursor: pointer;
@@ -658,7 +661,7 @@ li.dropdown-content a {
   .dropdown:hover .dropdown-content {
     max-height: 500px;
     height: 500px;
-    opacity: 1;
+    opacity: .99;
   }
   li.dropdown-content a:hover {
     color: #d6d6d6;
