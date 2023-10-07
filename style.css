@@ -639,10 +639,9 @@ bottom: 20%;
   overflow: hidden;
   top: 100%;
   width: 100vw;
-  z-index: 1;
+  z-index: 990;
   transition: max-height 0.9s ease-in-out, opacity 0.9s ease-out;
   background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 5px;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
@@ -669,3 +668,4 @@ li.dropdown-content a {
   }
 }
 /* kết thúc hover dropdown */
+
