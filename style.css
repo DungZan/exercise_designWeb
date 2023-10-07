@@ -26,6 +26,9 @@ a {
 ul{
   padding-left: 0;
 }
+hr{
+  margin: 5px 0;
+}
 a:hover {
   text-decoration: underline;
 }
@@ -347,7 +350,6 @@ header ul li img {
 
 .section4__item {
   height: 590px;
-  /* flex: 0.5; */
   position: relative;
   overflow: hidden;
   display: flex;
@@ -435,6 +437,22 @@ header ul li img {
   text-align: center;
   padding-top: 20px;
 }
+.carousel1{
+  color: black;
+  bottom: 30%;
+  font-size: 20px;
+  width: 60%;
+  left: 20%;
+}
+.carousel2{
+color: black;
+font-size: 25px;
+bottom: 20%;
+}
+.carousel3{
+  color: white;
+  font-size: 18px;
+  }
 /* card product */
 .card1 {
 	width: 18rem;
@@ -572,8 +590,8 @@ header ul li img {
 .footer1__more {
   font-size: 13px;
   color: #86868b;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--greyLight);
+  /* padding-bottom: 10px;
+  border-bottom: 1px solid var(--greyLight); */
 }
 
 .footer1__more a {
