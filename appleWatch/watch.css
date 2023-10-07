@@ -7,11 +7,12 @@
     --blue: #0071e3;
     --a: #2997ff;
 }
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
+    overflow-x: hidden;
 }
 
 .navbar__watchnav {
