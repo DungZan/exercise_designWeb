@@ -829,7 +829,17 @@ header ul li img {
 .section_ip_2 p {
   color: #d01f2a;
 }
-
+/* responsive link navbar */
+.nav_res_1 a{
+  text-decoration: none;
+  color: var(--greyLight);
+  font-weight: normal;
+}
+.nav_res_1 a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+/*  */
 @media only screen and (min-width: 769px) {
   .section_banner_ip {
     max-width: 1200px;
@@ -839,12 +849,19 @@ header ul li img {
   .section_ip_slide_mobile {
     display: none;
   }
+
+  ul.dropdown li.nav_res_1{
+    display: none;
+}
 }
 
 @media only screen and (max-width:769px) {
   .section_ip_slide {
     display: none;
   }
+  ul.dropdown li.nav_res_2{
+    display: none;
+}
 }
 
 .section_banner_ip_2 {

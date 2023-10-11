@@ -409,9 +409,22 @@
     margin: 50px auto 9px auto;
     padding-top: 40px;
 }
-
+/* responsive link navbar */
+.nav_res_1 a{
+    text-decoration: none;
+    color: var(--greyLight);
+    font-weight: normal;
+}
+.nav_res_1 a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+/*  */
 @media only screen and (min-width: 769px) {
     .section_ip_slide_mobile {
+        display: none;
+    }
+    ul.dropdown li.nav_res_1{
         display: none;
     }
 }
@@ -420,7 +433,9 @@
     .section_ip_slide {
         display: none;
     }
-
+    ul.dropdown li.nav_res_2{
+        display: none;
+    }
     .section_banner_ip {
         max-width: 1200px;
         margin: 0 auto;
