@@ -49,6 +49,9 @@ a:hover {
 .dark-blue {
   color: #06c !important;
 }
+.blur{
+  backdrop-filter: saturate(180%) blur(20px);
+}
 
 header {
   width: 100%;
