@@ -33,12 +33,26 @@
   }
   @keyframes zoomin {
     to{
-        height: 465px;
+        height: 390px;
     }
   }
   @keyframes zoomout {
     from{
-      height: 465px;
+      height: 390px;
+    }
+    to{
+      height: 50px;
+    }
+    
+  }
+  @keyframes zoomin1 {
+    to{
+        height: 450px;
+    }
+  }
+  @keyframes zoomout1 {
+    from{
+      height: 450px;
     }
     to{
       height: 50px;
