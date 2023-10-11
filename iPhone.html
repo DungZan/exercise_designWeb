@@ -18,8 +18,7 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="style_ip.css" />
         <link rel="stylesheet" href="responsive.css">
         <link rel="icon" href="./svg/apple.svg">
         <title>iPhone</title>
@@ -29,8 +28,8 @@
         <header class="header-top">
             <ul>
                 <li><img class="header__icon"
-                            src="./img/unauthorized_reseller no-bg.png"
-                            alt="apple" /> </li>
+                        src="./img/unauthorized_reseller no-bg.png"
+                        alt="apple" /> </li>
                 <ul class="dropdown">
                     <li class="dropbtn">Mac</li>
                     <li class="dropdown-content">
@@ -86,9 +85,11 @@
                             alt="shopping bag" /></li></ul>
             </ul>
         </header>
-        <!-- carousel -->
-        <section class="section_ip_1">
-            <div id="slide_ip" class="carousel slide section_ip_1"
+        <!-- <section class="section_ip_1">
+            <h1 style="text-align: center;">iPhone</h1>
+        </section> -->
+        <section class="section_ip_1 section_ip_slide">
+            <div id="slide_ip" class="carousel"
                 data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-indicators">
                     <!-- tao thanh dots -->
@@ -96,18 +97,31 @@
                         data-bs-slide-to="0" class="active"></button>
                     <button type="button" data-bs-target="#slide_ip"
                         data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#slide_ip"
+                        data-bs-slide-to="2"></button>
                 </div>
                 <!-- slideshow -->
-                <div class="carousel-inner">
+                <div class="carousel-inner slide_ip">
                     <div class="carousel-item active">
-                        <img src="./img/ip15.jpg" alt="ip 15"
+                        <img
+                            src="./img/img_iphone/banner iphone 15 pro max TH_Danh mục (4).jpg"
+                            alt="ip 15"
                             class="d-block img-fluid">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/ip_15.jpg" alt="ip 15pro"
+                        <img
+                            src="./img/img_iphone/banner iphone 14 Pro Max T10_Danh mục.jpg"
+                            alt="ip 14pro"
+                            class="d-block img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="./img/img_iphone/banner iphone 15 TH_Danh mục (3).jpg"
+                            alt="ip 15pro"
                             class="d-block img-fluid">
                     </div>
                 </div>
+
                 <!-- back, next -->
                 <button class="carousel-control-prev" type="button"
                     data-bs-target="#slide_ip" data-bs-slide="prev">
@@ -119,167 +133,76 @@
                 </button>
             </div>
         </section>
-        <section class="section5">
-            <div class="container">
-                <div class="product-iphone">
-                    <h1>iPhone</h1>
-                    <div class="row">
-                        <div
-                            class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-                            <div class="card1">
-                                <div class="card__img">
-                                    <img src="./img/iphone15.png" alt />
-                                </div>
-                                <h2>iPhone 15 Pro</h2>
-                                <p>Phiên bản phù hợp</p>
-                                <div class="card__social">
-                                    <a href>
-                                        <span>64GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>128GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>256GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>1TB</span>
-                                    </a>
-                                </div>
-                                <button>Buy now</button>
-                            </div>
-                        </div>
-                        <div
-                            class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-                            <div class="card1">
-                                <div class="card__img">
-                                    <img src="./img/iphone15_1.png" alt />
-                                </div>
-                                <h2>iPhone 15 Pro</h2>
-                                <p>Phiên bản phù hợp</p>
-                                <div class="card__social">
-                                    <a href>
-                                        <span>64GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>128GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>256GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>1TB</span>
-                                    </a>
-                                </div>
-                                <button>Buy now</button>
-                            </div>
-                        </div>
-                        <div
-                            class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-                            <div class="card1">
-                                <div class="card__img">
-                                    <img src="./img/iphone15.png" alt />
-                                </div>
-                                <h2>iPhone 15 Pro</h2>
-                                <p>Phiên bản phù hợp</p>
-                                <div class="card__social">
-                                    <a href>
-                                        <span>64GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>128GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>256GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>1TB</span>
-                                    </a>
-                                </div>
-                                <button>Buy now</button>
-                            </div>
-                        </div>
-                        <div
-                            class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-                            <div class="card1">
-                                <div class="card__img">
-                                    <img src="./img/iphone15.png" alt />
-                                </div>
-                                <h2>iPhone 15 Pro</h2>
-                                <p>Phiên bản phù hợp</p>
-                                <div class="card__social">
-                                    <a href>
-                                        <span>64GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>128GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>256GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>1TB</span>
-                                    </a>
-                                </div>
-                                <button>Buy now</button>
-                            </div>
-                        </div>
-                        <div
-                            class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-                            <div class="card1">
-                                <div class="card__img">
-                                    <img src="./img/iphone15.png" alt />
-                                </div>
-                                <h2>iPhone 15 Pro</h2>
-                                <p>Phiên bản phù hợp</p>
-                                <div class="card__social">
-                                    <a href>
-                                        <span>64GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>128GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>256GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>1TB</span>
-                                    </a>
-                                </div>
-                                <button>Buy now</button>
-                            </div>
-                        </div>
-                        <div
-                            class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-                            <div class="card1">
-                                <div class="card__img">
-                                    <img src="./img/iphone14.png" alt />
-                                </div>
-                                <h2>iPhone 15 Pro</h2>
-                                <p>Phiên bản phù hợp</p>
-                                <div class="card__social">
-                                    <a href>
-                                        <span>64GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>128GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>256GB</span>
-                                    </a>
-                                    <a href>
-                                        <span>1TB</span>
-                                    </a>
-                                </div>
-                                <button>Buy now</button>
-                            </div>
-                        </div>
-                    </div>
 
+        <!-- mobile screen -->
+        <section class="section_ip_1 section_ip_slide_mobile">
+            <div id="slide_ip_mb" class="carousel slide "
+                data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-indicators">
+                    <!-- tao thanh dots -->
+                    <button type="button" data-bs-target="#slide_ip_mb"
+                        data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#slide_ip_mb"
+                        data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#slide_ip_mb"
+                        data-bs-slide-to="2"></button>
                 </div>
+                <!-- slideshow -->
+                <div class="carousel-inner slide_ip">
+                    <div class="carousel-item active">
+                        <img
+                            src="./img/img_iphone/banner iphone 15 pro max TH_MB (3).jpg"
+                            alt="ip 15"
+                            class="d-block img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="./img/img_iphone/banner iphone 15 TH_MB (3).jpg"
+                            alt="ip 14pro"
+                            class="d-block img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="./img/img_iphone/banner iphone 14 Pro Max T10_Banner MB.jpg"
+                            alt="ip 15pro"
+                            class="d-block img-fluid">
+                    </div>
+                </div>
+
+                <!-- back, next -->
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#slide_ip_mb" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#slide_ip_mb" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
         </section>
+        <!--  -->
+       
 
+        <!-- banner -->
+        <section class="row section_banner_ip section_banner_ip_2">
+            <div class="col-lg-4" >
+               <img class="div_banner_ip" src="img/img_iphone/Banner TCDM.png" alt="" >
+            </div>
+            <div class="col-lg-4 " >
+                <img class="div_banner_ip" src="img/img_iphone/Banner Âm thanh.png" alt="">
+            </div>
+ 
+        </section>
+        <!--  -->
+        <section class="container-fluid section_ip_2">
+            <p>Mới !!</p>
+            <h5>iPhone 15</h5>
+            <h4>Từ 20tr</h4>
+            <div class="btn btn-success">Mua</div>
+            <img src="img/hero_1p15.jpg" alt style="width: 100%;">
+        </section>
+
+       
         <!-- FOOTER -->
         <footer class="footer1">
             <div class="footer1__wrapper">
@@ -378,29 +301,5 @@
             </div>
         </footer>
         <script src="./js/main.js"></script>
-        <!-- js của slideshow -->
-        <script>
-            let num = 1;
-            showSlide(num);
-
-            function next_slide(n){
-                showSlide(num += n);
-            }
-
-            function showSlide(n) {
-                let i;
-                let slides = document.getElementsByClassName("slide");
-                if (n > slides.length) {
-                    num = 1;
-                }
-                if (n < 1) {
-                    num = slides.length;
-                }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slides[num - 1].style.display = "block";
-            }
-        </script>
     </body>
 </html>
