@@ -475,7 +475,7 @@
 .card_ip{
   margin: 0 auto;
   padding: 0;
-  min-width: 140px;
+  /* min-width: 126px; */
   max-width: 290px;
   width: 30%;
 }
@@ -483,6 +483,9 @@
   .card{
     /* height: 170px; */
     margin: auto;
+  }
+  .card_ip{
+    width: 30%;
   }
 }
 div.card-footer{
