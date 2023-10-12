@@ -456,7 +456,8 @@
 
 /* card product */
 .card{
-  background-color: #fff;
+  background-color: #ededed;
+  border: none;
 }
 .card_ip_b{
   /* width: 60%; */
@@ -478,7 +479,7 @@
 } */
 div.card-footer{
   border: none;
-  background-color: #fff;
+  background-color: #ededed;
   text-align: center;
 }
 .card:hover{
