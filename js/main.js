@@ -14,15 +14,21 @@ var activeIcon = document.querySelector('.header__icon');
 var activeTextMac = document.querySelectorAll('.dropbtn')[1];
 var activeTextIpad =document.querySelectorAll('.dropbtn')[2];
 var activeTextIphone =document.querySelectorAll('.dropbtn')[3];
+var activeTextWatch =document.querySelectorAll('.dropbtn')[5];
+var activeTextTv =document.querySelectorAll('.dropbtn')[6];
 var dropMac = document.querySelector('.dropdown-content-mac');
 var dropIpad = document.querySelector('.dropdown-content-ipad');
 var dropIphone = document.querySelector('.dropdown-content-iphone');
+var dropWatch = document.querySelector('.dropdown-content-watch');
+var dropTv = document.querySelector('.dropdown-content-tv');
 activeTextMac.onclick = function (){
     if (headerTop.offsetHeight == '50' && bodyWidth.offsetWidth >=800) {
         headerTop.style="animation: zoomin1 1.5s; animation-fill-mode: forwards;"
         dropMac.style="visibility:visible;"
         dropIpad.style="visibility:hidden;"
         dropIphone.style="visibility:hidden;"
+        dropWatch.style="visibility:hidden;"
+        dropTv.style="visibility:hidden;"
     } else if(headerTop.offsetHeight = '450'){
         headerTop.style="animation: zoomout1 1.5s; animation-fill-mode: forwards;"
         setTimeout(() => {
@@ -38,6 +44,8 @@ activeTextIpad.onclick = function (){
         dropIpad.style="visibility:visible;"
         dropMac.style="visibility:hidden;"
         dropIphone.style="visibility:hidden;"
+        dropWatch.style="visibility:hidden;"
+        dropTv.style="visibility:hidden;"
     } else if(headerTop.offsetHeight = '450'&& bodyWidth.offsetWidth >=800){
         headerTop.style="animation: zoomout1 1.5s; animation-fill-mode: forwards;"
         
@@ -53,11 +61,47 @@ activeTextIphone.onclick = function (){
         dropIphone.style="visibility:visible;"
         dropMac.style="visibility:hidden;"
         dropIpad.style="visibility:hidden;"
+        dropWatch.style="visibility:hidden;"
+        dropTv.style="visibility:hidden;"
     } else if(headerTop.offsetHeight = '450'&& bodyWidth.offsetWidth >=800){
         headerTop.style="animation: zoomout1 1.5s; animation-fill-mode: forwards;"
         
         setTimeout(() => {
             dropIphone.style="visibility:hidden;"
+        }, 1000);
+    }
+    
+}
+activeTextWatch.onclick = function (){
+    if (headerTop.offsetHeight == '50'&& bodyWidth.offsetWidth >=800) {
+        headerTop.style="animation: zoomin1 1.5s; animation-fill-mode: forwards;"
+        dropWatch.style="visibility:visible;"
+        dropMac.style="visibility:hidden;"
+        dropIpad.style="visibility:hidden;"
+        dropIphone.style="visibility:hidden;"
+        dropTv.style="visibility:hidden;"
+    } else if(headerTop.offsetHeight = '450'&& bodyWidth.offsetWidth >=800){
+        headerTop.style="animation: zoomout1 1.5s; animation-fill-mode: forwards;"
+        
+        setTimeout(() => {
+            dropWatch.style="visibility:hidden;"
+        }, 1000);
+    }
+    
+}
+activeTextTv.onclick = function (){
+    if (headerTop.offsetHeight == '50'&& bodyWidth.offsetWidth >=800) {
+        headerTop.style="animation: zoomin1 1.5s; animation-fill-mode: forwards;"
+        dropWatch.style="visibility:hidden;"
+        dropTv.style="visibility:visible;"
+        dropMac.style="visibility:hidden;"
+        dropIpad.style="visibility:hidden;"
+        dropIphone.style="visibility:hidden;"
+    } else if(headerTop.offsetHeight = '450'&& bodyWidth.offsetWidth >=800){
+        headerTop.style="animation: zoomout1 1.5s; animation-fill-mode: forwards;"
+        
+        setTimeout(() => {
+            dropTv.style="visibility:hidden;"
         }, 1000);
     }
     
