@@ -539,12 +539,30 @@ header ul li img {
   }
 }
 
-div.card-footer{
+.card-footer{
+  font-family: Arial, Helvetica, sans-serif;
   border: none;
   background-color: #fff;
   text-align: left;
-  padding: 0px 0 10px 20px;
+  padding: 0px 0 10px 17px;
+}
+.card-footer p{
+  padding-left: 4px;
   font-weight: bold;
+  font-size: 14px;
+}
+.card-footer span{
+  padding-left: 5px;
+}
+.card-footer span:first-of-type{
+  color: #0071e3;
+  font-weight: bold;
+}
+.card_sale{
+  text-decoration: line-through;
+}
+.card_sale_{
+  width: 38px;
 }
 .card-body{
   padding-top: 10px;
