@@ -463,19 +463,32 @@
   max-width: 900px;
   margin: 0 auto;
 }
+
 .card_ip{
   margin: 0 auto;
   min-width: 140px;
   max-width: 290px;
   min-height: 300px;
-  width: 20%;
+  width: 30%;
 }
-div.card-body img{
+/* @media only screen and (max-width:760px) {
+  .card_ip{
+    width: 32%;
+  }
+} */
+div.card-footer{
+  border: none;
+  background-color: #fff;
+  text-align: center;
+}
+.card:hover{
+  box-shadow: 4px 4px 4px 4px #948585 ;
+  /* background-color: #000; */
+}
+.card div img{
   width: 100%;
   padding: 0;
 }
-/* @media only screen and(min-width: 760px) {
-  .card_ip_b{
-    width: 60%;
-  }
-} */
+.card div p{
+  padding: 10px auto 200px auto;
+}
