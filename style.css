@@ -680,7 +680,7 @@ header ul li img {
   height: 100%;
   z-index: -1;
   top: 40px;
-  right: -780px;
+  right: -800px;
   display: flex;
   visibility: hidden;
 }
@@ -691,7 +691,7 @@ header ul li img {
   height: 100%;
   z-index: -1;
   top: 40px;
-  right: -670px;
+  right: -705px;
   display: flex;
   visibility: hidden;
 }
@@ -702,7 +702,7 @@ header ul li img {
   height: 100%;
   z-index: -1;
   top: 40px;
-  right: -578px;
+  right: -615px;
   display: flex;
   visibility: hidden;
 }
