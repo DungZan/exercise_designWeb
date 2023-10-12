@@ -25,7 +25,10 @@ activeTextMac.onclick = function (){
         dropIphone.style="visibility:hidden;"
     } else if(headerTop.offsetHeight = '450'){
         headerTop.style="animation: zoomout1 1.5s; animation-fill-mode: forwards;"
-        dropMac.style="visibility:hidden;"
+        setTimeout(() => {
+            dropMac.style="visibility:hidden;"
+        }, 1000);
+        
     }
     
 }
@@ -37,7 +40,10 @@ activeTextIpad.onclick = function (){
         dropIphone.style="visibility:hidden;"
     } else if(headerTop.offsetHeight = '450'&& bodyWidth.offsetWidth >=800){
         headerTop.style="animation: zoomout1 1.5s; animation-fill-mode: forwards;"
-        dropIpad.style="visibility:hidden;"
+        
+        setTimeout(() => {
+            dropIpad.style="visibility:hidden;"
+        }, 1000);
     }
     
 }
@@ -49,7 +55,10 @@ activeTextIphone.onclick = function (){
         dropIpad.style="visibility:hidden;"
     } else if(headerTop.offsetHeight = '450'&& bodyWidth.offsetWidth >=800){
         headerTop.style="animation: zoomout1 1.5s; animation-fill-mode: forwards;"
-        dropIphone.style="visibility:hidden;"
+        
+        setTimeout(() => {
+            dropIphone.style="visibility:hidden;"
+        }, 1000);
     }
     
 }
