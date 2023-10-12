@@ -365,13 +365,12 @@
 }
 .section_ip_2_ {
     margin-top: 50px;
-    background-color: #000;
 }
 
 .section_ip_2_ div a img {
     position:static;
     right: 0;
-    width: 80%;
+    width: 100%;
 }
 
 .section_ip_2 img {
@@ -453,4 +452,44 @@
     text-align: center;
     margin: 0 auto 10px auto;
     width: 100%;
+}
+
+/* card product */
+.card{
+  background-color: #ededed;
+  border: none;
+}
+.card_ip_b{
+  /* width: 60%; */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card_ip{
+  margin: 0 auto;
+  min-width: 140px;
+  max-width: 290px;
+  min-height: 300px;
+  width: 30%;
+}
+/* @media only screen and (max-width:760px) {
+  .card_ip{
+    width: 32%;
+  }
+} */
+div.card-footer{
+  border: none;
+  background-color: #ededed;
+  text-align: center;
+}
+.card:hover{
+  box-shadow: 4px 4px 4px 4px #948585 ;
+  /* background-color: #000; */
+}
+.card div img{
+  width: 100%;
+  padding: 0;
+}
+.card div p{
+  padding: 10px auto 200px auto;
 }
