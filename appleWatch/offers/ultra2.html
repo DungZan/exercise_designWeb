@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/7ff4ee27c3.js" crossorigin="anonymous"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="./bootstrap_5.3.2/css/bootstrap.min.css">
+        <script src="./bootstrap_5.3.2/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="./ultra2.css" />
+        <link rel="icon" href="/exercise_designWeb/svg/apple.svg">
+        <script src="/exercise_designWeb/js/main.js"></script>
+        <title>Ultra 2</title>
+    </head>
+    <body>
+        <div class="text-center">reserved for header - trống đến khi hoàn thiện thanh điều hướng chính</div>
+
+        <div class="row">
+            <div class="navbar__watchnav col-12">
+                <p class="navbar__watchnav--welcomeslogan">Dành cho cổ tay bạn.</p>
+                <nav class="navbar__watchnav__main">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="/exercise_designWeb/appleWatch/img/band_applewatch.svg" alt="Band">
+                                <p>Dây đeo</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/exercise_designWeb/appleWatch/img/flagship_applewatch.svg" alt="Brand">
+                                <p>Thương hiệu</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/exercise_designWeb/appleWatch/watch.html">
+                                <img src="/exercise_designWeb/appleWatch/img/mainshop_applewatch.svg" alt="Main">
+                                <p>Apple Watch</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/exercise_designWeb/appleWatch/img/airpods_applewatch.svg" alt="AirPods">
+                                <p>AirPods</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/exercise_designWeb/appleWatch/img/etc_applewatch.svg" alt="ETC">
+                                <p>Phụ kiện khác</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="productlist container-fluid">
+            <div class="pl__headertext col-12">
+                <p>Bạn đang chọn sản phẩm</p>
+                <h1>Apple Watch Ultra 2</h1>
+            </div>
+            <!-- lựa chọn loại dây và kích thước - quá phức tạp, tạm thời hoặc vĩnh viễn bỏ qua -->
+            <div class="pd__optionboard col-12 row container-fluid">
+                <div class="pd__choice col-sm-4 col-12">
+                    <p>Chọn kiểu dây</p>
+                    <form action="">
+                        <input type="radio" name="bandtype" id="band_1" onclick="set_bandtype('al'); show_al();"> Alpine Loop <br>
+                        <input type="radio" name="bandtype" id="band_2" onclick="set_bandtype('tr'); show_tr();"> Trail Loop <br>
+                        <input type="radio" name="bandtype" id="band_3" onclick="set_bandtype('oc'); show_oc();"> Ocean Band <br>
+                    </form>
+                </div>
+                <div class="pd__choice col-sm-4 col-12">
+                    <p>Chọn màu dây</p>
+                    <form id="al_bandcolor" style="display: none;" action="">
+                        <input type="radio" name="bandcolor" id="band_1_1" onclick="show_preview('1_1'); set_bandcolor('al_1')"> Blue <br>
+                        <input type="radio" name="bandcolor" id="band_1_2" onclick="show_preview('1_2'); set_bandcolor('al_2')"> Indigo <br>
+                        <input type="radio" name="bandcolor" id="band_1_3" onclick="show_preview('1_3'); set_bandcolor('al_3')"> Olive <br>
+                    </form>
+                    <form id="tr_bandcolor" style="display: none;" action="">
+                        <input type="radio" name="bandcolor" id="band_2_1" onclick="show_preview('2_1'); set_bandcolor('tr_1')"> Blue/Black <br>
+                        <input type="radio" name="bandcolor" id="band_2_2" onclick="show_preview('2_2'); set_bandcolor('tr_2')"> Green/Gray <br>
+                        <input type="radio" name="bandcolor" id="band_2_3" onclick="show_preview('2_3'); set_bandcolor('tr_3')"> Orange/Beige <br>
+                    </form>
+                    <form id="oc_bandcolor" style="display: none;" action="">
+                        <input type="radio" name="bandcolor" id="band_3_1" onclick="show_preview('3_1'); set_bandcolor('oc_1')"> Blue <br>
+                        <input type="radio" name="bandcolor" id="band_3_2" onclick="show_preview('3_2'); set_bandcolor('oc_2')"> Orange <br>
+                        <input type="radio" name="bandcolor" id="band_3_3" onclick="show_preview('3_3'); set_bandcolor('oc_3')"> White <br>
+                    </form>
+                </div>
+                <div class="pd__choice col-sm-4 col-12">
+                    <p>Chọn kích thước dây</p>
+                    <form action="">
+                        <input type="radio" name="bandsize" id="size_1" onclick="set_bandsize('sm')"> Nhỏ : 130-160mm <br>
+                        <input type="radio" name="bandsize" id="size_2" onclick="set_bandsize('md')"> Vừa : 145-190mm <br>
+                        <input type="radio" name="bandsize" id="size_3" onclick="set_bandsize('lg')"> Lớn : 165-210mm <br>
+                    </form>
+                </div>
+            </div>
+            <div class="pd__preview col-12 row" id="preview">
+                <div class="pd__placeholderpv col-12" id="pv_placeholder">
+                    <p>Hình ảnh xem trước sẽ có khi bạn lựa chọn</p>
+                </div>
+                <div class="pd__frontpv col-md-4 col-12">
+                    <img id="pv_f-1_1" src="./img_ultra2/ultra2_alpine_blue_front.png" alt="Alpine Blue">
+                    <img id="pv_f-1_2" src="./img_ultra2/ultra2_alpine_indigo_front.png" alt="Alpine Indigo">
+                    <img id="pv_f-1_3" src="./img_ultra2/ultra2_alpine_olive_front.png" alt="Alpine Olive">
+                    <img id="pv_f-2_1" src="./img_ultra2/ultra2_trail_blueblack_front.png" alt="Trail Blue/Black">
+                    <img id="pv_f-2_2" src="./img_ultra2/ultra2_trail_greengray_front.png" alt="Trail Green/Gray">
+                    <img id="pv_f-2_3" src="./img_ultra2/ultra2_trail_orangebeige_front.png" alt="Trait Orange/Beige">
+                    <img id="pv_f-3_1" src="./img_ultra2/ultra2_ocean_blue_front.png" alt="Ocean Blue">
+                    <img id="pv_f-3_2" src="./img_ultra2/ultra2_ocean_orange_front.png" alt="Ocean Orange">
+                    <img id="pv_f-3_3" src="./img_ultra2/ultra2_ocean_white_front.png" alt="Ocean White">
+                </div>
+                <div class="pd__bandpv col-md-4 col-12">
+                    <div class="pd__bpv--all" id="pv_ball">
+                        <img id="pv_b-1" src="./img_ultra2/ultra2_alpine_allband.png" alt="Alpine">
+                        <img id="pv_b-2" src="./img_ultra2/ultra2_trail_allband.png" alt="Trail">
+                        <img id="pv_b-3" src="./img_ultra2/ultra2_ocean_allband.png" alt="Ocean">
+                    </div>
+                    <div class="pd__bpv--idv" id="pv_bidv">
+                        <img id="pv_b-1_1" src="./img_ultra2/ultra2_alpine_blue_band.png" alt="Alpine Blue">
+                        <img id="pv_b-1_2" src="./img_ultra2/ultra2_alpine_indigo_band.png" alt="Alpine Indigo">
+                        <img id="pv_b-1_3" src="./img_ultra2/ultra2_alpine_olive_band.png" alt="Alpine Olive">
+                        <img id="pv_b-2_1" src="./img_ultra2/ultra2_trail_blueblack_band.png" alt="Trail Blue/Black">
+                        <img id="pv_b-2_2" src="./img_ultra2/ultra2_trail_greengray_band.png" alt="Trail Green/Gray">
+                        <img id="pv_b-2_3" src="./img_ultra2/ultra2_trail_orangebeige_band.png" alt="Trait Orange/Beige">
+                        <img id="pv_b-3_1" src="./img_ultra2/ultra2_ocean_blue_band.png" alt="Ocean Blue">
+                        <img id="pv_b-3_2" src="./img_ultra2/ultra2_ocean_orange_band.png" alt="Ocean Orange">
+                        <img id="pv_b-3_3" src="./img_ultra2/ultra2_ocean_white_band.png" alt="Ocean White">
+                    </div>
+                </div>
+                <div class="pd__sidepv col-md-4 col-12">
+                    <img id="pv_s-1_1" src="./img_ultra2/ultra2_alpine_blue_side.png" alt="Alpine Blue">
+                    <img id="pv_s-1_2" src="./img_ultra2/ultra2_alpine_indigo_side.png" alt="Alpine Indigo">
+                    <img id="pv_s-1_3" src="./img_ultra2/ultra2_alpine_olive_side.png" alt="Alpine Olive">
+                    <img id="pv_s-2_1" src="./img_ultra2/ultra2_trail_blueblack_side.png" alt="Trail Blue/Black">
+                    <img id="pv_s-2_2" src="./img_ultra2/ultra2_trail_greengray_side.png" alt="Trail Green/Gray">
+                    <img id="pv_s-2_3" src="./img_ultra2/ultra2_trail_orangebeige_side.png" alt="Trait Orange/Beige">
+                    <img id="pv_s-3_1" src="./img_ultra2/ultra2_ocean_blue_side.png" alt="Ocean Blue">
+                    <img id="pv_s-3_2" src="./img_ultra2/ultra2_ocean_orange_side.png" alt="Ocean Orange">
+                    <img id="pv_s-3_3" src="./img_ultra2/ultra2_ocean_white_side.png" alt="Ocean White">
+                </div>
+            </div>
+        </div>
+
+        <div class="confirmorder">
+            <div>
+                <h3>21.990.000đ</h3>
+                <p> / hoặc trả góp từ 2.990.000đ/tháng</p>
+            </div>
+            <button onclick="beginorder()">Mua ngay</button>
+        </div>
+
+        <div class="detail">
+            <h4>Chi tiết sản phẩm</h4>
+            <table>
+                <tr>
+                    <td>Tên sản phẩm</td>
+                    <td>Apple Watch Ultra 2</td>
+                </tr>
+                <tr>
+                    <td>Màu sắc</td>
+                    <td id="dt_bandcolor">Chưa lựa chọn</td>
+                </tr>
+                <tr>
+                    <td>Kiểu dây</td>
+                    <td id="dt_bandtype">Chưa lựa chọn</td>
+                </tr>
+                <tr>
+                    <td>Kích thước dây</td>
+                    <td id="dt_bandsize">Chưa lựa chọn</td>
+                </tr>
+            </table>
+            <a href="">Thông số chi tiết</a>
+        </div>
+        <div class="text-center">reserved for footer - trống đến khi hoàn thiện footer</div>
+    
+        <script src="./ultra2.js"></script>
+    </body>
+</html>
