@@ -59,6 +59,7 @@ function set_bandtype(type) {
     if (type === "al") get_displaybandtype.innerHTML = "Alpine Loop"; else
     if (type === "tr") get_displaybandtype.innerHTML = "Trail Loop"; else
     if (type === "oc") get_displaybandtype.innerHTML = "Ocean";
+    clear_bandcolor();
 }
 function set_bandcolor(type) {
     bandcolor = type;
@@ -72,6 +73,10 @@ function set_bandcolor(type) {
     if (type === "al_3") get_displaybandcolor.innerHTML = "Olive"; else
     if (type === "tr_3") get_displaybandcolor.innerHTML = "Orange/Beige"; else
     if (type === "oc_3") get_displaybandcolor.innerHTML = "White";
+}
+function clear_bandcolor() {
+    bandcolor = undefined;
+    document.getElementById("dt_bandcolor").innerHTML = "Chưa lựa chọn";
 }
 function set_bandsize(type) {
     bandsize = type;
