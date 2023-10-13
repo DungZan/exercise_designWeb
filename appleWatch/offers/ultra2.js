@@ -86,6 +86,10 @@ function set_bandsize(type) {
     if (type === "lg") get_displaybandsize.innerHTML = "Lớn - 165-210mm";
 }
 
+function show_detail() {
+    alert("detail");
+}
+
 function beginorder() {
     if (bandcolor!=undefined && bandtype!=undefined && bandsize!=undefined) {
         alert("Sẵn sàng để thực hiện mua hàng. Chức năng đang phát triển");
