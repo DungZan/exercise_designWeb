@@ -464,8 +464,8 @@ header ul li img {
   margin: 20px;
   border: none;
   text-decoration: none;
-  box-shadow: 2px 2px 2px 2px #bab6b6;
-  transition: box-shadow 0.13s ease-in-out;
+  box-shadow: 0px 0px 2px 5px #bab6b6;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .card_ip_b {
@@ -479,9 +479,10 @@ header ul li img {
 .card-footer {
   font-family: Arial, Helvetica, sans-serif;
   border: none;
-  background-color: #fff;
+  background-color: #302c2c;
   text-align: left;
   padding: 0px 0 10px 17px;
+  color: #fff;
 }
 
 .card-footer p {
@@ -491,14 +492,14 @@ header ul li img {
 }
 
 .card-footer span {  padding-left: 5px;}
-.card-footer span:first-of-type {color: #0071e3;font-weight: bold;}
+.card-footer span:first-of-type {color: #e32222;font-weight: bold;font-size: 16px;}
 .card_sale {text-decoration: line-through;}
 .card_sale_ {width:38px;}
-.card-body {padding-top:10px;}
+.card-body {padding-top:10px;background-color: #302c2c;border: none;}
 
 .card-header {
   border: none;
-  background-color: #fff;
+  background-color: #302c2c;
   padding: 15px 20px 0 0;
 }
 
@@ -512,7 +513,7 @@ header ul li img {
   margin: 0 0 0 70%;
 }
 
-.card:hover {box-shadow: 4px 4px 4px 4px #948585;}
+.card:hover {box-shadow: 4px 4px 4px 4px #474343;}
 .card_ip a:hover{ text-decoration: none;}
 .card div img {width: 100%;}
 .section_card_footer {
