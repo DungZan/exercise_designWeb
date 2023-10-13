@@ -76,7 +76,7 @@ function set_bandcolor(type) {
 }
 function clear_bandcolor() {
     bandcolor = undefined;
-    document.getElementById("dt_bandcolor").innerHTML = "Chưa lựa chọn";
+    document.getElementById("dt_bandcolor").innerHTML = "";
 }
 function set_bandsize(type) {
     bandsize = type;
