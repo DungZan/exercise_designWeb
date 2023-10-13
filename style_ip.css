@@ -535,13 +535,16 @@ header ul li img {
 }
 
 /* icon chat */
-.chat img{
-  width: 80px;
+.chat{
+  width: 100px;
+  height: 160px;
   right: 0;
   bottom: 0;
-  height: 100%px;
-  border-radius: 50%;
   z-index: 9999999;
-  vertical-align: baseline;
   position: fixed;
+}
+.chat_ img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
