@@ -670,7 +670,7 @@ header ul li img {
 }
 @media only screen and (max-width: 800px) {
   .dropdown-content-mac,.dropdown-content-ipad,.dropdown-content-iphone,
-  .dropdown-content-watch,.dropdown-content-tv{
+  .dropdown-content-watch,.dropdown-content-tv,.dropdown-content-pk{
     visibility: hidden !important; 
   }
 }
@@ -726,6 +726,17 @@ header ul li img {
   z-index: -1;
   top: 40px;
   right: -415px;
+  display: flex;
+  visibility: hidden;
+}
+.dropdown-content-pk{
+  position: absolute;
+  opacity: 1;
+  width: 1000px;
+  height: 100%;
+  z-index: -1;
+  top: 40px;
+  right: -315px;
   display: flex;
   visibility: hidden;
 }
