@@ -70,35 +70,50 @@
                 <div class="pd__choice col-sm-4 col-12">
                     <p>Chọn kiểu dây</p>
                     <form action="">
-                        <input type="radio" name="bandtype" id="band_1" onclick="set_bandtype('al'); show_al();"> Alpine Loop <br>
-                        <input type="radio" name="bandtype" id="band_2" onclick="set_bandtype('tr'); show_tr();"> Trail Loop <br>
-                        <input type="radio" name="bandtype" id="band_3" onclick="set_bandtype('oc'); show_oc();"> Ocean Band <br>
+                        <input type="radio" name="bandtype" id="band_1" onclick="set_bandtype('al'); show_al();">
+                        <label for="band_1"> Alpine Loop</label><br>
+                        <input type="radio" name="bandtype" id="band_2" onclick="set_bandtype('tr'); show_tr();">
+                        <label for="band_2"> Trail Loop</label><br>
+                        <input type="radio" name="bandtype" id="band_3" onclick="set_bandtype('oc'); show_oc();">
+                        <label for="band_3"> Ocean Band</label><br>
                     </form>
                 </div>
                 <div class="pd__choice col-sm-4 col-12">
                     <p>Chọn màu dây</p>
                     <form id="al_bandcolor" style="display: none;" action="">
-                        <input type="radio" name="bandcolor" id="band_1_1" onclick="show_preview('1_1'); set_bandcolor('al_1')"> Blue <br>
-                        <input type="radio" name="bandcolor" id="band_1_2" onclick="show_preview('1_2'); set_bandcolor('al_2')"> Indigo <br>
-                        <input type="radio" name="bandcolor" id="band_1_3" onclick="show_preview('1_3'); set_bandcolor('al_3')"> Olive <br>
+                        <input type="radio" name="bandcolor" id="band_1_1" onclick="show_preview('1_1'); set_bandcolor('al_1')">
+                        <label for="band_1_1">Blue</label><br>
+                        <input type="radio" name="bandcolor" id="band_1_2" onclick="show_preview('1_2'); set_bandcolor('al_2')">
+                        <label for="band_1_2">Indigo</label><br>
+                        <input type="radio" name="bandcolor" id="band_1_3" onclick="show_preview('1_3'); set_bandcolor('al_3')">
+                        <label for="band_1_3">Olive</label><br>
                     </form>
                     <form id="tr_bandcolor" style="display: none;" action="">
-                        <input type="radio" name="bandcolor" id="band_2_1" onclick="show_preview('2_1'); set_bandcolor('tr_1')"> Green/Gray <br>
-                        <input type="radio" name="bandcolor" id="band_2_2" onclick="show_preview('2_2'); set_bandcolor('tr_2')"> Blue/Black <br>
-                        <input type="radio" name="bandcolor" id="band_2_3" onclick="show_preview('2_3'); set_bandcolor('tr_3')"> Orange/Beige <br>
+                        <input type="radio" name="bandcolor" id="band_2_1" onclick="show_preview('2_1'); set_bandcolor('tr_1')">
+                        <label for="band_2_1">Green/Gray</label><br>
+                        <input type="radio" name="bandcolor" id="band_2_2" onclick="show_preview('2_2'); set_bandcolor('tr_2')">
+                        <label for="band_2_2">Blue/Black</label><br>
+                        <input type="radio" name="bandcolor" id="band_2_3" onclick="show_preview('2_3'); set_bandcolor('tr_3')">
+                        <label for="band_2_3">Orange/Beige</label><br>
                     </form>
                     <form id="oc_bandcolor" style="display: none;" action="">
-                        <input type="radio" name="bandcolor" id="band_3_1" onclick="show_preview('3_1'); set_bandcolor('oc_1')"> Blue <br>
-                        <input type="radio" name="bandcolor" id="band_3_2" onclick="show_preview('3_2'); set_bandcolor('oc_2')"> Orange <br>
-                        <input type="radio" name="bandcolor" id="band_3_3" onclick="show_preview('3_3'); set_bandcolor('oc_3')"> White <br>
+                        <input type="radio" name="bandcolor" id="band_3_1" onclick="show_preview('3_1'); set_bandcolor('oc_1')">
+                        <label for="band_3_1">Blue</label><br>
+                        <input type="radio" name="bandcolor" id="band_3_2" onclick="show_preview('3_2'); set_bandcolor('oc_2')">
+                        <label for="band_3_2">Orange</label><br>
+                        <input type="radio" name="bandcolor" id="band_3_3" onclick="show_preview('3_3'); set_bandcolor('oc_3')">
+                        <label for="band_3_3">White</label><br>
                     </form>
                 </div>
                 <div class="pd__choice col-sm-4 col-12">
                     <p>Chọn kích thước dây</p>
                     <form action="">
-                        <input type="radio" name="bandsize" id="size_1" onclick="set_bandsize('sm')"> Nhỏ : 130-160mm <br>
-                        <input type="radio" name="bandsize" id="size_2" onclick="set_bandsize('md')"> Vừa : 145-190mm <br>
-                        <input type="radio" name="bandsize" id="size_3" onclick="set_bandsize('lg')"> Lớn : 165-210mm <br>
+                        <input type="radio" name="bandsize" id="size_1" onclick="set_bandsize('sm')">
+                        <label for="size_1"> Nhỏ : 130-160mm</label><br>
+                        <input type="radio" name="bandsize" id="size_2" onclick="set_bandsize('md')">
+                        <label for="size_2"> Vừa : 145-190mm</label><br>
+                        <input type="radio" name="bandsize" id="size_3" onclick="set_bandsize('lg')">
+                        <label for="size_3"> Lớn : 165-210mm</label><br>
                     </form>
                 </div>
             </div>
@@ -379,7 +394,7 @@
                             <label for="payment-bank">Chuyển khoản</label> <br>
                         </div>
                         <div class="pcct__if--confirm">
-                            <button>Xác nhận mua hàng</button>
+                            <button onclick="confirm_payment()">Xác nhận mua hàng</button>
                         </div>
                     </div>
                 </div>
