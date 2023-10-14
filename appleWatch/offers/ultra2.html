@@ -83,8 +83,8 @@
                         <input type="radio" name="bandcolor" id="band_1_3" onclick="show_preview('1_3'); set_bandcolor('al_3')"> Olive <br>
                     </form>
                     <form id="tr_bandcolor" style="display: none;" action="">
-                        <input type="radio" name="bandcolor" id="band_2_1" onclick="show_preview('2_1'); set_bandcolor('tr_1')"> Blue/Black <br>
-                        <input type="radio" name="bandcolor" id="band_2_2" onclick="show_preview('2_2'); set_bandcolor('tr_2')"> Green/Gray <br>
+                        <input type="radio" name="bandcolor" id="band_2_1" onclick="show_preview('2_1'); set_bandcolor('tr_1')"> Green/Gray <br>
+                        <input type="radio" name="bandcolor" id="band_2_2" onclick="show_preview('2_2'); set_bandcolor('tr_2')"> Blue/Black <br>
                         <input type="radio" name="bandcolor" id="band_2_3" onclick="show_preview('2_3'); set_bandcolor('tr_3')"> Orange/Beige <br>
                     </form>
                     <form id="oc_bandcolor" style="display: none;" action="">
@@ -110,8 +110,8 @@
                     <img id="pv_f-1_1" src="./img_ultra2/ultra2_alpine_blue_front.png" alt="Alpine Blue">
                     <img id="pv_f-1_2" src="./img_ultra2/ultra2_alpine_indigo_front.png" alt="Alpine Indigo">
                     <img id="pv_f-1_3" src="./img_ultra2/ultra2_alpine_olive_front.png" alt="Alpine Olive">
-                    <img id="pv_f-2_1" src="./img_ultra2/ultra2_trail_blueblack_front.png" alt="Trail Blue/Black">
-                    <img id="pv_f-2_2" src="./img_ultra2/ultra2_trail_greengray_front.png" alt="Trail Green/Gray">
+                    <img id="pv_f-2_1" src="./img_ultra2/ultra2_trail_greengray_front.png" alt="Trail Green/Gray">
+                    <img id="pv_f-2_2" src="./img_ultra2/ultra2_trail_blueblack_front.png" alt="Trail Blue/Black">
                     <img id="pv_f-2_3" src="./img_ultra2/ultra2_trail_orangebeige_front.png" alt="Trait Orange/Beige">
                     <img id="pv_f-3_1" src="./img_ultra2/ultra2_ocean_blue_front.png" alt="Ocean Blue">
                     <img id="pv_f-3_2" src="./img_ultra2/ultra2_ocean_orange_front.png" alt="Ocean Orange">
@@ -127,8 +127,8 @@
                         <img id="pv_b-1_1" src="./img_ultra2/ultra2_alpine_blue_band.png" alt="Alpine Blue">
                         <img id="pv_b-1_2" src="./img_ultra2/ultra2_alpine_indigo_band.png" alt="Alpine Indigo">
                         <img id="pv_b-1_3" src="./img_ultra2/ultra2_alpine_olive_band.png" alt="Alpine Olive">
-                        <img id="pv_b-2_1" src="./img_ultra2/ultra2_trail_blueblack_band.png" alt="Trail Blue/Black">
-                        <img id="pv_b-2_2" src="./img_ultra2/ultra2_trail_greengray_band.png" alt="Trail Green/Gray">
+                        <img id="pv_b-2_1" src="./img_ultra2/ultra2_trail_greengray_band.png" alt="Trail Green/Gray">
+                        <img id="pv_b-2_2" src="./img_ultra2/ultra2_trail_blueblack_band.png" alt="Trail Blue/Black">
                         <img id="pv_b-2_3" src="./img_ultra2/ultra2_trail_orangebeige_band.png" alt="Trait Orange/Beige">
                         <img id="pv_b-3_1" src="./img_ultra2/ultra2_ocean_blue_band.png" alt="Ocean Blue">
                         <img id="pv_b-3_2" src="./img_ultra2/ultra2_ocean_orange_band.png" alt="Ocean Orange">
@@ -139,8 +139,8 @@
                     <img id="pv_s-1_1" src="./img_ultra2/ultra2_alpine_blue_side.png" alt="Alpine Blue">
                     <img id="pv_s-1_2" src="./img_ultra2/ultra2_alpine_indigo_side.png" alt="Alpine Indigo">
                     <img id="pv_s-1_3" src="./img_ultra2/ultra2_alpine_olive_side.png" alt="Alpine Olive">
-                    <img id="pv_s-2_1" src="./img_ultra2/ultra2_trail_blueblack_side.png" alt="Trail Blue/Black">
-                    <img id="pv_s-2_2" src="./img_ultra2/ultra2_trail_greengray_side.png" alt="Trail Green/Gray">
+                    <img id="pv_s-2_1" src="./img_ultra2/ultra2_trail_greengray_side.png" alt="Trail Green/Gray">
+                    <img id="pv_s-2_2" src="./img_ultra2/ultra2_trail_blueblack_side.png" alt="Trail Blue/Black">
                     <img id="pv_s-2_3" src="./img_ultra2/ultra2_trail_orangebeige_side.png" alt="Trait Orange/Beige">
                     <img id="pv_s-3_1" src="./img_ultra2/ultra2_ocean_blue_side.png" alt="Ocean Blue">
                     <img id="pv_s-3_2" src="./img_ultra2/ultra2_ocean_orange_side.png" alt="Ocean Orange">
@@ -154,7 +154,7 @@
                 <h3>21.990.000đ</h3>
                 <p> / hoặc trả góp từ 2.990.000đ/tháng</p>
             </div>
-            <button onclick="beginorder()">Mua ngay</button>
+            <button onclick="begin_order()">Mua ngay</button>
         </div>
 
         <div class="detail">
@@ -184,7 +184,7 @@
             <div class="mi__content">
                 <div class="mi__header">
                     <h4>Thông số chi tiết</h4>
-                    <span class="close">&times;</span>
+                    <span class="close" onclick="hide_detail()">&times;</span>
                 </div>
                 <div class="mi__main">
                     <div class="mi__main--section" role="base">
@@ -331,8 +331,63 @@
             </div>
         </div>
 
+        <div class="purchase" id="purchase">
+            <div class="pc__content row container">
+                <div class="pc__outerbox col-12">
+                    <div class="pc__header">
+                        <h6>Bạn đang thực hiện mua hàng</h6>
+                        <span class="close" onclick="cancel_order()">&times;</span>
+                    </div>
+                </div>
+                <div class="pc__outerbox col-lg-6 col-12">
+                    <div class="pcct__details">
+                        <h5>Thông tin sản phẩm</h5>
+                        <div class="pcct__dt--smalldt row">
+                            <img class="col-lg-3 col-12" id="pc_imgpv" src="" alt="purchase-preview">
+                            <div class="col-lg-9 col-12">
+                                <h6>Apple Watch Ultra 2</h6>
+                                <p>Kiểu dây: <span id="pc_bandtype"></span></p>
+                                <p>Màu: <span id="pc_bandcolor"></span></p>
+                                <p>Kích thước: <span id="pc_bandsize"></span></p>
+                            </div>
+                        </div>
+                        <div class="pcct__dt--total">
+                            <p style="display: inline;">Số lượng: </p>
+                            <input type="number" name="buyquantity" id="buyquantity" value="1" onchange="update_totalprice()">
+                        </div>
+                        <div class="pcct__dt--totalprice">
+                            <h5>Tổng tiền: </h5>
+                            <span id="pc_totalprice">21.990.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pc__outerbox col-lg-6 col-12">
+                    <div class="pcct__inform">
+                        <h5>Thông tin khách hàng</h5>
+                        <div class="pcct__if--input">
+                            <input type="radio" name="gender" id="gender-male">
+                            <label for="gender-male">Anh</label>
+                            <input type="radio" name="gender" id="gender-female">
+                            <label for="gender-female">Chị</label> <br>
+                            <input style="width: 49%;" type="text" name="fullname" id="fullname" placeholder="Họ tên">
+                            <input style="width: 49%;" type="tel" name="phone" id="phone" placeholder="Số điện thoại"> <br>
+                            <input style="width: 99%; margin-top: 2px;" type="text" name="address" id="address" placeholder="Địa chỉ"> <br>
+                            <p>Hình thức thanh toán</p>
+                            <input type="radio" name="payment" id="payment-cash">
+                            <label for="payment-cash">Tiền mặt</label>
+                            <input type="radio" name="payment" id="payment-bank">
+                            <label for="payment-bank">Chuyển khoản</label> <br>
+                        </div>
+                        <div class="pcct__if--confirm">
+                            <button>Xác nhận mua hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="text-center">reserved for footer - trống đến khi hoàn thiện footer</div>
-    
+
         <script src="./ultra2.js"></script>
     </body>
 </html>

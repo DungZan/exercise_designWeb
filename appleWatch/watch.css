@@ -7,7 +7,7 @@
     --blue: #0071e3;
     --a: #2997ff;
 }
-body {
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
