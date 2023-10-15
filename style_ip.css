@@ -685,11 +685,8 @@ header ul li img {
 }
 
 .sub-email {
+    width: 360px;
     margin: 0 auto;
-}
-
-.sub-email {
-    width: 370px;
     /* display: flex; */
 }
 
