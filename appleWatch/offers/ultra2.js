@@ -171,5 +171,6 @@ function confirm_payment() {
         alert("Quý khách hàng hãy nhập đầy đủ thông tin trước khi thanh toán!");
     } else {
         alert("Đơn hàng của quý khách đã được ghi nhận!");
+        window.location.reload();
     }
 }

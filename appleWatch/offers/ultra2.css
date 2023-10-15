@@ -233,7 +233,7 @@ html, body {
 }
 
 .purchase {
-    display: none;
+    /* display: none; */
     position: fixed;
     z-index: 1;
     left: 0;
@@ -261,7 +261,7 @@ html, body {
                 margin: 5px;
                 background-color: white;
                 border-radius: 10px;
-                > h6 {
+                > h5 {
                     padding: 5px 0 5px 10px;
                     margin: 0;
                 }
@@ -314,6 +314,9 @@ html, body {
                     border-top: 1px solid var(--greyLight2);
                     display: flex;
                     justify-content: space-between;
+                    > h5, > .h5 {
+                        margin: 0;
+                    }
                 }
             }
             > .pcct__inform {
@@ -327,7 +330,7 @@ html, body {
                 }
                 > .pcct__if--input {
                     > p {
-                        margin: 10px 0 0 0;
+                        margin: 15px 0 0 0;
                     }
                 }
                 > .pcct__if--confirm {
