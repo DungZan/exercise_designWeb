@@ -450,7 +450,7 @@
         <div class="sub-email">
             <div>
                 <input id="email" type="email" placeholder="Email">
-                <button type="button" onclick="vali()">Đăng ký</button>
+                <button type="button" onclick="thong_bao()">Đăng ký</button>
             </div>
             <p id="result"></p>
         </div>
@@ -564,7 +564,7 @@
             return false;
         }
 
-        function vali() {
+        function thong_bao() {
             const $result = $('#result');
             const email = $('#email').val();
             if (sub_email(email)) {

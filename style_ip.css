@@ -661,10 +661,10 @@ header ul li img {
     transition: width hei;
 }
 
-.chat_ img:hover {
-    width: 65px;
-    height: auto;
-}
+
+/* .chat_ img:hover {
+    border: #5dae35;
+} */
 
 
 /* sub-email */
@@ -681,7 +681,7 @@ header ul li img {
     padding: 70px 0 5px 0;
 }
 
-.form p:first-of-type {
+.form p {
     text-align: center;
     padding-bottom: 20px;
 }
@@ -716,7 +716,7 @@ input {
     border: none;
 }
 
-p #result {
+.form #result {
     text-align: left;
 }
 
