@@ -230,7 +230,7 @@
     <!--  -->
 
     <!-- banner -->
-    <section class="row section_banner_ip section_banner_ip_2">
+    <section class="row section_banner_ip">
         <div class="col-md-5">
             <a href="index.html">
                 <img class="div_banner_ip" src="img/img_iphone/Banner TCDM.png" alt>
@@ -445,7 +445,8 @@
     </section>
 
     <div class="form">
-        <h3>Đăng ký nhận thông tin về sản phầm mới nhất từ BE_A Store</h3>
+        <h3>Đăng ký nhận thông tin từ BE_A Store</h3>
+        <p>Thông tin về sản phẩm và khuyến mãi mới nhất</p>
         <div class="sub-email">
             <div>
                 <input id="email" type="email" placeholder="Email">
@@ -544,17 +545,16 @@
         </div>
     </footer>
     <script>
-        const validateEmail = (email) => {
+        const sub_email = (email) => {
             return email.match(
                 /^[a-zA-z0-9.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/
-
             );
         };
-        const validate = () => {
+        const test_email = () => {
             const $result = $('#result');
             const email = $('#email').val();
             $result.text('');
-            if (validateEmail(email)) {
+            if (sub_email(email)) {
                 $result.text(email + ' là hợp lệ.');
                 $result.css('color', 'green');
             } else {
@@ -567,14 +567,14 @@
         function vali() {
             const $result = $('#result');
             const email = $('#email').val();
-            if (validateEmail(email)) {
-                alert("thành công ");
+            if (sub_email(email)) {
+                alert("Đăng ký thành công ");
             } else {
-                alert("sai ");
+                alert("Email không hợp lệ. Vui lòng nh");
             }
             location.reload();
         }
-        $('#email').on('input', validate);
+        $('#email').on('input', test_email);
     </script>
     <script src="./js/main.js "></script>
 </body>
