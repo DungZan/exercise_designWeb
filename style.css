@@ -459,6 +459,33 @@ header ul li img {
   width: 18px;
   margin-left: 5px;
 }
+.section5{
+  margin-top: 15px;
+  position: relative;
+}
+.section5__item {
+  height: 590px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: #fbfbfb;
+}
+.section5__item .background {
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+#background-sec5-1{
+  bottom: -25px;
+}
+#background-sec5{
+  bottom: -225px;
+}
+.top__title-content{
+  color: var(--white);
+}
 
 .product-iphone {
   background-color: rgba(0, 0, 0, 0.1);
