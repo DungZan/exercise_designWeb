@@ -129,10 +129,36 @@
 }
 
 /* Content */
-.Title{
+.section-content{
+  display: block;
   text-align: center;
-  margin: 100px auto ;
+  margin: 30px;
 }
+
+.section-content > .tabnav{
+  list-style: none;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.section-content > .tabnav > li{
+    padding: 30px;
+  
+}
+
+.section-content > .tabnav >  li > a{
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  
+  
+}
+
+
+
 /* 
 .category-main{
   display: flex;
