@@ -288,9 +288,31 @@
         top: 10%;
         width: 80%;
         max-width: 1200px;
-        >.modal-content h4 {
-            padding-top: 20px;
-            text-align: center;
+        >.modal-content {
+            >h4 {
+                padding-top: 20px;
+                text-align: center;
+            }
+            >h3 {
+                font-size: 25px;
+                padding-left: 20px;
+            }
+            >div p {
+                padding-left: 20px;
+            }
+            >div {
+                >.goc {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    text-decoration: line-through;
+                }
+                >span:first-of-type {
+                    padding-left: 20px;
+                    color: #e32222;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
@@ -305,7 +327,48 @@
     }
 }
 
-@media only screen and (max-width:770px) {
+.but-modal {
+    background-color: #ffffff;
+    width: 65px;
+    height: 36px;
+    border: rgb(186, 186, 186) solid 1px;
+    border-radius: 5px;
+    margin: 0 -20px 20px 30px;
+    color: #4d4d4d;
+}
+
+.but-modal:focus {
+    border: #0071e3 solid 2px;
+}
+
+.color {
+    >.but-modal {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    >.black {
+        background-color: #000;
+    }
+    >.star-light {
+        background-color: #f4e9d4;
+    }
+    >.red {
+        background-color: red;
+    }
+    >.purple {
+        background-color: #bab4e7;
+    }
+    >.green {
+        background-color: #174c6f
+    }
+    >.yellow {
+        background-color: #fdeb66;
+    }
+}
+
+@media only screen and (max-width: 770px) {
     .card {
         margin: auto;
     }
