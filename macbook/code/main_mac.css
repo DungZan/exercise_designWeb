@@ -153,8 +153,10 @@
   text-decoration: none;
   color: #000;
   font-size: 20px;
-  
-  
+}
+
+.section-content > .tabnav > li:hover{
+  color: #0071e3;
 }
 
 
