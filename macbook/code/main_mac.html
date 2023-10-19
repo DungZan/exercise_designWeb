@@ -121,263 +121,354 @@
 </div>
 
 <!-- Content-->
-  <div class="section-content">
+  <section class="section-content">
     <h2>Which Mac is right for you ?</h2>
-    <ul class="tabnav">
-     <li class="active"> <a data-toggle="tab" href="#laptop">Laptop</a></li>
-     <li><a data-toggle="tab" href="#desktop">Desktop</a></li>
+    <!-- Nav pills -->
+    <ul class="nav nav-pills" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="pill" href="#laptop">Laptop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" href="#Desktop">Desktop</a>
+      </li>
+    
     </ul>
-    <div class="tab-content">
-      <div id="laptop" class="tab-pane fade in active">
-          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-           <a href="#macbook">
-            <div class="card_mac">
-              <div class="card_header">
-                <p>Hot</p>
-              </div>
-              <div class="card_body">
-                <img src="/macbook/img/0000723_macbook-air-m1-2020-8gb-ram-256gb-ssd_240.png" alt="MacBook Air M1 2020">
-              </div>
-              <div class="card_footer">
-                <p>MacBook Air M1 2020(8GB RAM | 256GB SSD)</p>
-                <span>18.890.000đ</span>
-                <br>
-                <span class="sale">28.990.000đ</span>
-                <span class="sale">-34%</span>
-              </div>
-            </div>
-           </a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-            <a href="#macbook">
-             <div class="card_mac">
-               <div class="card_header">
-                 <p>Hot</p>
-               </div>
-               <div class="card_body">
-                 <img src="/macbook/img/0008043_macbook-pro-16-m1-pro-16-core16gb1tb_240.png" alt="MacBook Pro 16 M1 Pro">
-               </div>
-               <div class="card_footer">
-                 <p>MacBook Pro 16 M1 Pro(16Core/16GB/1TB)</p>
-                 <span>53.990.000đ</span>
-                 <br>
-                 <span class="sale">73.000.000đ</span>
-                 <span class="sale">-26%</span>
-               </div>
-             </div>
-            </a>
-           </div>
-           <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-            <a href="#iMac">
-             <div class="card_mac">
-               <div class="card_header">
-                 <p>Hot</p>
-               </div>
-               <div class="card_body">
-                 <img src="/macbook/img/0000809_imac-m1-2021-24-inch-8-core-gpu8gb512gb_240.png" alt="iMac M1 2021 24inch">
-               </div>
-               <div class="card_footer">
-                 <p>iMac M1 2021 24inch(8Core GPU/8GB/512GB)</p>
-                 <span>37.990.000đ</span>
-                 <br>
-                 <span class="sale">45.990.000đ</span>
-                 <span class="sale">-17%</span>
-               </div>
-             </div>
-            </a>
-           </div>
-           <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-            <a href="#macbook">
-             <div class="card_mac">
-               <div class="card_header">
-                 <p>Hot</p>
-               </div>
-               <div class="card_body">
-                 <img src="/macbook/img/0012362_mac-mini-m2-10-core-gpu-16gb-ram-256gb-ssd-cto_240.png" alt="Mac mini M2">
-               </div>
-               <div class="card_footer">
-                 <p>Mac mini M2 (10-Core GPU|8GB RAM|256GB SSD)</p>
-                 <span>14.950.000đ</span>
-                 <br>
-                 <span class="sale">19.990.000đ</span>
-                 <span class="sale">-25%</span>
-               </div>
-             </div>
-            </a>
-           </div>
 
+  <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="laptop" class="container tab-pane active"><br>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section_mac">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                  <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="/macbook/img/0000723_macbook-air-m1-2020-8gb-ram-256gb-ssd_240.png" alt="MacBook Air M1 2020">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Air M1 2020 (8GB RAM | 256GB SSD)</h6>
+                  <span style="color: blue; font-weight: bold;" >18.890.000đ</span>
+                  <br>
+                  <span class="sale" style="text-decoration: line-through;" >28.990.000đ</span>
+                  <span class="sale" >-34%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section_mac">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                  <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="/macbook/img/0008043_macbook-pro-16-m1-pro-16-core16gb1tb_240.png" alt="MacBook Pro 16 M1 Pro">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Pro 16 M1 Pro (16Core/16GB/1TB)</h6>
+                  <span style="color: blue; font-weight: bold;">53.990.000đ</span>
+                  <br>
+                  <span class="sale" style="text-decoration: line-through;">73.000.000đ</span>
+                  <span class="sale">-26%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section_mac">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                  <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="/macbook/img/0008043_macbook-pro-16-m1-pro-16-core16gb1tb_240 (1).png" alt="MacBook Pro 16 M1 Pro">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Pro 16 M1 Pro (16Core/16Gb/512SSD)</h6>
+                  <span style="color: blue; font-weight: bold;">46.990.000đ</span>
+                  <br>
+                  <span class="sale" style="text-decoration: line-through;">68.990.000đ</span>
+                  <span class="sale">-31%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section_mac">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                 <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="../img/0008502_macbook-air-m2-2022-8gb-ram-256gb-ssd_240.png" alt="MacBook Air M2 2022">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Air M2 2022(8GB RAM | 256Gb SSD)</h6>
+                  <span style="color: blue; font-weight: bold;">26.590.000đ</span>
+                  <br>
+                  <span class="sale" style="text-decoration: line-through;">32.990.000đ</span>
+                  <span class="sale">-19%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section_mac">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                  <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="../img/0008682_macbook-pro-13-inch-m2-10-core-8gb-ram-256gb-ssd_240.png" alt="MacBook Pro 13 inch M2">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Pro 13 inch M2 (10 Core| 16GB Ram)</h6>
+                  <span style="color: blue; font-weight: bold;">29.690.000đ</span>
+                  <br>
+                  <span class="sale" style=" text-decoration: line-through; ">35.990.000đ</span>
+                  <span class="sale">-17%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section_mac">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                  <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="../img/0018139_macbook-air-15-inch-m2-8gb-ram-512gb-ssd_240.png" alt="MacBook Air 15 inch M2">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Air 15 inch M2 (8GB RAM | 256GB SSD)</h6>
+                  <span style="color: blue; font-weight: bold;">30.890.000đ</span>
+                  <br>
+                  <span class="sale" style="text-decoration: line-through;">35.990.000đ</span>
+                  <span class="sale">-14%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section_mac">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                  <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="../img//0020331_macbook-air-15-inch-m2-16gb-ram-512gb-ssd_240.png" alt="MacBook Air 15 inch M2">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Air 15 inch M2 (16GB RAM | 256Gb SSD)</h6>
+                  <span style="color: blue; font-weight: bold;">36.890.000đ</span>
+                  <br>
+                  <span class="sale" style="text-decoration: line-through;">39.990.000đ</span>
+                  <span class="sale">-7%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section_mac">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                  <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="../img/0018139_macbook-air-15-inch-m2-8gb-ram-512gb-ssd_240.png" alt="MacBook Air 15 inch M2">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Air 15 inch M2(8GB RAM | 512GB SSD)</h6>
+                  <span style="color: blue; font-weight: bold;">34.790.000đ</span>
+                  <br>
+                  <span class="sale" style="text-decoration: line-through;">42.990.000đ</span>
+                  <span class="sale">-19%</span>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-      <div id="desktop" class="tab-pane fade">
-        
-      </div>
-    </div>
-  </div>
-
-  
-
-  
-
-  
-  
-<!-- 
-    <section class="section5">
-    <div class="container">
-      <div class="product-iphone">
-        <h1>iPhone</h1>
+      <div id="Desktop" class="container tab-pane fade"><br>
         <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-            <div class="card1">
-              <div class="card__img">
-                <img src="./img/iphone15.png" alt="" />
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section_mac">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                  <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="/macbook/img/0000809_imac-m1-2021-24-inch-8-core-gpu8gb512gb_240.png" alt="MacBook Air M1 2020">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Air M1 2020 (8GB RAM | 256GB SSD)</h6>
+                  <span style="color: blue; font-weight: bold;" >18.890.000đ</span>
+                  <br>
+                  <span class="sale" style="text-decoration: line-through;" >28.990.000đ</span>
+                  <span class="sale" >-34%</span>
+                </div>
               </div>
-              <h2>iPhone 15 Pro</h2>
-              <p>Phiên bản phù hợp</p>
-              <div class="card__social">
-                <a href="">
-                  <span>64GB</span>
-                </a>
-                <a href="">
-                  <span>128GB</span>
-                </a>
-                <a href="">
-                  <span>256GB</span>
-                </a>
-                <a href="">
-                  <span>1TB</span>
-                </a>
-              </div>
-              <button>Buy now</button>
-            </div>
+            </a>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-            <div class="card1">
-              <div class="card__img">
-                <img src="./img/iphone15_1.png" alt="" />
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section_mac">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                  <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="/macbook/img/0008043_macbook-pro-16-m1-pro-16-core16gb1tb_240.png" alt="MacBook Pro 16 M1 Pro">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Pro 16 M1 Pro (16Core/16GB/1TB)</h6>
+                  <span style="color: blue; font-weight: bold;">53.990.000đ</span>
+                  <br>
+                  <span class="sale" style="text-decoration: line-through;">73.000.000đ</span>
+                  <span class="sale">-26%</span>
+                </div>
               </div>
-              <h2>iPhone 15 Pro</h2>
-              <p>Phiên bản phù hợp</p>
-              <div class="card__social">
-                <a href="">
-                  <span>64GB</span>
-                </a>
-                <a href="">
-                  <span>128GB</span>
-                </a>
-                <a href="">
-                  <span>256GB</span>
-                </a>
-                <a href="">
-                  <span>1TB</span>
-                </a>
-              </div>
-              <button>Buy now</button>
-            </div>
+            </a>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-            <div class="card1">
-              <div class="card__img">
-                <img src="./img/iphone15.png" alt="" />
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section_mac">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                  <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="/macbook/img/0008043_macbook-pro-16-m1-pro-16-core16gb1tb_240 (1).png" alt="MacBook Pro 16 M1 Pro">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Pro 16 M1 Pro (16Core/16Gb/512SSD)</h6>
+                  <span style="color: blue; font-weight: bold;">46.990.000đ</span>
+                  <br>
+                  <span class="sale" style="text-decoration: line-through;">68.990.000đ</span>
+                  <span class="sale">-31%</span>
+                </div>
               </div>
-              <h2>iPhone 15 Pro</h2>
-              <p>Phiên bản phù hợp</p>
-              <div class="card__social">
-                <a href="">
-                  <span>64GB</span>
-                </a>
-                <a href="">
-                  <span>128GB</span>
-                </a>
-                <a href="">
-                  <span>256GB</span>
-                </a>
-                <a href="">
-                  <span>1TB</span>
-                </a>
-              </div>
-              <button>Buy now</button>
-            </div>
+            </a>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-            <div class="card1">
-              <div class="card__img">
-                <img src="./img/iphone15.png" alt="" />
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section_mac">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                 <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="../img/0008502_macbook-air-m2-2022-8gb-ram-256gb-ssd_240.png" alt="MacBook Air M2 2022">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Air M2 2022(8GB RAM | 256Gb SSD)</h6>
+                  <span style="color: blue; font-weight: bold;">26.590.000đ</span>
+                  <br>
+                  <span class="sale" style="text-decoration: line-through;">32.990.000đ</span>
+                  <span class="sale">-19%</span>
+                </div>
               </div>
-              <h2>iPhone 15 Pro</h2>
-              <p>Phiên bản phù hợp</p>
-              <div class="card__social">
-                <a href="">
-                  <span>64GB</span>
-                </a>
-                <a href="">
-                  <span>128GB</span>
-                </a>
-                <a href="">
-                  <span>256GB</span>
-                </a>
-                <a href="">
-                  <span>1TB</span>
-                </a>
-              </div>
-              <button>Buy now</button>
-            </div>
+            </a>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-            <div class="card1">
-              <div class="card__img">
-                <img src="./img/iphone15.png" alt="" />
-              </div>
-              <h2>iPhone 15 Pro</h2>
-              <p>Phiên bản phù hợp</p>
-              <div class="card__social">
-                <a href="">
-                  <span>64GB</span>
-                </a>
-                <a href="">
-                  <span>128GB</span>
-                </a>
-                <a href="">
-                  <span>256GB</span>
-                </a>
-                <a href="">
-                  <span>1TB</span>
-                </a>
-              </div>
-              <button>Buy now</button>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-            <div class="card1">
-              <div class="card__img">
-                <img src="./img/iphone14.png" alt="" />
-              </div>
-              <h2>iPhone 15 Pro</h2>
-              <p>Phiên bản phù hợp</p>
-              <div class="card__social">
-                <a href="">
-                  <span>64GB</span>
-                </a>
-                <a href="">
-                  <span>128GB</span>
-                </a>
-                <a href="">
-                  <span>256GB</span>
-                </a>
-                <a href="">
-                  <span>1TB</span>
-                </a>
-              </div>
-              <button>Buy now</button>
-            </div>
-          </div>
-      </div>
+        </div>
       
-      </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section1">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                  <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="../img/0008682_macbook-pro-13-inch-m2-10-core-8gb-ram-256gb-ssd_240.png" alt="MacBook Pro 13 inch M2">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Pro 13 inch M2 (10 Core| 16GB Ram)</h6>
+                  <span style="color: blue; font-weight: bold;">29.690.000đ</span>
+                  <br>
+                  <span class="sale" style=" text-decoration: line-through; ">35.990.000đ</span>
+                  <span class="sale">-17%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section1">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                  <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="../img/0018139_macbook-air-15-inch-m2-8gb-ram-512gb-ssd_240.png" alt="MacBook Air 15 inch M2">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Air 15 inch M2 (8GB RAM | 256GB SSD)</h6>
+                  <span style="color: blue; font-weight: bold;">30.890.000đ</span>
+                  <br>
+                  <span class="sale" style="text-decoration: line-through;">35.990.000đ</span>
+                  <span class="sale">-14%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section1">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                  <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="../img//0020331_macbook-air-15-inch-m2-16gb-ram-512gb-ssd_240.png" alt="MacBook Air 15 inch M2">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Air 15 inch M2 (16GB RAM | 256Gb SSD)</h6>
+                  <span style="color: blue; font-weight: bold;">36.890.000đ</span>
+                  <br>
+                  <span class="sale" style="text-decoration: line-through;">39.990.000đ</span>
+                  <span class="sale">-7%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center section1">
+            <a href="#macbook">
+              <div class="card_mac">
+                <!-- <div class="card_header">
+                  <p>Hot</p>
+                </div> -->
+                <div class="card_body">
+                  <img src="../img/0018139_macbook-air-15-inch-m2-8gb-ram-512gb-ssd_240.png" alt="MacBook Air 15 inch M2">
+                </div>
+                <div class="card_footer">
+                  <h6>MacBook Air 15 inch M2(8GB RAM | 512GB SSD)</h6>
+                  <span style="color: blue; font-weight: bold;">34.790.000đ</span>
+                  <br>
+                  <span class="sale" style="text-decoration: line-through;">42.990.000đ</span>
+                  <span class="sale">-19%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>  
     </div>
-  </section>   -->
+    
+    <div class="More"><a href="#more">More</a></div>
+
+  </section>
+
+
+  
+
+  
+
+
     
     <!-- FOOTER -->
-    <!-- <footer class="footer1">
+     <footer class="footer1">
         <div class="footer1__wrapper">
           <ul>
             <li>1.Sản phẩm của nhóm BE_A</li>
@@ -464,7 +555,7 @@
           </div>
         </div>
       </footer>
-     --> 
+     
      <script src="main.js"></script>
 </body>
 </html>
