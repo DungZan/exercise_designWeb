@@ -289,6 +289,10 @@
         width: 80%;
         max-width: 1000px;
         >.modal-content {
+            >.row {
+                width: 100%;
+                margin: 0 auto;
+            }
             >h4 {
                 padding-top: 20px;
                 text-align: center;
@@ -337,7 +341,7 @@
     height: 36px;
     border: rgb(186, 186, 186) solid 1px;
     border-radius: 5px;
-    margin: 0 -20px 20px 30px;
+    margin: 5px;
     color: #4d4d4d;
 }
 
@@ -345,7 +349,7 @@
     border: #0071e3 solid 2px;
 }
 
-.color {
+.color div {
     >.but-modal {
         width: 30px;
         height: 30px;
@@ -378,6 +382,21 @@
     }
     >.deep-purple {
         background-color: #61586b;
+    }
+    >.pink {
+        background-color: #efcfd2;
+    }
+    >.green-real {
+        background-color: #b5d999;
+    }
+    >.blue {
+        background-color: #88adc6;
+    }
+    >.white {
+        background-color: #f3f2ed;
+    }
+    >.titan-blue {
+        background-color: #505865;
     }
 }
 

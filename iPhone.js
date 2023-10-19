@@ -94,19 +94,19 @@ function changePrice(dungluong, pban) {
         const Giam = document.getElementById("giam-15");
         if (dungluong == 128) {
             dluong = 128;
-            Gia.textContent = "18.690.000₫";
-            Goc.textContent = "24.000.000₫";
-            Giam.textContent = "-25%";
+            Gia.textContent = "21.890.000₫";
+            Goc.textContent = "24.990.000₫";
+            Giam.textContent = "-23%";
         } else if (dungluong == 256) {
             dluong = 256;
-            Gia.textContent = "21.590.000₫";
+            Gia.textContent = "24.890.000₫";
             Goc.textContent = "27.990.000₫";
-            Giam.textContent = "-23%";
+            Giam.textContent = "-22%";
         } else if (dungluong == 512) {
             dluong = 512;
-            Gia.textContent = "26.990.000₫";
+            Gia.textContent = "29.990.000₫";
             Goc.textContent = "33.990.000₫";
-            Giam.textContent = "-21%";
+            Giam.textContent = "-22%";
         }
     } else if (pban == 152) {
         const Gia = document.getElementById("gia-15plus");
@@ -114,19 +114,19 @@ function changePrice(dungluong, pban) {
         const Giam = document.getElementById("giam-15plus");
         if (dungluong == 128) {
             dluong = 128;
-            Gia.textContent = "18.690.000₫";
-            Goc.textContent = "24.000.000₫";
-            Giam.textContent = "-25%";
+            Gia.textContent = "25.490.000₫";
+            Goc.textContent = "27.990.000₫";
+            Giam.textContent = "-9%";
         } else if (dungluong == 256) {
             dluong = 256;
-            Gia.textContent = "21.590.000₫";
-            Goc.textContent = "27.990.000₫";
-            Giam.textContent = "-23%";
+            Gia.textContent = "28.490.000₫";
+            Goc.textContent = "30.990.000₫";
+            Giam.textContent = "-9%";
         } else if (dungluong == 512) {
             dluong = 512;
-            Gia.textContent = "26.990.000₫";
-            Goc.textContent = "33.990.000₫";
-            Giam.textContent = "-21%";
+            Gia.textContent = "33.490.000₫";
+            Goc.textContent = "36.990.000₫";
+            Giam.textContent = "-10%";
         }
     } else if (pban == 153) {
         const Gia = document.getElementById("gia-15pro");
@@ -134,19 +134,24 @@ function changePrice(dungluong, pban) {
         const Giam = document.getElementById("giam-15pro");
         if (dungluong == 128) {
             dluong = 128;
-            Gia.textContent = "18.690.000₫";
-            Goc.textContent = "24.000.000₫";
-            Giam.textContent = "-25%";
+            Gia.textContent = "27.990.000₫";
+            Goc.textContent = "30.990.000₫";
+            Giam.textContent = "-10%";
         } else if (dungluong == 256) {
             dluong = 256;
-            Gia.textContent = "21.590.000₫";
-            Goc.textContent = "27.990.000₫";
-            Giam.textContent = "-23%";
+            Gia.textContent = "30.490.000₫";
+            Goc.textContent = "34.990.000₫";
+            Giam.textContent = "-13%";
         } else if (dungluong == 512) {
             dluong = 512;
-            Gia.textContent = "26.990.000₫";
-            Goc.textContent = "33.990.000₫";
-            Giam.textContent = "-21%";
+            Gia.textContent = "36.490.000₫";
+            Goc.textContent = "40.990.000₫";
+            Giam.textContent = "-11%";
+        } else if (dungluong == 1024) {
+            dluong = 1024;
+            Gia.textContent = "42.490.000₫";
+            Goc.textContent = "46.990.000₫";
+            Giam.textContent = "-10%";
         }
     } else if (pban == 154) {
         const Gia = document.getElementById("gia-15max");
@@ -206,7 +211,7 @@ function changeImg(x, pban) {
         } else if (x == 6) {
             mau.src = "img/img_iphone/ip14yellow.png";
         }
-    } else if (pban = 143) {
+    } else if (pban == 143) {
         mau = document.getElementById("color-14pro");
         if (x == 1) {
             mau.src = "img/img_iphone/ip14black.png";
@@ -235,47 +240,39 @@ function changeImg(x, pban) {
     } else if (pban == 151) {
         mau = document.getElementById("color-15");
         if (x == 1) {
-            mau.src = "img/img_iphone/ip14black.png";
-        } else if (x == 2) {
-            mau.src = "img/img_iphone/ip14star.png";
-        } else if (x == 3) {
-            mau.src = "img/img_iphone/ip14red.png";
-        } else if (x == 4) {
-            mau.src = "img/img_iphone/ip14purple.png";
-        } else if (x == 5) {
-            mau.src = "img/img_iphone/ip14green.png";
+            mau.src = "img/img_iphone/ip15black.png";
+        } else if (x == 10) {
+            mau.src = "img/img_iphone/ip15pink.png";
         } else if (x == 6) {
-            mau.src = "img/img_iphone/ip14yellow.png";
+            mau.src = "img/img_iphone/ip15yellow.png";
+        } else if (x == 11) {
+            mau.src = "img/img_iphone/ip15green-real.png";
+        } else if (x == 12) {
+            mau.src = "img/img_iphone/ip15blue.png";
         }
     } else if (pban == 152) {
         mau = document.getElementById("color-15plus");
         if (x == 1) {
-            mau.src = "img/img_iphone/ip14black.png";
-        } else if (x == 2) {
-            mau.src = "img/img_iphone/ip14star.png";
-        } else if (x == 3) {
-            mau.src = "img/img_iphone/ip14red.png";
-        } else if (x == 4) {
-            mau.src = "img/img_iphone/ip14purple.png";
-        } else if (x == 5) {
-            mau.src = "img/img_iphone/ip14green.png";
+            mau.src = "img/img_iphone/ip15black.png";
+        } else if (x == 10) {
+            mau.src = "img/img_iphone/ip15pink.png";
         } else if (x == 6) {
-            mau.src = "img/img_iphone/ip14yellow.png";
+            mau.src = "img/img_iphone/ip15yellow.png";
+        } else if (x == 11) {
+            mau.src = "img/img_iphone/ip15green-real.png";
+        } else if (x == 12) {
+            mau.src = "img/img_iphone/ip15blue.png";
         }
     } else if (pban == 153) {
         mau = document.getElementById("color-15pro");
         if (x == 1) {
-            mau.src = "img/img_iphone/ip14black.png";
-        } else if (x == 2) {
-            mau.src = "img/img_iphone/ip14star.png";
-        } else if (x == 3) {
-            mau.src = "img/img_iphone/ip14red.png";
+            mau.src = "img/img_iphone/ip15problack.png";
+        } else if (x == 13) {
+            mau.src = "img/img_iphone/ip15prowhite.png";
+        } else if (x == 14) {
+            mau.src = "img/img_iphone/ip15protitan-blue.png";
         } else if (x == 4) {
             mau.src = "img/img_iphone/ip14purple.png";
-        } else if (x == 5) {
-            mau.src = "img/img_iphone/ip14green.png";
-        } else if (x == 6) {
-            mau.src = "img/img_iphone/ip14yellow.png";
         }
     } else if (pban == 154) {
         mau = document.getElementById("color-15max");
@@ -299,12 +296,12 @@ function changeImg(x, pban) {
 function cart() {
     if (dluong != 0 && msac != 0) {
         alert("Thêm sản phẩm thành công!");
+        location.reload();
     } else {
         alert("Vui lòng chọn đầy đủ thông tin");
     }
     dluong = 0;
     msac = 0;
-    location.reload();
 }
 // test email
 
