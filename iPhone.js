@@ -333,3 +333,7 @@ function thong_bao() {
     location.reload();
 }
 $('#email').on('input', test_email);
+
+function infoclose(x) {
+    $(x).modal('hide');
+}
