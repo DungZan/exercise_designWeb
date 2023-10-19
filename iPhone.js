@@ -29,19 +29,19 @@ function changePrice(dungluong, pban) {
         const Giam = document.getElementById("giam-14plus");
         if (dungluong == 128) {
             dluong = 128;
-            Gia.textContent = "18.690.000₫";
-            Goc.textContent = "24.000.000₫";
+            Gia.textContent = "21.190.000₫";
+            Goc.textContent = "27.990.000₫";
             Giam.textContent = "-25%";
         } else if (dungluong == 256) {
             dluong = 256;
-            Gia.textContent = "21.590.000₫";
-            Goc.textContent = "27.990.000₫";
+            Gia.textContent = "23.990.000₫";
+            Goc.textContent = "30.990.000₫";
             Giam.textContent = "-23%";
         } else if (dungluong == 512) {
             dluong = 512;
-            Gia.textContent = "26.990.000₫";
-            Goc.textContent = "33.990.000₫";
-            Giam.textContent = "-21%";
+            Gia.textContent = "25.590.000₫";
+            Goc.textContent = "36.990.000₫";
+            Giam.textContent = "-31%";
         }
     } else if (pban == 143) {
         const Gia = document.getElementById("gia-14pro");
@@ -74,19 +74,24 @@ function changePrice(dungluong, pban) {
         const Giam = document.getElementById("giam-14max");
         if (dungluong == 128) {
             dluong = 128;
-            Gia.textContent = "18.690.000₫";
-            Goc.textContent = "24.000.000₫";
+            Gia.textContent = "26.550.000₫";
+            Goc.textContent = "34.990.000₫";
             Giam.textContent = "-25%";
         } else if (dungluong == 256) {
             dluong = 256;
-            Gia.textContent = "21.590.000₫";
-            Goc.textContent = "27.990.000₫";
+            Gia.textContent = "28.890.000₫";
+            Goc.textContent = "37.490.000₫";
             Giam.textContent = "-23%";
         } else if (dungluong == 512) {
             dluong = 512;
-            Gia.textContent = "26.990.000₫";
-            Goc.textContent = "33.990.000₫";
-            Giam.textContent = "-21%";
+            Gia.textContent = "35.890.000₫";
+            Goc.textContent = "43.990.000₫";
+            Giam.textContent = "-19%";
+        } else if (dungluong == 1024) {
+            dluong = 1024;
+            Gia.textContent = "41.990.000₫";
+            Goc.textContent = "49.990.000₫";
+            Giam.textContent = "-17%";
         }
     } else if (pban == 151) {
         const Gia = document.getElementById("gia-15");
@@ -214,24 +219,24 @@ function changeImg(x, pban) {
     } else if (pban == 143) {
         mau = document.getElementById("color-14pro");
         if (x == 1) {
-            mau.src = "img/img_iphone/ip14black.png";
+            mau.src = "img/img_iphone/ip14maxblack.png";
         } else if (x == 7) {
-            mau.src = "img/img_iphone/ip14star.png";
+            mau.src = "img/img_iphone/ip14maxwhite.png";
         } else if (x == 8) {
-            mau.src = "img/img_iphone/ip14red.png";
+            mau.src = "img/img_iphone/ip14maxgold.png";
         } else if (x == 9) {
-            mau.src = "img/img_iphone/ip14purple.png";
+            mau.src = "img/img_iphone/ip14maxpurple.png";
         }
     } else if (pban == 144) {
         mau = document.getElementById("color-14max");
         if (x == 1) {
-            mau.src = "img/img_iphone/ip14black.png";
-        } else if (x == 2) {
-            mau.src = "img/img_iphone/ip14star.png";
+            mau.src = "img/img_iphone/ip14maxblack.png";
+        } else if (x == 7) {
+            mau.src = "img/img_iphone/ip14maxwhite.png";
         } else if (x == 8) {
             mau.src = "img/img_iphone/ip14maxgold.png";
-        } else if (x == 4) {
-            mau.src = "img/img_iphone/ip14purple.png";
+        } else if (x == 9) {
+            mau.src = "img/img_iphone/ip14maxpurple.png";
         }
     } else if (pban == 151) {
         mau = document.getElementById("color-15");
