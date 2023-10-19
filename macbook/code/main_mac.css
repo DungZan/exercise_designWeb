@@ -131,7 +131,7 @@
 
 /* Content */
 .section-content{
-  display: block;
+  /* display: block; */
   text-align: center;
   margin: 30px;
 }
@@ -151,9 +151,6 @@
 
 
 
-.section-content > .tab-content > .tab-pane{
-  display: block;
-}
 .row{
   margin-bottom: 20px;
 }
