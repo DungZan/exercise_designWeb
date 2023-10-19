@@ -157,21 +157,21 @@ function changePrice(dungluong, pban) {
         const Gia = document.getElementById("gia-15max");
         const Goc = document.getElementById("goc-15max");
         const Giam = document.getElementById("giam-15max");
-        if (dungluong == 128) {
-            dluong = 128;
-            Gia.textContent = "18.690.000₫";
-            Goc.textContent = "24.000.000₫";
-            Giam.textContent = "-25%";
-        } else if (dungluong == 256) {
+        if (dungluong == 256) {
             dluong = 256;
-            Gia.textContent = "21.590.000₫";
-            Goc.textContent = "27.990.000₫";
-            Giam.textContent = "-23%";
+            Gia.textContent = "34.990.000₫";
+            Goc.textContent = "37.990.000₫";
+            Giam.textContent = "-8%";
         } else if (dungluong == 512) {
             dluong = 512;
-            Gia.textContent = "26.990.000₫";
-            Goc.textContent = "33.990.000₫";
-            Giam.textContent = "-21%";
+            Gia.textContent = "39.990.000₫";
+            Goc.textContent = "43.990.000₫";
+            Giam.textContent = "-10%";
+        } else if (dungluong == 1024) {
+            dluong = 1024;
+            Gia.textContent = "45.990.000₫";
+            Goc.textContent = "49.990.000₫";
+            Giam.textContent = "-9%";
         }
     }
 
@@ -228,14 +228,10 @@ function changeImg(x, pban) {
             mau.src = "img/img_iphone/ip14black.png";
         } else if (x == 2) {
             mau.src = "img/img_iphone/ip14star.png";
-        } else if (x == 3) {
-            mau.src = "img/img_iphone/ip14red.png";
+        } else if (x == 8) {
+            mau.src = "img/img_iphone/ip14maxgold.png";
         } else if (x == 4) {
             mau.src = "img/img_iphone/ip14purple.png";
-        } else if (x == 5) {
-            mau.src = "img/img_iphone/ip14green.png";
-        } else if (x == 6) {
-            mau.src = "img/img_iphone/ip14yellow.png";
         }
     } else if (pban == 151) {
         mau = document.getElementById("color-15");
@@ -271,23 +267,19 @@ function changeImg(x, pban) {
             mau.src = "img/img_iphone/ip15prowhite.png";
         } else if (x == 14) {
             mau.src = "img/img_iphone/ip15protitan-blue.png";
-        } else if (x == 4) {
-            mau.src = "img/img_iphone/ip14purple.png";
+        } else if (x == 7) {
+            mau.src = "img/img_iphone/tip15progrey.png";
         }
     } else if (pban == 154) {
         mau = document.getElementById("color-15max");
         if (x == 1) {
-            mau.src = "img/img_iphone/ip14black.png";
-        } else if (x == 2) {
-            mau.src = "img/img_iphone/ip14star.png";
-        } else if (x == 3) {
-            mau.src = "img/img_iphone/ip14red.png";
-        } else if (x == 4) {
-            mau.src = "img/img_iphone/ip14purple.png";
-        } else if (x == 5) {
-            mau.src = "img/img_iphone/ip14green.png";
-        } else if (x == 6) {
-            mau.src = "img/img_iphone/ip14yellow.png";
+            mau.src = "img/img_iphone/ip15promaxblack.png";
+        } else if (x == 13) {
+            mau.src = "img/img_iphone/ip15prowhite.png";
+        } else if (x == 14) {
+            mau.src = "img/img_iphone/ip15protitan-blue.png";
+        } else if (x == 7) {
+            mau.src = "img/img_iphone/tip15progrey.png";
         }
     }
     msac = x;
