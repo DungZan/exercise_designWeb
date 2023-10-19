@@ -84,8 +84,15 @@ html, body {
         margin: 3px 0 3px 0;
         > .pd__choice {
             border-left: 1px solid var(--greyLight2);
-            margin: 3px 0 3px 0;
-
+            margin: 10px 0 10px 0;
+            > p {
+                font-weight: bold;
+                margin: 0;
+            }
+            > .pd__choice--af p {
+                font-weight: bold;
+                margin: 20px 0 0 0;
+            }
         }
     }
     > .pd__preview {
@@ -101,12 +108,22 @@ html, body {
                 padding: 0;
             }
         }
+        > .pdpv__full {
+            position: relative;
+            > #pv_full_case {
+                z-index: 1;
+                max-width: 80%;
+                position: absolute;
+                left: 10%;
+                top: -5%;
+            }
+        } 
     }
     > .pd__preview img {
         max-width: 80%;
         margin: 0 auto;
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin-top: 5%;
+        margin-bottom: 5%;
         display: none;
     }
 }
@@ -294,7 +311,30 @@ html, body {
                         max-width: 90%;
                         padding: 10px 0 10px 0;
                     }
-                    > div {
+                    > .pcct__dt--pv {
+                        position: relative;
+                        box-sizing: border-box;
+                        > #pcpv_full_case {
+                            z-index: 1;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin: 0 auto;
+                            max-width: 80%;
+                        }
+                        > #pcpv_full_band {
+                            z-index: 0;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin: 0 auto;
+                            max-width: 80%;
+                        }
+                        > #pcpv_canvas {
+                            max-width: 90%;
+                        }
+                    }
+                    > .pcct__dt--text {
                         > h6 {
                             padding: 10px 0 0 0;
                         }
