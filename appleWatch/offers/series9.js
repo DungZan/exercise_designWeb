@@ -23,12 +23,6 @@ function cleardown(depth) {
         band_type = undefined;
     } else return;
     if (depth>2) {
-        document.getElementById("connectivity").style.display = "none";
-        document.getElementById("connectivity").querySelectorAll("input").forEach(function(child) {
-            child.checked = 0;
-        });
-        case_connect = undefined;
-        connective = 1;
         document.getElementById("bandline").style.display = "none";
         document.getElementById("bandline").querySelectorAll("input").forEach(function(child) {
             child.checked = 0;
@@ -52,6 +46,11 @@ function cleardown(depth) {
             });
         });
         case_color = undefined;
+        document.getElementById("connectivity").style.display = "none";
+        document.getElementById("connectivity").querySelectorAll("input").forEach(function(child) {
+            child.checked = 0;
+        });
+        case_connect = undefined;
     } else return;
 }
 function set_case(id) {
@@ -60,18 +59,21 @@ function set_case(id) {
     document.getElementById("casecolor_" + id).style.display = "block";
     document.getElementById("pv_case").setAttribute("src", "./img_series9/case/series9_case_" + id + ".png");
     document.getElementById("pv_case").style.display = "block";
+    document.getElementById("connectivity").style.display = "block";
+    if (case_mat == "1") {
+        document.getElementById("pdc_onlyGPS").style.display = "block";
+    } else {
+        document.getElementById("pdc_onlyGPS").style.display = "none";
+    }
     update_detail();
 }
 function set_casesize(size) {
     cleardown(3);
     case_size = size;
-    document.getElementById("connectivity").style.display = "block";
     document.getElementById("bandline").style.display = "block";
     if (size == 41) {
-        document.getElementById("pdc_onlyGPS").style.display = "block";
         document.getElementById("modernBuckle_41mm").style.display = "block";
     } else {
-        document.getElementById("pdc_onlyGPS").style.display = "none";
         document.getElementById("modernBuckle_41mm").style.display = "none";
     }
     if (case_color != undefined) show_preview('c', case_color);
@@ -202,9 +204,21 @@ function hide_detail() {
 var get_purchaseform = document.getElementById("purchase");
 var get_buyquantity = document.getElementById("buyquantity");
 let buy_quantity;
-const base_price = 21990000;
+let price;
+function calculate_price() {
+    if (case_mat=="1" && case_size=="41" && case_connect=="1") price = 10499000; else
+    if (case_mat=="1" && case_size=="41" && case_connect=="2") price = 13099000; else
+    if (case_mat=="1" && case_size=="45" && case_connect=="1") price = 11299000; else
+    if (case_mat=="1" && case_size=="45" && case_connect=="2") price = 13899000; else 
+    if (case_mat=="2" && case_size=="41") price = 18999000; else 
+    if (case_mat=="2" && case_size=="45") price = 20299000;
+    if (band_type=="2_2" || band_type=="2_4" || band_type=="3_1") price += 1300000; else
+    if (band_type=="2_3") price += 3050000; else
+    if (band_type=="3_2") price += 9200000;
+}
 function begin_order() {
     if (case_color!=undefined && band_color!=undefined && case_size!=undefined && case_connect!=undefined) {
+        calculate_price();
         document.getElementById("pcpv_full_band").setAttribute("src", document.getElementById("pv_full_band").getAttribute("src"));
         document.getElementById("pcpv_full_case").setAttribute("src", document.getElementById("pv_full_case").getAttribute("src"));
         document.getElementById("pc_case").innerHTML = caseinfo;
@@ -212,6 +226,7 @@ function begin_order() {
         document.getElementById("pc_connect").innerHTML = connectinfo;
         get_purchaseform.style.display = "block";
         buy_quantity = 1;
+        document.getElementById("pc_totalprice").innerHTML = (price*buy_quantity).toLocaleString("en-US") + "đ";
     } else {
         alert("Quý khách hàng hãy chọn đầy đủ thông số trước khi mua hàng!");
     }
@@ -223,7 +238,7 @@ function cancel_order() {
 function update_totalprice() {
     if (get_buyquantity.value>0 && get_buyquantity.value<11) { 
         buy_quantity = get_buyquantity.value;
-        document.getElementById("pc_totalprice").innerHTML = (base_price*buy_quantity).toLocaleString("en-US") + "đ";
+        document.getElementById("pc_totalprice").innerHTML = (price*buy_quantity).toLocaleString("en-US") + "đ";
     } else {
         get_buyquantity.value = buy_quantity;
     }
