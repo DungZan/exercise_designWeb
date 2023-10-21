@@ -49,9 +49,7 @@
   margin: 0 10px;
   border-radius: 10%;
 } 
-.chapternav_item-MacbookPro{
-  width: 100px;
-}
+
 .chapternav_item > .chapternav_link > img{
   width: 100%;
   height: 80%;
@@ -283,5 +281,19 @@
   /* form */
 .form{
   position: relative;
+  top: 50px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  margin: 30px;
+  overflow: hidden;
+  >h1{
+    text-align: center;
+  }
+  >.infor_custom{
+    display: block;
+    font-size: 20px;
+    border: 1px solid  ;
+  }
   
 }

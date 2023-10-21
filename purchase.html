@@ -229,12 +229,9 @@
 
     <!-- Form -->
     <div class="form">
-        <h2>Thông tin khách hàng</h2>
-        <table align="center">
-            <form action="total.js" name="frmAccount">
-                <tr>
-                    <th colspan="2">Vui lòng nhập</th>
-                </tr>
+        <h1>Thông tin khách hàng</h1>
+        <table align="center" class="infor_custom">
+            <form action="abc.jsp" name="frmAccount">
                 <tr>
                     <td>Full name:</td>
                     <td><input type="text" name="fullname"></td>
@@ -262,7 +259,7 @@
                 <tr>
                     <td></td>
                     <td>
-                        <input type="button" value="Submit" onclick="valiform(document.forms.frmAccount);">
+                        <input type="button" value="Submit" onclick="validform(document.forms.frmAccount);">
                         <input type="reset" value="Reset">
                     </td>
                 </tr>
@@ -359,8 +356,8 @@
     </div>
   </footer>
 
-  <script src="/js/main.js"></script>
   <script src="total.js"></script>
+  <script src="/js/main.js"></script>
 
 
 </body>
