@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 
 body {
@@ -54,6 +55,7 @@ body {
     text-align: center;
     border-radius: 10%;
     padding-bottom: 10px;
+    overflow-x: hidden;
 }
 
 .iPad_tp>a>img {
@@ -116,14 +118,14 @@ a {
 .thespp {
     margin-top: 20px;
     width: 100%;
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: center;
 }
 
 .sp {
     width: 140px;
-    position: relative;
+    /* position: relative; */
     float: left;
     margin: 0;
     text-align: center;
@@ -153,7 +155,7 @@ a {
 }
 
 .gt111 {
-    height: 180px;
+    height: 120px;
 }
 
 .gt1 {
@@ -200,29 +202,139 @@ a {
 }
 
 
+/* quang ba */
+
+.video {
+    margin: 0;
+    display: none;
+    justify-content: center;
+    z-index: 2;
+}
+
+#background-video {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    max-height: 550px;
+    display: none;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#close-video {
+    display: none;
+    position: fixed;
+    top: 60px;
+    z-index: 3;
+    right: 0;
+    width: 20px;
+    height: 20px;
+}
+
+#background-video1 {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    max-height: 550px;
+    display: none;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#close-video1 {
+    display: none;
+    position: fixed;
+    top: 60px;
+    z-index: 3;
+    right: 0;
+    width: 20px;
+    height: 20px;
+}
+
+#background-video2 {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    max-height: 550px;
+    display: none;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#close-video2 {
+    display: none;
+    position: fixed;
+    top: 60px;
+    z-index: 3;
+    right: 0;
+    width: 20px;
+    height: 20px;
+}
+
+#background-video3 {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    max-height: 550px;
+    display: none;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#close-video3 {
+    display: none;
+    position: fixed;
+    top: 60px;
+    z-index: 3;
+    right: 0;
+    width: 20px;
+    height: 20px;
+}
+
+#background-video4 {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    max-height: 550px;
+    display: none;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#close-video4 {
+    display: none;
+    position: fixed;
+    top: 60px;
+    z-index: 3;
+    right: 0;
+    width: 20px;
+    height: 20px;
+}
+
+
 /* Quảng cáo */
 
 @media only screen and (max-width: 3000px) {
     div.qc1 {
-        height: 1200px;
+        height: 1300px;
     }
 }
 
 @media only screen and (max-width: 2560px) {
     div.qc1 {
-        height: 900px;
+        height: 1000px;
     }
 }
 
 @media only screen and (max-width: 1920px) {
     div.qc1 {
-        height: 700px;
+        height: 800px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
     div.qc1 {
-        height: 400px;
+        height: 500px;
     }
 }
 
@@ -233,11 +345,19 @@ a {
 }
 
 .qc1 {
-    position: relative;
+    /* position: relative; */
     background-image: url(/img/Ipad/pc1.ipad/ipados17__fbavkgtxnxyu_medium_2x.jpg);
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.qc1>div {
+    margin-top: 50px;
 }
 
 
