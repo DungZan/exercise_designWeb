@@ -157,6 +157,10 @@
 
 /* card product */
 
+.product {
+    background-color: #f0f0f0;
+}
+
 .section_ip_bg {
     background-color: #f5f5f7;
 }
@@ -176,7 +180,7 @@
     margin: 20px;
     border: none;
     text-decoration: none;
-    box-shadow: 0px 0px 2px 5px #bab6b6;
+    box-shadow: 0px 0px 2px 3px #bab6b6;
     transition: box-shadow 0.2s ease-in-out;
 }
 
@@ -194,10 +198,10 @@
 .card-footer {
     font-family: Arial, Helvetica, sans-serif;
     border: none;
-    background-color: #302c2c;
+    background-color: #f3f3f3;
     text-align: left;
     padding: 0px 0 10px 17px;
-    color: #fff;
+    color: #000000;
     >p {
         padding-left: 4px;
         font-weight: bold;
@@ -223,12 +227,12 @@
 
 .card-body {
     padding-top: 10px;
-    background-color: #302c2c;
+    background-color: #f3f3f3;
 }
 
 .card-header {
     border: none;
-    background-color: #302c2c;
+    background-color: #f3f3f3;
     padding: 15px 20px 0 0;
     >p {
         color: #5dae35;
@@ -289,13 +293,24 @@
         width: 80%;
         max-width: 1000px;
         >.modal-content {
-            >h4 {
+            >.row {
+                width: 100%;
+                margin: 0 auto;
+            }
+            .tit {
                 padding-top: 20px;
                 text-align: center;
-            }
-            >h3 {
-                font-size: 25px;
-                padding-left: 20px;
+                display: flex;
+                >span {
+                    right: 4%;
+                    position: absolute;
+                }
+                >span:hover {
+                    cursor: pointer;
+                    color: #010101;
+                    font-size: larger;
+                }
+                margin: 0 auto;
             }
             >div p {
                 padding-top: 30px;
@@ -310,15 +325,30 @@
                     padding-right: 5px;
                     text-decoration: line-through;
                 }
-                >span:first-of-type {
-                    padding-left: 20px;
-                    color: #e32222;
-                    font-weight: bold;
-                    font-size: 16px;
-                }
             }
         }
     }
+}
+
+.pric {
+    font-size: 16px;
+}
+
+.pric span:first-of-type {
+    padding-left: 50px;
+    color: #e32222;
+    font-weight: bold;
+}
+
+.modal-dialog {
+    top: 10%;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.modal-content h3 {
+    font-size: 20px;
+    padding-left: 50px;
 }
 
 .img-modal {
@@ -333,11 +363,12 @@
 
 .but-modal {
     background-color: #ffffff;
+    min-width: 40px;
     width: 65px;
     height: 36px;
     border: rgb(186, 186, 186) solid 1px;
     border-radius: 5px;
-    margin: 0 -20px 20px 30px;
+    margin: 5px;
     color: #4d4d4d;
 }
 
@@ -345,9 +376,14 @@
     border: #0071e3 solid 2px;
 }
 
-.color {
+.close {
+    color: #000;
+}
+
+.color div {
     >.but-modal {
         width: 30px;
+        min-width: 0px;
         height: 30px;
         border-radius: 50%;
         padding: 5px;
@@ -379,6 +415,21 @@
     >.deep-purple {
         background-color: #61586b;
     }
+    >.pink {
+        background-color: #efcfd2;
+    }
+    >.green-real {
+        background-color: #b5d999;
+    }
+    >.blue {
+        background-color: #88adc6;
+    }
+    >.white {
+        background-color: #f3f2ed;
+    }
+    >.titan-blue {
+        background-color: #505865;
+    }
 }
 
 .cart {
@@ -401,10 +452,29 @@
     border: none;
 }
 
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
+    .modal-dialog {
+        width: 100%;
+        max-width: 100%;
+    }
+    .modal-content {
+        >.tit h4 {
+            font-size: smaller;
+        }
+        >h3 {
+            font-size: 15px;
+            padding-left: 15px;
+        }
+    }
     .modal-dialog.modal-dialog-centered {
         margin: 0 auto;
         transform: translate(0, 0);
+    }
+    .pric span {
+        font-size: 12px;
+    }
+    .pric span:first-of-type {
+        padding-left: 15px;
     }
 }
 
@@ -415,8 +485,17 @@
     .card_ip {
         width: 40%;
         margin: 0 auto 30px auto;
+        display: flex;
+        justify-content: center;
+    }
+    .but-modal {
+        font-size: smaller;
+        height: 26px;
     }
 }
+
+
+/*  */
 
 
 /* icon chat */
@@ -494,4 +573,37 @@ input {
 
 .sub-email #result {
     margin-left: 20px;
+}
+
+.more {
+    text-align: center;
+    >h4 {
+        padding: 60px 0 40px 0;
+    }
+    >div {
+        max-width: 800px;
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 90px;
+        >a {
+            color: #000;
+            font-weight: light;
+            max-width: 140px;
+            >img {
+                margin: 0 auto;
+                width: 90%;
+            }
+            >h6 {
+                padding: 5px 0;
+            }
+        }
+        /* >div:first-of-type {
+        margin-left: 10px;
+    } */
+        >a:hover {
+            text-decoration: none;
+            cursor: pointer;
+            color: #0071e3;
+        }
+    }
 }

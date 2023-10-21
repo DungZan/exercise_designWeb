@@ -75,13 +75,17 @@ header ul {
   color: var(--greyLight);
 }
 
-header ul li {
+header ul li,header ul a {
   cursor: pointer;
   list-style: none;
 }
-
-header ul li:hover {
+header ul a{
+  color: var(--greyLight);
+  font-weight: unset;
+}
+header ul li:hover,header ul a:hover {
   color: #fff;
+  text-decoration: unset;
 }
 
 header ul li img {
