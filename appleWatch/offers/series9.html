@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/7ff4ee27c3.js" crossorigin="anonymous"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="./bootstrap_5.3.2/css/bootstrap.min.css">
+        <script src="./bootstrap_5.3.2/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="./style_offer.css" />
+        <link rel="icon" href="/exercise_designWeb/svg/apple.svg">
+        <script src="/exercise_designWeb/js/main.js"></script>
+        <title>Series 9</title>
+    </head>
+    <body>
+        <div class="text-center">reserved for header - trống đến khi hoàn thiện thanh điều hướng chính</div>
+
+        <div class="row">
+            <div class="navbar__watchnav col-12">
+                <p class="navbar__watchnav--welcomeslogan">Dành cho cổ tay bạn.</p>
+                <nav class="navbar__watchnav__main">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="/exercise_designWeb/appleWatch/img/band_applewatch.svg" alt="Band">
+                                <p>Dây đeo</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/exercise_designWeb/appleWatch/img/flagship_applewatch.svg" alt="Brand">
+                                <p>Thương hiệu</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/exercise_designWeb/appleWatch/watch.html">
+                                <img src="/exercise_designWeb/appleWatch/img/mainshop_applewatch.svg" alt="Main">
+                                <p>Apple Watch</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/exercise_designWeb/appleWatch/img/airpods_applewatch.svg" alt="AirPods">
+                                <p>AirPods</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/exercise_designWeb/appleWatch/img/etc_applewatch.svg" alt="ETC">
+                                <p>Phụ kiện khác</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="productlist container-fluid">
+            <div class="pl__headertext col-12">
+                <p>Bạn đang chọn sản phẩm</p>
+                <h1>Apple Watch Series 9</h1>
+            </div>
+            <div class="pd__optionboard col-12 row container-fluid">
+                <div class="pd__choice col-sm-4 col-12">
+                    <p>Chất liệu khung viền</p>
+                    <form action="">
+                        <input type="radio" name="casemat" id="case_1" onchange="set_case('1')">
+                        <label for="case_1"> Nhôm</label><br>
+                        <input type="radio" name="casemat" id="case_2" onchange="set_case('2')">
+                        <label for="case_2"> Thép không gỉ</label><br>
+                    </form>
+                    <div class="pd__choice--af" id="casecolor">
+                        <p>Màu khung viền</p>
+                        <form id="casecolor_1" style="display: none;" action="">
+                            <input type="radio" name="casecolor" id="case_1_1" onchange="show_preview('c', '1_1')">
+                            <label for="case_1_1">Pink</label><br>
+                            <input type="radio" name="casecolor" id="case_1_2" onchange="show_preview('c', '1_2')">
+                            <label for="case_1_2">Midnight</label><br>
+                            <input type="radio" name="casecolor" id="case_1_3" onchange="show_preview('c', '1_3')">
+                            <label for="case_1_3">Starlight</label><br>
+                            <input type="radio" name="casecolor" id="case_1_4" onchange="show_preview('c', '1_4')">
+                            <label for="case_1_4">Silver</label><br>
+                        </form>
+                        <form id="casecolor_2" style="display: none;" action="">
+                            <input type="radio" name="casecolor" id="case_2_1" onchange="show_preview('c', '2_1')">
+                            <label for="case_2_1">Gold</label><br>
+                            <input type="radio" name="casecolor" id="case_2_2" onchange="show_preview('c', '2_2')">
+                            <label for="case_2_2">Silver</label><br>
+                            <input type="radio" name="casecolor" id="case_2_3" onchange="show_preview('c', '2_3')">
+                            <label for="case_2_3">Graphite</label><br>
+                        </form>
+                    </div>
+                </div>
+                <div class="pd__choice col-sm-4 col-12">
+                    <p>Kích thước mặt</p>
+                    <form id="casesize" action="" style="display: none;">
+                        <input type="radio" name="casesize" id="casesize_41" onchange="set_casesize('41')">
+                        <label for="casesize_41"> 41mm</label><br>
+                        <input type="radio" name="casesize" id="casesize_45" onchange="set_casesize('45')">
+                        <label for="casesize_45"> 45mm</label><br>
+                    </form>
+                    <div class="pd__choice--af">
+                        <p>Khả năng kết nối</p>
+                        <form id="connectivity" action="" style="display: none;">
+                            <div id="pdc_onlyGPS" style="display: none;">
+                                <input type="radio" name="connect" id="connect_1" onchange="set_caseconnect('1')">
+                                <label for="connect_1"> GPS</label><br>
+                            </div>
+                            <input type="radio" name="connect" id="connect_2" onchange="set_caseconnect('2')">
+                            <label for="connect_2"> GPS + eSim</label><br>
+                        </form>
+                    </div>
+                </div>
+                <div class="pd__choice col-sm-4 col-12">
+                    <p>Dòng dây</p>
+                    <form id="bandline" action="" style="display: none;">
+                        <input type="radio" name="bandline" id="band_1" onchange="set_bandline('1')">
+                        <label for="band_1"> Rubber</label><br>
+                        <input type="radio" name="bandline" id="band_2" onchange="set_bandline('2')">
+                        <label for="band_2"> Textile</label><br>
+                        <input type="radio" name="bandline" id="band_3" onchange="set_bandline('3')">
+                        <label for="band_3"> Stainless Steel</label><br>
+                    </form>
+                    <div class="pd__choice--af" id="bandtype">
+                        <p>Kiểu dây</p>
+                        <form id="bandtype_1" style="display: none;" action="">
+                            <input type="radio" name="bandtype" id="band_1_1" onchange="set_bandtype('1_1')">
+                            <label for="band_1_1"> Solo Loop</label><br>
+                            <input type="radio" name="bandtype" id="band_1_2" onchange="set_bandtype('1_2')">
+                            <label for="band_1_2"> Sport Band</label><br>
+                        </form>
+                        <form id="bandtype_2" style="display: none;" action="">
+                            <input type="radio" name="bandtype" id="band_2_1" onchange="set_bandtype('2_1')">
+                            <label for="band_2_1"> Sport Loop</label><br>
+                            <input type="radio" name="bandtype" id="band_2_2" onchange="set_bandtype('2_2')">
+                            <label for="band_2_2"> Magnetic Link</label><br>
+                            <div id="modernBuckle_41mm" style="display: none;">
+                                <input type="radio" name="bandtype" id="band_2_3" onchange="set_bandtype('2_3')">
+                                <label for="band_2_3"> Morden Buckle</label><br>
+                            </div>
+                            <input type="radio" name="bandtype" id="band_2_4" onchange="set_bandtype('2_4')">
+                            <label for="band_2_4"> Braided Solo Loop</label><br>
+                        </form>
+                        <form id="bandtype_3" style="display: none;" action="">
+                            <input type="radio" name="bandtype" id="band_3_1" onchange="set_bandtype('3_1')">
+                            <label for="band_3_1"> Milanese Loop</label><br>
+                            <input type="radio" name="bandtype" id="band_3_2" onchange="set_bandtype('3_2')">
+                            <label for="band_3_2"> Link Bracelet</label><br>
+                        </form>
+                        <div class="pd__choice--af" id="bandcolor">
+                            <p>Màu dây</p>
+                            <form id="bandcolor_1_1" style="display: none;" action="">
+                                <input type="radio" name="bandcolor" id="band_1_1_1" onchange="show_preview('b', '1_1_1')">
+                                <label for="band_1_1_1"> Light Pink</label> <br>
+                                <input type="radio" name="bandcolor" id="band_1_1_2" onchange="show_preview('b', '1_1_2')">
+                                <label for="band_1_1_2"> Orange Sorbet</label> <br>
+                                <input type="radio" name="bandcolor" id="band_1_1_3" onchange="show_preview('b', '1_1_3')">
+                                <label for="band_1_1_3"> Cypress</label> <br>
+                                <input type="radio" name="bandcolor" id="band_1_1_4" onchange="show_preview('b', '1_1_4')">
+                                <label for="band_1_1_4"> Winter Blue</label> <br>
+                                <input type="radio" name="bandcolor" id="band_1_1_5" onchange="show_preview('b', '1_1_5')">
+                                <label for="band_1_1_5"> Midnight</label> <br>
+                                <input type="radio" name="bandcolor" id="band_1_1_6" onchange="show_preview('b', '1_1_6')">
+                                <label for="band_1_1_6"> Starlight</label> <br>
+                            </form>
+                            <form id="bandcolor_1_2" style="display: none;" action="">
+                                <input type="radio" name="bandcolor" id="band_1_2_1" onchange="show_preview('b', '1_2_1')">
+                                <label for="band_1_2_1"> Winter Blue</label> <br>
+                                <input type="radio" name="bandcolor" id="band_1_2_2" onchange="show_preview('b', '1_2_2')">
+                                <label for="band_1_2_2"> Mulberry</label> <br>
+                                <input type="radio" name="bandcolor" id="band_1_2_3" onchange="show_preview('b', '1_2_3')">
+                                <label for="band_1_2_3"> Light Pink</label> <br>
+                                <input type="radio" name="bandcolor" id="band_1_2_4" onchange="show_preview('b', '1_2_4')">
+                                <label for="band_1_2_4"> Starlight</label> <br>
+                                <input type="radio" name="bandcolor" id="band_1_2_5" onchange="show_preview('b', '1_2_5')">
+                                <label for="band_1_2_5"> Clay</label> <br>
+                                <input type="radio" name="bandcolor" id="band_1_2_6" onchange="show_preview('b', '1_2_6')">
+                                <label for="band_1_2_6"> Storm Blue</label> <br>
+                            </form>
+                            <form id="bandcolor_2_1" style="display: none;" action="">
+                                <input type="radio" name="bandcolor" id="band_2_1_1" onchange="show_preview('b', '2_1_1')">
+                                <label for="band_2_1_1"> Cypress</label> <br>
+                                <input type="radio" name="bandcolor" id="band_2_1_2" onchange="show_preview('b', '2_1_2')">
+                                <label for="band_2_1_2"> Winter Blue</label> <br>
+                                <input type="radio" name="bandcolor" id="band_2_1_3" onchange="show_preview('b', '2_1_3')">
+                                <label for="band_2_1_3"> Midnight</label> <br>
+                                <input type="radio" name="bandcolor" id="band_2_1_4" onchange="show_preview('b', '2_1_4')">
+                                <label for="band_2_1_4"> Starlight</label> <br>
+                                <input type="radio" name="bandcolor" id="band_2_1_5" onchange="show_preview('b', '2_1_5')">
+                                <label for="band_2_1_5"> Light Pink</label> <br>
+                            </form>
+                            <form id="bandcolor_2_2" style="display: none;" action="">
+                                <input type="radio" name="bandcolor" id="band_2_2_1" onchange="show_preview('b', '2_2_1')">
+                                <label for="band_2_2_1"> Evergreen</label> <br>
+                                <input type="radio" name="bandcolor" id="band_2_2_2" onchange="show_preview('b', '2_2_2')">
+                                <label for="band_2_2_2"> Taupe</label> <br>
+                                <input type="radio" name="bandcolor" id="band_2_2_3" onchange="show_preview('b', '2_2_3')">
+                                <label for="band_2_2_3"> Pacific Blue</label> <br>
+                            </form>
+                            <form id="bandcolor_2_3" style="display: none;" action="">
+                                <input type="radio" name="bandcolor" id="band_2_3_1" onchange="show_preview('b', '2_3_1')">
+                                <label for="band_2_3_1"> Lavender Blue</label> <br>
+                                <input type="radio" name="bandcolor" id="band_2_3_2" onchange="show_preview('b', '2_3_2')">
+                                <label for="band_2_3_2"> Mulberry</label> <br>
+                                <input type="radio" name="bandcolor" id="band_2_3_3" onchange="show_preview('b', '2_3_3')">
+                                <label for="band_2_3_3"> Tan</label> <br>
+                            </form>
+                            <form id="bandcolor_2_4" style="display: none;" action="">
+                                <input type="radio" name="bandcolor" id="band_2_4_1" onchange="show_preview('b', '2_4_1')">
+                                <label for="band_2_4_1"> Storm Blue</label> <br>
+                                <input type="radio" name="bandcolor" id="band_2_4_2" onchange="show_preview('b', '2_4_2')">
+                                <label for="band_2_4_2"> Guava</label> <br>
+                                <input type="radio" name="bandcolor" id="band_2_4_3" onchange="show_preview('b', '2_4_3')">
+                                <label for="band_2_4_3"> Clay</label> <br>
+                                <input type="radio" name="bandcolor" id="band_2_4_4" onchange="show_preview('b', '2_4_4')">
+                                <label for="band_2_4_4"> Beige</label> <br>
+                                <input type="radio" name="bandcolor" id="band_2_4_5" onchange="show_preview('b', '2_4_5')">
+                                <label for="band_2_4_5"> Midnight</label> <br>
+                            </form>
+                            <form id="bandcolor_3_1" style="display: none;" action="">
+                                <input type="radio" name="bandcolor" id="band_3_1_1" onchange="show_preview('b', '3_1_1')">
+                                <label for="band_3_1_1"> Gold</label> <br>
+                                <input type="radio" name="bandcolor" id="band_3_1_2" onchange="show_preview('b', '3_1_2')">
+                                <label for="band_3_1_2"> Silver</label> <br>
+                                <input type="radio" name="bandcolor" id="band_3_1_3" onchange="show_preview('b', '3_1_3')">
+                                <label for="band_3_1_3"> Graphite</label> <br>
+                            </form>
+                            <form id="bandcolor_3_2" style="display: none;" action="">
+                                <input type="radio" name="bandcolor" id="band_3_2_1" onchange="show_preview('b', '3_2_1')">
+                                <label for="band_3_2_1"> Silver</label> <br>
+                                <input type="radio" name="bandcolor" id="band_3_2_2" onchange="show_preview('b', '3_2_2')">
+                                <label for="band_3_2_2"> Space Black</label> <br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pd__preview col-12 row" id="preview">
+                <div class="pd__placeholderpv col-12" id="pv_placeholder">
+                    <p>Hình ảnh xem trước sẽ có khi bạn lựa chọn</p>
+                </div>
+                <div class="col-md-4 col-12">
+                    <img id="pv_case" src="" alt="">
+                </div>
+                <div class="pdpv__full col-md-4 col-12">
+                    <img id="pv_full_case" src="" alt="">
+                    <img id="pv_full_band" src="" alt="">
+                </div>
+                <div class="col-md-4 col-12">
+                    <img id="pv_band" src="" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="confirmorder">
+            <div>
+                <h3>Từ 10.499.000đ</h3>
+                <p>/ hoặc trả góp với 1.67% lãi suất và 20% thanh toán đầu</p>
+            </div>
+            <button onclick="begin_order()">Mua ngay</button>
+        </div>
+
+        <div class="detail">
+            <h4>Chi tiết sản phẩm</h4>
+            <table>
+                <tr>
+                    <td>Tên sản phẩm</td>
+                    <td>Apple Watch Series 9</td>
+                </tr>
+                <tr>
+                    <td>Mặt đồng hồ</td>
+                    <td id="dt_case"></td>
+                </tr>
+                <tr>
+                    <td>Dây đeo</td>
+                    <td id="dt_band"></td>
+                </tr>
+                <tr>
+                    <td>Hỗ trợ kết nối</td>
+                    <td id="dt_connect"></td>
+                </tr>
+            </table>
+            <p class="dt__more" id="dt_more" onclick="show_detail()">Thông số chi tiết</p>
+        </div>
+
+        <div class="moreinfo" id="moreinfo">
+            <div class="mi__content">
+                <div class="mi__header">
+                    <h4>Thông số chi tiết</h4>
+                    <span class="close" onclick="hide_detail()">&times;</span>
+                </div>
+                <div class="mi__main">
+                    <div class="mi__main--section" role="base">
+                        <p>Thông tin cơ bản</p>
+                        <table>
+                            <tr>
+                                <td>Tên sản phẩm</td>
+                                <td>Apple Watch Series 9</td>
+                            </tr>
+                            <tr>
+                                <td>Xuất xứ</td>
+                                <td>Trung Quốc</td>
+                            </tr>
+                            <tr>
+                                <td>Ngày ra mắt</td>
+                                <td>9/2023</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="mi__main--section" role="design">
+                        <p>Thiết kế</p>
+                        <table>
+                            <tr>
+                                <td>Chất liệu mặt</td>
+                                <td>Kính cường lực Ion-X</td>
+                            </tr>
+                            <tr>
+                                <td>Chất liệu khung viền</td>
+                                <td>Theo lựa chọn</td>
+                            </tr>
+                            <tr>
+                                <td>Chất liệu dây</td>
+                                <td>Theo lựa chọn</td>
+                            </tr>
+                            <tr>
+                                <td>Thay dây</td>
+                                <td>Có</td>
+                            </tr>
+                            <tr>
+                                <td>Kích thước, khối lượng</td>
+                                <td>Dài 41mm - Ngang 35 mm - Dày 10.7mm - Nặng 31.9g (không eSim)/32.1g (có eSim)</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="mi__main--section" role="display">
+                        <p>Màn hình</p>
+                        <table>
+                            <tr>
+                                <td>Công nghệ</td>
+                                <td>OLED</td>
+                            </tr>
+                            <tr>
+                                <td>Kích thước</td>
+                                <td>1.9 inch</td>
+                            </tr>
+                            <tr>
+                                <td>Độ phân giải</td>
+                                <td>430x352 pixels</td>
+                            </tr>
+                            <tr>
+                                <td>Kích thước mặt</td>
+                                <td>41/45mm</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="mi__main--section" role="battery">
+                        <p>Pin</p>
+                        <table>
+                            <tr>
+                                <td>Thời gian sử dụng</td>
+                                <td>Khoảng 18 giờ (ở chế độ sử dụng thông thường)<br>Khoảng 36 giờ (Chế độ năng lượng thấp)</td>
+                            </tr>
+                            <tr>
+                                <td>Cổng sạc</td>
+                                <td>Đế sạc nam châm</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="mi__main--section" role="hardware_connection">
+                        <p>Cấu hình và kết nối</p>
+                        <table>
+                            <tr>
+                                <td>CPU</td>
+                                <td>Apple S9</td>
+                            </tr>
+                            <tr>
+                                <td>Bộ nhớ trong</td>
+                                <td>64GB</td>
+                            </tr>
+                            <tr>
+                                <td>Hệ điều hành</td>
+                                <td>watchOS 10 kèm theo máy</td>
+                            </tr>
+                            <tr>
+                                <td>Tương thích</td>
+                                <td>iPhone X trở lên chạy iOS 17 trở lên</td>
+                            </tr>
+                            <tr>
+                                <td>Phần mềm quản lý</td>
+                                <td>Watch</td>
+                            </tr>
+                            <tr>
+                                <td>Kết nối</td>
+                                <td>
+                                    <ul>
+                                        <li>Bluetooth v5.3</li>
+                                        <li>GPS</li>
+                                        <li>NFC</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cảm biến</td>
+                                <td>Tiêu chuẩn Apple</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="mi__main--section" role="utility">
+                        <p>Tiện ích</p>
+                        <table>
+                            <tr>
+                                <td>Nghe gọi</td>
+                                <td>Qua Bluetooth / Bluetooth + eSim</td>
+                            </tr>
+                            <tr>
+                                <td>Kháng nước</td>
+                                <td>5 ATM - ISO 22810:2010</td>
+                            </tr>
+                            <tr>
+                                <td>Chức năng thêm</td>
+                                <td>Tiêu chuẩn Apple</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="purchase" id="purchase">
+            <div class="pc__content row container">
+                <div class="pc__outerbox col-12">
+                    <div class="pc__header">
+                        <h5>Bạn đang thực hiện mua hàng</h5>
+                        <span class="close" onclick="cancel_order()">&times;</span>
+                    </div>
+                </div>
+                <div class="pc__outerbox col-lg-6 col-12">
+                    <div class="pcct__details">
+                        <h5>Thông tin sản phẩm</h5>
+                        <div class="pcct__dt--smalldt row">
+                            <div class="pcct__dt--pv col-lg-3 col-12">
+                                <img id="pcpv_full_case" src="" alt="">
+                                <img id="pcpv_full_band" src="" alt="">
+                                <img id="pcpv_canvas" src="./img_series9/blankcanvas.png" alt="purchase_preview">
+                            </div>
+                            <div class="pcct__dt--text col-lg-9 col-12">
+                                <h6>Apple Watch Series 9</h6>
+                                <p>Mặt đồng hồ: <span id="pc_case"></span></p>
+                                <p>Dây đeo: <span id="pc_band"></span></p>
+                                <p>Hỗ trợ kết nối: <span id="pc_connect"></span></p>
+                            </div>
+                        </div>
+                        <div class="pcct__dt--total">
+                            <p style="display: inline;">Số lượng: </p>
+                            <input type="number" name="buyquantity" id="buyquantity" value="1" onchange="update_totalprice()">
+                        </div>
+                        <div class="pcct__dt--totalprice">
+                            <h5>Tổng tiền: </h5>
+                            <span class="h5" id="pc_totalprice">21.990.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pc__outerbox col-lg-6 col-12">
+                    <div class="pcct__inform">
+                        <h5>Thông tin khách hàng</h5>
+                        <div class="pcct__if--input">
+                            <input type="radio" name="gender" id="gender-male">
+                            <label for="gender-male">Anh</label>
+                            <input type="radio" name="gender" id="gender-female">
+                            <label for="gender-female">Chị</label> <br>
+                            <input style="width: 49%; height: 40px; padding-left: 10px; border-radius: 10px; border: 1px solid #a1a1a6;" type="text" name="fullname" id="fullname" placeholder="Họ tên">
+                            <input style="width: 49%; height: 40px; margin-left: 0.4vw; padding-left: 10px; border-radius: 10px; border: 1px solid #a1a1a6;" type="tel" name="phone" id="phone" placeholder="Số điện thoại"> <br>
+                            <input style="width: 100%; margin-top: 5px; height: 40px; padding-left: 10px; border-radius: 10px; border: 1px solid #a1a1a6;" type="text" name="address" id="address" placeholder="Địa chỉ"> <br>
+                            <p>Hình thức thanh toán</p>
+                            <input type="radio" name="payment" id="payment-cash">
+                            <label for="payment-cash">Tiền mặt</label>
+                            <input type="radio" name="payment" id="payment-bank">
+                            <label for="payment-bank">Chuyển khoản</label> <br>
+                        </div>
+                        <div class="pcct__if--confirm">
+                            <button onclick="confirm_payment()">Xác nhận mua hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">reserved for footer - trống đến khi hoàn thiện footer</div>
+
+        <script src="./series9.js"></script>
+    </body>
+</html>

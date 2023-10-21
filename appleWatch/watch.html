@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/7ff4ee27c3.js" crossorigin="anonymous"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <!-- <link rel="stylesheet" href="./bootstrap_5.3.2/css/bootstrap.min.css">
+        <script src="./bootstrap_5.3.2/js/bootstrap.bundle.min.js"></script> -->
+
+        <link rel="stylesheet" href="watch.css" />
+        <link rel="icon" href="../svg/apple.svg">
+        <script src="../js/main.js"></script>
+        <title>Watch - Apple</title>
+    </head>
+    <body>
+        <!-- Header
+        <header class="navbar__mainnav">
+          <ul>
+            <li><img class="header__icon" src="/img/unauthorized_reseller no-bg.png" alt="apple" /></li>
+            <li>Mac</li>
+            <li>iPad</li>
+            <li>iPhone</li>
+            <li>Watch</li>
+            <li>TV</li>
+            <li>Music</li>
+            <li>Support</li>
+            <li><img src="/svg/search.svg" alt="search" /></li>
+            <li><img src="/svg/shopping-bag.svg" alt="shopping bag" /></li>
+          </ul>
+        </header>
+        <div class="navbar__mainnav--spaceunder"></div> -->
+        <div class="text-center">reserved for header - trống đến khi hoàn thiện thanh điều hướng chính</div>
+
+        <div class="row">
+            <div class="navbar__watchnav col-12">
+                <p class="navbar__watchnav--welcomeslogan">Dành cho cổ tay bạn.</p>
+                <nav class="navbar__watchnav__main">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="/exercise_designWeb/appleWatch/img/band_applewatch.svg" alt="Band">
+                                <p>Dây đeo</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/exercise_designWeb/appleWatch/img/flagship_applewatch.svg" alt="Brand">
+                                <p>Thương hiệu</p>
+                            </a>
+                        </li>
+                        <li class="navbar__watchnav__main--active">
+                            <a href="/exercise_designWeb/appleWatch/watch.html">
+                                <img src="/exercise_designWeb/appleWatch/img/mainshop_applewatch.svg" alt="Main">
+                                <p>Apple Watch</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/exercise_designWeb/appleWatch/img/airpods_applewatch.svg" alt="AirPods">
+                                <p>AirPods</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="/exercise_designWeb/appleWatch/img/etc_applewatch.svg" alt="ETC">
+                                <p>Phụ kiện khác</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="bscarousel__ifb" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <!-- indicator buttons -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#bscarousel__ifb" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#bscarousel__ifb" data-bs-slide-to="1"></button>
+            </div>
+
+            <!-- carousel items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/appleWatch_news_series9.png" alt="Apple Watch Series 9">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/appleWatch_news_ultra2.png" alt="Apple Watch Ultra 2">
+                </div>
+            </div>
+
+            <!-- carousel control -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#bscarousel__ifb" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bscarousel__ifb" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="offers row">
+            <p class="offers__catchphrase col-12">Lựa chọn phù hợp nhất</p>
+            <div class="offers__type col-lg-4 col-12">
+                <img class="of__type--logo" src="./img/appleWatch_ultra2_product.png" alt="Ultra 2">
+                <div class="of__type--pic"><img src="./img/offers_aw-ultra2.png" alt="Ultra 2"></div>
+                <div class="of__type--text">
+                    <p>Đầy đủ nhất,<br>hoàn chỉnh nhất.</p>
+                    <a href="./offers/ultra2.html"><i class="fa-solid fa-arrow-right"></i> Xem Ultra 2</a>
+                </div>
+            </div>
+            <div class="offers__type col-lg-4 col-12">
+                <img class="of__type--logo" src="./img/appleWatch_series9_product.png" alt="Series 9">
+                <div class="of__type--pic"><img src="./img/offers_aw-series9.png" alt="Series 9"></div>
+                <div class="of__type--text">
+                    <p>Cảm biến mạnh mẽ,<br>quan tâm sức khoẻ.</p>
+                    <a href="./offers/series9.html"><i class="fa-solid fa-arrow-right"></i> Xem Series 9</a>
+                </div>
+            </div>
+            <div class="offers__type col-lg-4 col-12">
+                <img class="of__type--logo" src="./img/appleWatch_se_product.png" alt="SE">
+                <div class="of__type--pic"><img src="./img/offers_aw-se.png" alt="SE"></div>
+                <div class="of__type--text">
+                    <p>Thiết yếu cùng<br>giá cả phải chăng.</p>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i> Xem SE</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center">reserved for footer - trống đến khi hoàn thiện footer</div>
+    </body>
+</html>
