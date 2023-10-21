@@ -289,7 +289,7 @@
     max-width: 100%;
     margin: 0 auto;
     >.modal-dialog {
-        top: 10%;
+        top: 25px;
         width: 80%;
         max-width: 1000px;
         >.modal-content {
@@ -341,7 +341,6 @@
 }
 
 .modal-dialog {
-    top: 10%;
     width: 80%;
     max-width: 1000px;
 }
