@@ -309,19 +309,19 @@ const sub_email = (email) => {
     );
 };
 const test_email = () => {
-    const $result = $('#result');
-    const email = $('#email').val();
-    $result.text('');
-    if (sub_email(email)) {
-        $result.text(email + ' là hợp lệ.');
-        $result.css('color', 'green');
-    } else {
-        $result.text(email + ' không hợp lệ.');
-        $result.css('color', 'red');
+        const $result = $('#result');
+        const email = $('#email').val();
+        $result.text('');
+        if (sub_email(email)) {
+            $result.text(email + ' là hợp lệ.');
+            $result.css('color', 'green');
+        } else {
+            $result.text(email + ' không hợp lệ.');
+            $result.css('color', 'red');
+        }
+        return false;
     }
-    return false;
-}
-
+    // 
 function thong_bao() {
     const $result = $('#result');
     const email = $('#email').val();
