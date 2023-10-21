@@ -312,10 +312,6 @@
                 }
                 margin: 0 auto;
             }
-            >h3 {
-                font-size: 25px;
-                padding-left: 20px;
-            }
             >div p {
                 padding-top: 30px;
                 padding-left: 30px;
@@ -329,15 +325,30 @@
                     padding-right: 5px;
                     text-decoration: line-through;
                 }
-                >span:first-of-type {
-                    padding-left: 20px;
-                    color: #e32222;
-                    font-weight: bold;
-                    font-size: 16px;
-                }
             }
         }
     }
+}
+
+.pric {
+    font-size: 16px;
+}
+
+.pric span:first-of-type {
+    padding-left: 50px;
+    color: #e32222;
+    font-weight: bold;
+}
+
+.modal-dialog {
+    top: 10%;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.modal-content h3 {
+    font-size: 20px;
+    padding-left: 50px;
 }
 
 .img-modal {
@@ -352,7 +363,7 @@
 
 .but-modal {
     background-color: #ffffff;
-    min-width: 48px;
+    min-width: 40px;
     width: 65px;
     height: 36px;
     border: rgb(186, 186, 186) solid 1px;
@@ -441,10 +452,29 @@
     border: none;
 }
 
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
+    .modal-dialog {
+        width: 100%;
+        max-width: 100%;
+    }
+    .modal-content {
+        >.tit h4 {
+            font-size: smaller;
+        }
+        >h3 {
+            font-size: 15px;
+            padding-left: 15px;
+        }
+    }
     .modal-dialog.modal-dialog-centered {
         margin: 0 auto;
         transform: translate(0, 0);
+    }
+    .pric span {
+        font-size: 12px;
+    }
+    .pric span:first-of-type {
+        padding-left: 15px;
     }
 }
 
@@ -455,6 +485,12 @@
     .card_ip {
         width: 40%;
         margin: 0 auto 30px auto;
+        display: flex;
+        justify-content: center;
+    }
+    .but-modal {
+        font-size: smaller;
+        height: 26px;
     }
 }
 
@@ -559,8 +595,8 @@ input {
             }
         }
         /* >div:first-of-type {
-            margin-left: 10px;
-        } */
+        margin-left: 10px;
+    } */
         >a:hover {
             text-decoration: none;
             cursor: pointer;
