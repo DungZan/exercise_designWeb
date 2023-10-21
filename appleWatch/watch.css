@@ -8,7 +8,7 @@
     --a: #2997ff;
 }
 html, body {
-    margin: 0;
+    margin: 25px 0 0 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;

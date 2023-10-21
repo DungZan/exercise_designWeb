@@ -8,7 +8,7 @@
     --a: #2997ff;
 }
 html, body {
-    margin: 0;
+    margin: 25px 0 0 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
@@ -203,6 +203,8 @@ html, body {
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    margin-top: 50px;
+    padding-bottom: 50px;
     > .mi__content {
         background-color: white;
         width: 720px;
@@ -260,6 +262,8 @@ html, body {
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    margin-top: 50px;
+    padding-bottom: 50px;
     > .pc__content {
         width: 1280px;
         max-width: 90%;
