@@ -102,6 +102,7 @@ $(document).ready(function() {
         var gia = 0;
         $("#gia").text(gia);
         $("#muane").hide();
+        $("#trolai4").hide();
         $("#luachon1").show();
         alert("Bạn đã mua thành công")
     });
