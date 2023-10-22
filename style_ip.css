@@ -64,7 +64,7 @@
     margin-top: 50px;
 }
 
-.section_ip_2_ div a img {
+.section_ip_2_ div button img {
     position: static;
     right: 0;
     width: 100%;
@@ -103,6 +103,14 @@
     color: #d01f2a;
     margin: 50px auto 9px auto;
     padding-top: 40px;
+}
+
+.section_ip_2 div:last-of-type p {
+    width: 100px;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 0;
+    color: #0071e3;
 }
 
 

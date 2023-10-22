@@ -14,6 +14,7 @@ function backtop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
 // giá
 let dluong = 0;
 let msac = 0;
@@ -316,8 +317,9 @@ function cart() {
     dluong = 0;
     msac = 0;
 }
-// test email
 
+
+// test email
 
 const sub_email = (email) => {
     return email.match(
@@ -352,4 +354,9 @@ $('#email').on('input', test_email);
 
 function infoclose(x) {
     $(x).modal('hide');
+}
+
+function view() {
+    let cnt = document.getElementById("view-product");
+    cnt.scrollIntoView();
 }

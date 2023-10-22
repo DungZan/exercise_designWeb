@@ -319,12 +319,12 @@
     <!-- banner -->
     <section class="row section_banner_ip">
         <div class="col-md-5">
-            <a href="index.html">
+            <a href="#">
                 <img class="div_banner_ip" src="img/img_iphone/Banner TCDM.png" alt>
             </a>
         </div>
         <div class="col-md-5 ">
-            <a href="index.html">
+            <a href="#">
                 <img class="div_banner_ip" src="img/img_iphone/Banner Âm thanh.png" alt>
             </a>
         </div>
@@ -333,7 +333,7 @@
     <!--  -->
     <section class="section_ip_2_">
         <div>
-            <a href><img src="img/img_iphone/638314976816669602_z4733868417837_0b0e913fe536537851450d5f7b2c55f4.jpg" alt></a>
+            <button onclick="view()"><img src="img/img_iphone/638314976816669602_z4733868417837_0b0e913fe536537851450d5f7b2c55f4.jpg" alt></button>
         </div>
     </section>
 
@@ -341,8 +341,10 @@
         <p>Mới!!</p>
         <h3>iPhone 15</h3>
         <h4>Từ 20tr hoặc trả góp 3tr/tháng trong 12 tháng</h4>
-        <div class="btn btn-success">Mua</div><br>
-        <div><a href>Xem thêm</a> ></div>
+        <div class="btn btn-success" onclick="view()">Mua</div><br>
+        <div>
+            <p onclick="view()">Xem thêm ></p>
+        </div>
         <img src="img/img_iphone/hero_1p15.jpg">
     </section>
 
@@ -354,7 +356,7 @@
         </div>
 
         <!-- card product -->
-        <div class="product">
+        <div class="product" id="view-product">
             <div class="row card_ip_b">
 
                 <div class="col-md-3 col-sm-5 card_ip">
@@ -526,7 +528,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="modal fade col-md-7 col-sm-7" id="infor-product-15">
+                <div class="modal fade blur col-md-7 col-sm-7" id="infor-product-15">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="tit">
@@ -567,7 +569,7 @@
             </div>
 
             <div class="row">
-                <div class="modal fade col-md-7 col-sm-7" id="infor-product-15plus">
+                <div class="modal fade blur col-md-7 col-sm-7" id="infor-product-15plus">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="tit">
@@ -607,7 +609,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="modal fade col-md-7 col-sm-7" id="infor-product-15pro">
+                <div class="modal fade blur col-md-7 col-sm-7" id="infor-product-15pro">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="tit">
@@ -647,7 +649,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="modal fade col-md-7 col-sm-7" id="infor-product-15max">
+                <div class="modal fade blur col-md-7 col-sm-7" id="infor-product-15max">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="tit">
@@ -686,7 +688,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="modal fade col-md-7 col-sm-7" id="infor-product-14max">
+                <div class="modal fade blur col-md-7 col-sm-7" id="infor-product-14max">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="tit">
@@ -726,7 +728,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="modal fade col-md-7 col-sm-7" id="infor-product-14pro">
+                <div class="modal fade blur col-md-7 col-sm-7" id="infor-product-14pro">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="tit">
@@ -766,7 +768,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="modal fade col-md-7 col-sm-7" id="infor-product-14plus">
+                <div class="modal fade blur col-md-7 col-sm-7" id="infor-product-14plus">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="tit">
@@ -807,7 +809,7 @@
                 </div>
             </div>
             <div class="row" id="modal">
-                <div class="modal fade col-md-7 col-sm-7" id="infor-product-14">
+                <div class="modal fade blur col-md-7 col-sm-7" id="infor-product-14">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="tit">
