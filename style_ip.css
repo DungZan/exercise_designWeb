@@ -499,15 +499,31 @@
 
 /* icon chat */
 
+#backtop {
+    display: none;
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 200px;
+    right: 9px;
+    z-index: 999999999;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(55, 110, 192);
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
 .chat {
     width: 100px;
-    height: 160px;
+    height: 200px;
     right: 0;
     bottom: 0;
     z-index: 9999999;
     position: fixed;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-left: 10px;
 }
 
@@ -516,7 +532,17 @@
     margin-left: 30px;
     width: 60px;
     height: auto;
-    transition: width hei;
+}
+
+.chat_ button {
+    margin: 0 0 10px 35px;
+    width: 45px;
+    text-align: center;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #248ece;
+    color: white;
 }
 
 .form {

@@ -1,3 +1,19 @@
+// back to top
+let back = document.getElementById("backtop");
+window.onscroll = function() { lan_chuot(); }
+
+function lan_chuot() {
+    if (window.innerWidth > 576 && (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)) {
+        back.style.display = "block";
+    } else {
+        back.style.display = "none";
+    }
+}
+
+function backtop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 // giá
 let dluong = 0;
 let msac = 0;
