@@ -352,12 +352,16 @@ function changeImg(x, pban) {
     } else if (pban == 153) {
         mau = document.getElementById("color-15pro");
         if (x == 1) {
+            colour = "Titan huyền bí";
             mau.src = "img/img_iphone/ip15problack.png";
         } else if (x == 13) {
+            colour = "Titan thuần khiết";
             mau.src = "img/img_iphone/ip15prowhite.png";
         } else if (x == 14) {
+            colour = "Titan siêu xanh";
             mau.src = "img/img_iphone/ip15protitan-blue.png";
         } else if (x == 7) {
+            colour = "Titan thiên nhiên";
             mau.src = "img/img_iphone/tip15progrey.png";
         }
     } else if (pban == 154) {

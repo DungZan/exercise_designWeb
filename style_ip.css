@@ -520,6 +520,11 @@
     color: white;
     cursor: pointer;
     border-radius: 50%;
+    opacity: 0.8;
+}
+
+#backtop:hover {
+    opacity: 1;
 }
 
 .chat {
