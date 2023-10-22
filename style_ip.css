@@ -64,13 +64,8 @@
     margin-top: 50px;
 }
 
-.section_ip_2_ div button img {
-    position: static;
-    right: 0;
-    width: 100%;
-}
-
-.section_ip_2_ button {
+.section_ip_2_ div img {
+    cursor: pointer;
     width: 100%;
 }
 
