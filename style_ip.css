@@ -640,3 +640,28 @@ input {
         }
     }
 }
+
+
+/* modal more prd */
+
+.more-prd {
+    background-color: #fff;
+    width: 500px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+.modal-title {
+    font-weight: bolder;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+@media only screen and (max-width:576px) {
+    .more-prd {
+        width: 100%;
+    }
+}
