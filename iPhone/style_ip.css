@@ -652,7 +652,7 @@ input {
 }
 
 #bo {
-    border: none;
+    border: 1px solid black;
 }
 
 .modal-title {
