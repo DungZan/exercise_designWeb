@@ -245,9 +245,8 @@ let mau;
 let k;
 
 function changeImg(x, pban) {
-
     if (pban == 141) {
-        k = "../img/img_iphone/0009181_iphone-14-128gb_240.png";
+        k = "../img/img_iphone/iphone-14-note.jpg";
         mau = document.getElementById("color-14");
         if (x == 1) {
             colour = "Đen bóng đêm";
@@ -269,7 +268,7 @@ function changeImg(x, pban) {
             mau.src = "../img/img_iphone/ip14yellow.png";
         }
     } else if (pban == 142) {
-        k = "../img/img_iphone/iphone-14-note.jpg";
+        k = "../img/img_iphone/iphone-14-plus-note.jpg";
         mau = document.getElementById("color-14plus");
         if (x == 1) {
             colour = "Đen bóng đêm";
@@ -415,7 +414,12 @@ function cart() {
     msac = 0;
 }
 
-
+function come() {
+    const $result = $('#notice-mail');
+    const $result2 = $('#mail-title');
+    $result.text("Hệ thống các sản phẩm khác đang được cập nhật. Vui lòng quay lại sau.");
+    $result2.text("Comming Soon!");
+}
 // test email
 
 const sub_email = (email) => {
