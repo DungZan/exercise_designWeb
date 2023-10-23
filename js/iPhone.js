@@ -245,139 +245,139 @@ function changeImg(x, pban) {
         mau = document.getElementById("color-14");
         if (x == 1) {
             colour = "Đen bóng đêm";
-            mau.src = "img/img_iphone/ip14black.png";
+            mau.src = "../img/img_iphone/ip14black.png";
         } else if (x == 2) {
             colour = "Ánh sao";
-            mau.src = "img/img_iphone/ip14star.png";
+            mau.src = "../img/img_iphone/ip14star.png";
         } else if (x == 3) {
             colour = "Đỏ rực rỡ";
-            mau.src = "img/img_iphone/ip14red.png";
+            mau.src = "../img/img_iphone/ip14red.png";
         } else if (x == 4) {
             colour = "Tím mộng mơ";
-            mau.src = "img/img_iphone/ip14purple.png";
+            mau.src = "../img/img_iphone/ip14purple.png";
         } else if (x == 5) {
             colour = "Xanh xao";
-            mau.src = "img/img_iphone/ip14green.png";
+            mau.src = "../img/img_iphone/ip14green.png";
         } else if (x == 6) {
             colour = "Vàng quý tộc";
-            mau.src = "img/img_iphone/ip14yellow.png";
+            mau.src = "../img/img_iphone/ip14yellow.png";
         }
     } else if (pban == 142) {
         mau = document.getElementById("color-14plus");
         if (x == 1) {
             colour = "Đen bóng đêm";
-            mau.src = "img/img_iphone/ip14black.png";
+            mau.src = "../img/img_iphone/ip14black.png";
         } else if (x == 2) {
             colour = "Ánh sao";
-            mau.src = "img/img_iphone/ip14star.png";
+            mau.src = "../img/img_iphone/ip14star.png";
         } else if (x == 3) {
             colour = "Đỏ rực rỡ";
-            mau.src = "img/img_iphone/ip14red.png";
+            mau.src = "../img/img_iphone/ip14red.png";
         } else if (x == 4) {
             colour = "Tím mộng mơ";
-            mau.src = "img/img_iphone/ip14purple.png";
+            mau.src = "../img/img_iphone/ip14purple.png";
         } else if (x == 5) {
             colour = "Xanh xao";
-            mau.src = "img/img_iphone/ip14green.png";
+            mau.src = "../img/img_iphone/ip14green.png";
         } else if (x == 6) {
             colour = "Vàng quý tộc";
-            mau.src = "img/img_iphone/ip14yellow.png";
+            mau.src = "../img/img_iphone/ip14yellow.png";
         }
     } else if (pban == 143) {
         mau = document.getElementById("color-14pro");
         if (x == 1) {
             colour = "Đen thời không";
-            mau.src = "img/img_iphone/ip14maxblack.png";
+            mau.src = "../img/img_iphone/ip14maxblack.png";
         } else if (x == 7) {
             colour = "Bạc thời thượng";
-            mau.src = "img/img_iphone/ip14maxwhite.png";
+            mau.src = "../img/img_iphone/ip14maxwhite.png";
         } else if (x == 8) {
             colour = "Vàng gold quý phái";
-            mau.src = "img/img_iphone/ip14maxgold.png";
+            mau.src = "../img/img_iphone/ip14maxgold.png";
         } else if (x == 9) {
             colour = "Tím vực sâu";
-            mau.src = "img/img_iphone/ip14maxpurple.png";
+            mau.src = "../img/img_iphone/ip14maxpurple.png";
         }
     } else if (pban == 144) {
         mau = document.getElementById("color-14max");
         if (x == 1) {
             colour = "Đen thời không";
-            mau.src = "img/img_iphone/ip14maxblack.png";
+            mau.src = "../img/img_iphone/ip14maxblack.png";
         } else if (x == 7) {
             colour = "Bạc thời thượng";
-            mau.src = "img/img_iphone/ip14maxwhite.png";
+            mau.src = "../img/img_iphone/ip14maxwhite.png";
         } else if (x == 8) {
             colour = "Vàng gold quý phái";
-            mau.src = "img/img_iphone/ip14maxgold.png";
+            mau.src = "../img/img_iphone/ip14maxgold.png";
         } else if (x == 9) {
             colour = "Tím vực sâu";
-            mau.src = "img/img_iphone/ip14maxpurple.png";
+            mau.src = "../img/img_iphone/ip14maxpurple.png";
         }
     } else if (pban == 151) {
         mau = document.getElementById("color-15");
         if (x == 1) {
             colour = "Đen huyền bí";
-            mau.src = "img/img_iphone/ip15black.png";
+            mau.src = "../img/img_iphone/ip15black.png";
         } else if (x == 10) {
             colour = "Hồng nam tính";
-            mau.src = "img/img_iphone/ip15pink.png";
+            mau.src = "../img/img_iphone/ip15pink.png";
         } else if (x == 6) {
             colour = "Vàng quý tộc";
-            mau.src = "img/img_iphone/ip15yellow.png";
+            mau.src = "../img/img_iphone/ip15yellow.png";
         } else if (x == 11) {
             colour = "Xanh đồng cỏ";
-            mau.src = "img/img_iphone/ip15green-real.png";
+            mau.src = "../img/img_iphone/ip15green-real.png";
         } else if (x == 12) {
             colour = "Xanh đại dương";
-            mau.src = "img/img_iphone/ip15blue.png";
+            mau.src = "../img/img_iphone/ip15blue.png";
         }
     } else if (pban == 152) {
         mau = document.getElementById("color-15plus");
         if (x == 1) {
             colour = "Đen huyền bí";
-            mau.src = "img/img_iphone/ip15black.png";
+            mau.src = "../img/img_iphone/ip15black.png";
         } else if (x == 10) {
             colour = "Hồng nam tính";
-            mau.src = "img/img_iphone/ip15pink.png";
+            mau.src = "../img/img_iphone/ip15pink.png";
         } else if (x == 6) {
             colour = "Vàng quý tộc";
-            mau.src = "img/img_iphone/ip15yellow.png";
+            mau.src = "../img/img_iphone/ip15yellow.png";
         } else if (x == 11) {
             colour = "Xanh đồng cỏ";
-            mau.src = "img/img_iphone/ip15green-real.png";
+            mau.src = "../img/img_iphone/ip15green-real.png";
         } else if (x == 12) {
             colour = "Xanh đại dương";
-            mau.src = "img/img_iphone/ip15blue.png";
+            mau.src = "../img/img_iphone/ip15blue.png";
         }
     } else if (pban == 153) {
         mau = document.getElementById("color-15pro");
         if (x == 1) {
             colour = "Titan huyền bí";
-            mau.src = "img/img_iphone/ip15problack.png";
+            mau.src = "../img/img_iphone/ip15problack.png";
         } else if (x == 13) {
             colour = "Titan thuần khiết";
-            mau.src = "img/img_iphone/ip15prowhite.png";
+            mau.src = "../img/img_iphone/ip15prowhite.png";
         } else if (x == 14) {
             colour = "Titan siêu xanh";
-            mau.src = "img/img_iphone/ip15protitan-blue.png";
+            mau.src = "../img/img_iphone/ip15protitan-blue.png";
         } else if (x == 7) {
             colour = "Titan thiên nhiên";
-            mau.src = "img/img_iphone/tip15progrey.png";
+            mau.src = "../img/img_iphone/tip15progrey.png";
         }
     } else if (pban == 154) {
         mau = document.getElementById("color-15max");
         if (x == 1) {
             colour = "Titan huyền bí";
-            mau.src = "img/img_iphone/ip15promaxblack.png";
+            mau.src = "../img/img_iphone/ip15promaxblack.png";
         } else if (x == 13) {
             colour = "Titan thuần khiết";
-            mau.src = "img/img_iphone/ip15prowhite.png";
+            mau.src = "../img/img_iphone/ip15prowhite.png";
         } else if (x == 14) {
             colour = "Titan siêu xanh";
-            mau.src = "img/img_iphone/ip15protitan-blue.png";
+            mau.src = "../img/img_iphone/ip15protitan-blue.png";
         } else if (x == 7) {
             colour = "Titan thiên nhiên";
-            mau.src = "img/img_iphone/tip15progrey.png";
+            mau.src = "../img/img_iphone/tip15progrey.png";
         }
     }
     msac = x;
