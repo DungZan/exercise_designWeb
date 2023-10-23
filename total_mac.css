@@ -18,6 +18,7 @@
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     background-color: #ddd;
+    overflow-x: hidden;
   }
   
   a {
@@ -279,21 +280,23 @@
    
 
   /* form */
-.form{
+.form_customer{
   position: relative;
   top: 50px;
   left: 0;
   display: inline-block;
   width: 100%;
   margin: 30px;
-  overflow: hidden;
+  height: 100%;
   >h1{
     text-align: center;
   }
-  >.infor_custom{
-    display: block;
+  >table{
     font-size: 20px;
-    border: 1px solid  ;
+    margin: auto;
+    >tr > td{
+      padding: 15px;
+    }
   }
   
 }
