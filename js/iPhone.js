@@ -21,13 +21,16 @@ let msac = 0;
 let ten = "";
 let size = "";
 let colour = "";
+let Gia;
+let Giam;
+let Goc;
 
 function changePrice(dungluong, pban) {
     if (pban == 141) {
         ten = "iPhone 14";
-        const Gia = document.getElementById("gia-14");
-        const Goc = document.getElementById("goc-14");
-        const Giam = document.getElementById("giam-14");
+        Gia = document.getElementById("gia-14");
+        Goc = document.getElementById("goc-14");
+        Giam = document.getElementById("giam-14");
         if (dungluong == 128) {
             size = "128GB";
             dluong = 128;
@@ -49,9 +52,9 @@ function changePrice(dungluong, pban) {
         }
     } else if (pban == 142) {
         ten = "iPhone 14 Plus";
-        const Gia = document.getElementById("gia-14plus");
-        const Goc = document.getElementById("goc-14plus");
-        const Giam = document.getElementById("giam-14plus");
+        Gia = document.getElementById("gia-14plus");
+        Goc = document.getElementById("goc-14plus");
+        Giam = document.getElementById("giam-14plus");
         if (dungluong == 128) {
             size = "128GB";
             dluong = 128;
@@ -73,9 +76,9 @@ function changePrice(dungluong, pban) {
         }
     } else if (pban == 143) {
         ten = "iPhone 14 Pro";
-        const Gia = document.getElementById("gia-14pro");
-        const Goc = document.getElementById("goc-14pro");
-        const Giam = document.getElementById("giam-14pro");
+        Gia = document.getElementById("gia-14pro");
+        Goc = document.getElementById("goc-14pro");
+        Giam = document.getElementById("giam-14pro");
         if (dungluong == 128) {
             size = "128GB";
             dluong = 128;
@@ -103,9 +106,9 @@ function changePrice(dungluong, pban) {
         }
     } else if (pban == 144) {
         ten = "iPhone 14 Pro Max";
-        const Gia = document.getElementById("gia-14max");
-        const Goc = document.getElementById("goc-14max");
-        const Giam = document.getElementById("giam-14max");
+        Gia = document.getElementById("gia-14max");
+        Goc = document.getElementById("goc-14max");
+        Giam = document.getElementById("giam-14max");
         if (dungluong == 128) {
             size = "128GB";
             dluong = 128;
@@ -133,9 +136,9 @@ function changePrice(dungluong, pban) {
         }
     } else if (pban == 151) {
         ten = "iPhone 15";
-        const Gia = document.getElementById("gia-15");
-        const Goc = document.getElementById("goc-15");
-        const Giam = document.getElementById("giam-15");
+        Gia = document.getElementById("gia-15");
+        Goc = document.getElementById("goc-15");
+        Giam = document.getElementById("giam-15");
         if (dungluong == 128) {
             dluong = 128;
             size = "128GB";
@@ -157,9 +160,9 @@ function changePrice(dungluong, pban) {
         }
     } else if (pban == 152) {
         ten = "iPhone 15 Plus";
-        const Gia = document.getElementById("gia-15plus");
-        const Goc = document.getElementById("goc-15plus");
-        const Giam = document.getElementById("giam-15plus");
+        Gia = document.getElementById("gia-15plus");
+        Goc = document.getElementById("goc-15plus");
+        Giam = document.getElementById("giam-15plus");
         if (dungluong == 128) {
             size = "128GB";
             dluong = 128;
@@ -181,9 +184,9 @@ function changePrice(dungluong, pban) {
         }
     } else if (pban == 153) {
         ten = "iPhone 15 Pro";
-        const Gia = document.getElementById("gia-15pro");
-        const Goc = document.getElementById("goc-15pro");
-        const Giam = document.getElementById("giam-15pro");
+        Gia = document.getElementById("gia-15pro");
+        Goc = document.getElementById("goc-15pro");
+        Giam = document.getElementById("giam-15pro");
         if (dungluong == 128) {
             dluong = 128;
             size = "128GB";
@@ -211,9 +214,9 @@ function changePrice(dungluong, pban) {
         }
     } else if (pban == 154) {
         ten = "iPhone 15 Pro Max";
-        const Gia = document.getElementById("gia-15max");
-        const Goc = document.getElementById("goc-15max");
-        const Giam = document.getElementById("giam-15max");
+        Gia = document.getElementById("gia-15max");
+        Goc = document.getElementById("goc-15max");
+        Giam = document.getElementById("giam-15max");
         if (dungluong == 256) {
             size = "256GB";
             dluong = 256;
@@ -238,10 +241,13 @@ function changePrice(dungluong, pban) {
 }
 
 // màu
+let mau;
+let k;
 
 function changeImg(x, pban) {
-    var mau;
+
     if (pban == 141) {
+        k = "../img/img_iphone/0009181_iphone-14-128gb_240.png";
         mau = document.getElementById("color-14");
         if (x == 1) {
             colour = "Đen bóng đêm";
@@ -263,6 +269,7 @@ function changeImg(x, pban) {
             mau.src = "../img/img_iphone/ip14yellow.png";
         }
     } else if (pban == 142) {
+        k = "../img/img_iphone/iphone-14-note.jpg";
         mau = document.getElementById("color-14plus");
         if (x == 1) {
             colour = "Đen bóng đêm";
@@ -284,6 +291,7 @@ function changeImg(x, pban) {
             mau.src = "../img/img_iphone/ip14yellow.png";
         }
     } else if (pban == 143) {
+        k = "../img/img_iphone/iphone-14-pro-note.jpg";
         mau = document.getElementById("color-14pro");
         if (x == 1) {
             colour = "Đen thời không";
@@ -299,6 +307,7 @@ function changeImg(x, pban) {
             mau.src = "../img/img_iphone/ip14maxpurple.png";
         }
     } else if (pban == 144) {
+        k = "../img/img_iphone/iphone-14-pro-max-note.jpg";
         mau = document.getElementById("color-14max");
         if (x == 1) {
             colour = "Đen thời không";
@@ -315,6 +324,7 @@ function changeImg(x, pban) {
         }
     } else if (pban == 151) {
         mau = document.getElementById("color-15");
+        k = "../img/img_iphone/iphone-14-pro-note.jpg";
         if (x == 1) {
             colour = "Đen huyền bí";
             mau.src = "../img/img_iphone/ip15black.png";
@@ -332,6 +342,7 @@ function changeImg(x, pban) {
             mau.src = "../img/img_iphone/ip15blue.png";
         }
     } else if (pban == 152) {
+        k = "../img/img_iphone/iphone-14-pro-note.jpg";
         mau = document.getElementById("color-15plus");
         if (x == 1) {
             colour = "Đen huyền bí";
@@ -351,6 +362,7 @@ function changeImg(x, pban) {
         }
     } else if (pban == 153) {
         mau = document.getElementById("color-15pro");
+        k = "../img/img_iphone/iphone-14-pro-note.jpg";
         if (x == 1) {
             colour = "Titan huyền bí";
             mau.src = "../img/img_iphone/ip15problack.png";
@@ -366,10 +378,12 @@ function changeImg(x, pban) {
         }
     } else if (pban == 154) {
         mau = document.getElementById("color-15max");
+        k = "../img/img_iphone/iphone-14-pro-note.jpg";
         if (x == 1) {
             colour = "Titan huyền bí";
             mau.src = "../img/img_iphone/ip15promaxblack.png";
-        } else if (x == 13) {
+        } else
+        if (x == 13) {
             colour = "Titan thuần khiết";
             mau.src = "../img/img_iphone/ip15prowhite.png";
         } else if (x == 14) {
@@ -390,6 +404,10 @@ function cart() {
         $result.text("Đã thêm sản phẩm.\n" + ten + "\n" + size + " " + colour);
         $result2.text("Thêm thành công!");
         $('#more-product').modal('show');
+        Gia.textContent = "";
+        Goc.textContent = "";
+        Giam.textContent = "";
+        mau.src = k;
     } else {
         alert("Vui lòng chọn đầy đủ thông tin");
     }
