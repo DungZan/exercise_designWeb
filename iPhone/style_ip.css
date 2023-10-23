@@ -651,6 +651,10 @@ input {
     border-radius: 10px;
 }
 
+#bo {
+    border: 1px solid black;
+}
+
 .modal-title {
     font-weight: bolder;
 }
@@ -662,5 +666,9 @@ input {
 @media only screen and (max-width:576px) {
     .more-prd {
         width: 100%;
+    }
+    #notice-mail,
+    #mail-title {
+        font-size: smaller;
     }
 }
