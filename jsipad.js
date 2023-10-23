@@ -110,6 +110,4 @@ $(document).ready(function() {
         $(".anhipad").show();
         alert("Bạn đã mua thành công")
     });
-
-
 });
