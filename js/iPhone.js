@@ -384,9 +384,12 @@ function changeImg(x, pban) {
 }
 
 function cart() {
+    const $result = $('#notice-mail');
+    const $result2 = $('#mail-title');
     if (dluong != 0 && msac != 0) {
-        alert("Thêm thành công \n" + ten + "\n" + size + " " + colour);
-        location.reload();
+        $result.text("Đã thêm sản phẩm.\n" + ten + "\n" + size + " " + colour);
+        $result2.text("Thêm thành công!");
+        $('#more-product').modal('show');
     } else {
         alert("Vui lòng chọn đầy đủ thông tin");
     }
@@ -417,18 +420,31 @@ const test_email = () => {
     }
     // 
 function thong_bao() {
-    const $result = $('#result');
+    const $result = $('#notice-mail');
+    const $result2 = $('#mail-title');
     const email = $('#email').val();
     if (sub_email(email)) {
-        alert("Đăng ký thành công. Thông tin mới nhất sẽ được gửi đến " + email);
+        $result.text("Thông tin mới nhất sẽ được gửi đến " + email);
+        $result2.text("Đăng ký thành công!");
+        $('#more-product').modal('show');
+        $('#email').val('');
+        $('#result').text('');
     } else {
         alert("Email không hợp lệ. Vui lòng nh");
     }
-    location.reload();
 }
 $('#email').on('input', test_email);
 
+function close2() {
+    // $('#more-product').modal('hide');
+    // $('#more-product').on('hidden.bs.modal', function(e) {
+    //     location.reload();
+    // });
+    alert('jjoi');
+}
+
 function infoclose(x) {
+    alert('jjoi');
     $(x).modal('hide');
 }
 

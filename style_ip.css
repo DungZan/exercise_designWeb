@@ -315,7 +315,6 @@
                 >span:hover {
                     cursor: pointer;
                     color: #010101;
-                    font-size: larger;
                 }
                 margin: 0 auto;
             }
@@ -380,10 +379,6 @@
 
 .but-modal:focus {
     border: #0071e3 solid 2px;
-}
-
-.close {
-    color: #000;
 }
 
 .color div {
