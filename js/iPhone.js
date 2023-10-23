@@ -436,15 +436,10 @@ function thong_bao() {
 $('#email').on('input', test_email);
 
 function close2() {
-    // $('#more-product').modal('hide');
-    // $('#more-product').on('hidden.bs.modal', function(e) {
-    //     location.reload();
-    // });
-    alert('jjoi');
+    $('#more-product').modal('hide');
 }
 
 function infoclose(x) {
-    alert('jjoi');
     $(x).modal('hide');
 }
 
