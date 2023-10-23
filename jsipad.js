@@ -23,6 +23,7 @@ $(document).ready(function() {
         $("#luachon1").show();
         $(".anhipad1").hide();
         $(".anhipad").show();
+        $("#gia").text(gia);
     });
 
 
@@ -104,6 +105,9 @@ $(document).ready(function() {
         $("#muane").hide();
         $("#trolai4").hide();
         $("#luachon1").show();
+        $(".anhipad2").hide();
+        $(".anhipad3").hide();
+        $(".anhipad").show();
         alert("Bạn đã mua thành công")
     });
 
