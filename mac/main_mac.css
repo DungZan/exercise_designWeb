@@ -163,6 +163,7 @@
 
 .information{
   display: none;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -173,16 +174,16 @@
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
   color: #000;
+  margin: 50px 0 0 0 ;
 }
 
 .information > .information_content{
   background-color: white;
   width: 720px;
-  max-width: 90%;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 15px 0 0 0 ;
   padding: 15px;
   margin: 0 auto;
+  display: block;
 }
 
 .information > .information_content > .information_header{
@@ -216,9 +217,8 @@
 .odd{
   background-color: #f5f5f7;
 }
-
-.data-table tr {
-  border: 1px solid black;
+.ulist p{
+  margin-bottom: 0;
 }
 
 

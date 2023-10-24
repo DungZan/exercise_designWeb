@@ -18,6 +18,9 @@ html, body {
 .navbar__watchnav {
     background-color: black;
     color: white;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
     > .navbar__watchnav--welcomeslogan {
         text-align: center;
         margin: 15px 0 10px 0;
@@ -61,6 +64,9 @@ html, body {
 }
 
 #bscarousel__ifb {
+    margin: 0;
+    width: 1920px;
+    max-width: 100%;
     > .carousel-inner img {
         display: block;
         width: 100%;
@@ -83,7 +89,8 @@ html, body {
     > .offers__type {
         display: flex;
         flex-direction: column;
-        padding: 15px 0 10px 0;
+        margin: 10px;
+        padding: 10px;
         transition: all .5s;
         > img {
             margin: 0 auto;
