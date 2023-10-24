@@ -318,10 +318,6 @@
                 }
                 margin: 0 auto;
             }
-            >div p {
-                padding-top: 30px;
-                padding-left: 30px;
-            }
             >div {
                 >.col-sm-5 {
                     margin: 0 auto;
@@ -334,6 +330,12 @@
             }
         }
     }
+}
+
+.pad p,
+.color p {
+    padding-top: 30px;
+    padding-left: 30px;
 }
 
 .pric {
@@ -435,13 +437,13 @@
 
 .cart {
     border: none;
-    margin: 20px auto 30px auto;
+    margin: 30px auto 30px auto;
     background-color: #0071e3;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     color: #f2f2f2;
-    width: 200px;
-    height: 50px;
+    width: 120px;
+    height: 35px;
     border-radius: 8px;
     >img {
         width: 20%;
@@ -588,7 +590,7 @@
     background-color: #248ece;
 }
 
-input {
+#email {
     background-color: #ffffff;
     margin: 0 auto;
     border-top-left-radius: 20px;
@@ -597,6 +599,118 @@ input {
     height: 40px;
     padding-left: 20px;
     border: none;
+}
+
+
+/* mua */
+
+#buy141,
+#buy142,
+#buy143,
+#buy144,
+#buy151,
+#buy152,
+#buy153,
+#buy154 {
+    display: none;
+}
+
+.inf {
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 576px) {
+    .inf {
+        width: 100%;
+    }
+    .cart {
+        width: 100px;
+        height: 30px;
+        font-size: smaller;
+        >img {
+            display: none
+        }
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .inf {
+        margin: 0 auto;
+        width: 50%;
+    }
+    .cart {
+        width: 100px;
+        height: 30px;
+        font-size: smaller;
+        >img {
+            display: none
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .name2 {
+        display: none;
+    }
+    .name1 {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .name2 {
+        display: block;
+    }
+    .name1 {
+        display: none;
+    }
+}
+
+.in4 {
+    margin: 0 auto;
+}
+
+.buy h6 {
+    text-align: center;
+}
+
+.gender {
+    margin: 10px auto;
+}
+
+#female {
+    margin-left: 2px;
+}
+
+.in4 p {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.in4 input {
+    margin: 2px auto;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#address {
+    margin-left: 0;
+}
+
+.pay p {
+    margin-top: 10px;
+    text-align: left;
+    padding: 0;
+}
+
+.comfirm {
+    width: 90px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .form #result {
@@ -630,8 +744,8 @@ input {
             }
         }
         /* >div:first-of-type {
-        margin-left: 10px;
-    } */
+    margin-left: 10px;
+} */
         >a:hover {
             text-decoration: none;
             cursor: pointer;

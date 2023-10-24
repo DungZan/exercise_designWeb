@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="style_ip.css" />
@@ -527,13 +529,15 @@
                 </button>
                 </div>
             </div>
+
+            <!-- modal -->
             <div class="row">
                 <div class="modal fade blur col-md-7 col-sm-7" id="infor-product-15">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="tit">
                                 <h4>Thông tin sản phẩm</h4>
-                                <span class="close" onclick="infoclose('#infor-product-15');">&#10539;</span>
+                                <span class="close" onclick="infoclose('#infor-product-15','#buy151');">&#10539;</span>
                             </div>
                             <div class="img-modal"><img id="color-15" src="../img/img_iphone/iphone-14-pro-note.jpg" alt=""></div>
                             <h3>iPhone 15</h3>
@@ -543,7 +547,7 @@
                                 <span class="giam" id="giam-15"></span>
                             </div>
                             <div class="row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-5 pad">
                                     <p>Dung lượng</p>
                                     <div class="d-flex justify-content-center">
                                         <button type="button" class="btn-3 but-modal" onclick="changePrice(128,151)">128GB</button>
@@ -562,7 +566,38 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="cart" onclick="cart()">Thêm vào giỏ hàng <img src="../img/img_iphone/cart.png" alt=""></button>
+                            <div class="row cart-buy">
+                                <button type="button" class="cart col-sm-6" onclick="cart()">Add to cart<img src="../img/img_iphone/cart.png" alt=""></button>
+                                <button type="button" class="cart col-sm-6" onclick="buy('#buy151')">Mua ngay</button>
+                            </div>
+                            <div id="buy151" class="buy">
+                                <h6>Thông tin khách hàng</h6>
+                                <div class="row inf">
+                                    <div class="col-md-12 gender">
+                                        <input type="radio" id="male-151" onclick="check(1,151)">
+                                        <label for="male">Anh</label>
+                                        <input type="radio" class="female" id="female-151" onclick="check(2,151)">
+                                        <label for="female">Chị</label>
+                                    </div>
+                                    <div class="row in4">
+                                        <input class="col-md-6" id="nameuser-151" type="text" placeholder="Họ tên">
+                                        <p class="col-md-6 name2" id="name2-151"></p>
+                                        <input class="col-md-4" type="text" id="numphone-151" placeholder="Số điện thoại">
+                                        <p class="col-md-6 name1" id="name-151"></p>
+                                        <p class="col-md-4" id="phone-151"></p>
+                                        <input class="col-md-11" type="text" id="address-151" placeholder="Địa chỉ">
+                                        <p class="col-md-11" id="add-151"></p>
+                                    </div>
+                                    <div class="pay">
+                                        <p>Hình thức thanh toán</p>
+                                        <input type="radio" id="cash-151" onclick="check(3,151)">
+                                        <label for="cash">Tiền mặt</label>
+                                        <input type="radio" id="bank-151" onclick="check(4,151)">
+                                        <label for="bank">Chuyển khoản</label>
+                                    </div>
+                                </div>
+                                <div class="comfirm"><button type="button" class="comfirm" onclick="comfirm('#buy151')">Xác nhận</button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -574,7 +609,7 @@
                         <div class="modal-content">
                             <div class="tit">
                                 <h4>Thông tin sản phẩm</h4>
-                                <span class="close" onclick="infoclose('#infor-product-15plus');">&#10539;</span>
+                                <span class="close" onclick="infoclose('#infor-product-15plus','#buy152');">&#10539;</span>
                             </div>
                             <div class="img-modal"><img id="color-15plus" src="../img/img_iphone/iphone-14-pro-note.jpg" alt=""></div>
                             <h3>iPhone 15 Plus</h3>
@@ -584,7 +619,7 @@
                                 <span class="giam" id="giam-15plus"></span>
                             </div>
                             <div class="row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-5 pad">
                                     <p>Dung lượng</p>
                                     <div class="d-flex justify-content-center">
                                         <button type="button" class="btn-3 but-modal" onclick="changePrice(128,152)">128GB</button>
@@ -603,7 +638,38 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="cart" onclick="cart()">Thêm vào giỏ hàng <img src="../img/img_iphone/cart.png" alt=""></button>
+                            <div class="row cart-buy">
+                                <button type="button" class="cart col-sm-6" onclick="cart()">Add to cart<img src="../img/img_iphone/cart.png" alt=""></button>
+                                <button type="button" class="cart col-sm-6" onclick="buy('#buy152')">Mua ngay</button>
+                            </div>
+                            <div id="buy152" class="buy">
+                                <h6>Thông tin khách hàng</h6>
+                                <div class="row inf">
+                                    <div class="col-md-12 gender">
+                                        <input type="radio" id="male-152" onclick="check(1,152)">
+                                        <label for="male">Anh</label>
+                                        <input type="radio" class="female" id="female-152" onclick="check(2, 152)">
+                                        <label for="female">Chị</label>
+                                    </div>
+                                    <div class="row in4">
+                                        <input class="col-md-6" id="nameuser-152" type="text" placeholder="Họ tên">
+                                        <p class="col-md-6 name2" id="name2-152"></p>
+                                        <input class="col-md-4" type="text" id="numphone-152" placeholder="Số điện thoại">
+                                        <p class="col-md-6 name1" id="name-152"></p>
+                                        <p class="col-md-4" id="phone-152"></p>
+                                        <input class="col-md-11" type="text" id="address-152" placeholder="Địa chỉ">
+                                        <p class="col-md-11" id="add-152"></p>
+                                    </div>
+                                    <div class="pay">
+                                        <p>Hình thức thanh toán</p>
+                                        <input type="radio" id="cash-152" onclick="check(3,152)">
+                                        <label for="cash">Tiền mặt</label>
+                                        <input type="radio" id="bank-152" onclick="check(4,152)">
+                                        <label for="bank">Chuyển khoản</label>
+                                    </div>
+                                </div>
+                                <div class="comfirm"><button type="button" class="comfirm" onclick="comfirm('#buy152')">Xác nhận</button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -614,7 +680,7 @@
                         <div class="modal-content">
                             <div class="tit">
                                 <h4>Thông tin sản phẩm</h4>
-                                <span class="close" onclick="infoclose('#infor-product-15pro');">&#10539;</span>
+                                <span class="close" onclick="infoclose('#infor-product-15pro','#buy153');">&#10539;</span>
                             </div>
                             <div class="img-modal"><img id="color-15pro" src="../img/img_iphone/iphone-14-pro-note.jpg" alt=""></div>
                             <h3>iPhone 15 Pro</h3>
@@ -624,7 +690,7 @@
                                 <span class="giam" id="giam-15pro"></span>
                             </div>
                             <div class="row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-5 pad">
                                     <p>Dung lượng</p>
                                     <div class="d-flex justify-content-center">
                                         <button type="button" class="btn-3 but-modal" onclick="changePrice(128,153)">128GB</button>
@@ -643,7 +709,38 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="cart" onclick="cart()">Thêm vào giỏ hàng <img src="../img/img_iphone/cart.png" alt=""></button>
+                            <div class="row cart-buy">
+                                <button type="button" class="cart col-sm-6" onclick="cart()">Add to cart<img src="../img/img_iphone/cart.png" alt=""></button>
+                                <button type="button" class="cart col-sm-6" onclick="buy('#buy153')">Mua ngay</button>
+                            </div>
+                            <div id="buy153" class="buy">
+                                <h6>Thông tin khách hàng</h6>
+                                <div class="row inf">
+                                    <div class="col-md-12 gender">
+                                        <input type="radio" id="male-153" onclick="check(1,153)">
+                                        <label for="male">Anh</label>
+                                        <input type="radio" class="female" id="female-153" onclick="check(2,153)">
+                                        <label for="female">Chị</label>
+                                    </div>
+                                    <div class="row in4">
+                                        <input class="col-md-6" id="nameuser-153" type="text" placeholder="Họ tên">
+                                        <p class="col-md-6 name2" id="name2-153"></p>
+                                        <input class="col-md-4" type="text" id="numphone-153" placeholder="Số điện thoại">
+                                        <p class="col-md-6 name1" id="name-153"></p>
+                                        <p class="col-md-4" id="phone-153"></p>
+                                        <input class="col-md-11" type="text" id="address-153" placeholder="Địa chỉ">
+                                        <p class="col-md-11" id="add-153"></p>
+                                    </div>
+                                    <div class="pay">
+                                        <p>Hình thức thanh toán</p>
+                                        <input type="radio" id="cash-153" onclick="check(3,153)">
+                                        <label for="cash">Tiền mặt</label>
+                                        <input type="radio" id="bank-153" onclick="check(4,153)">
+                                        <label for="bank">Chuyển khoản</label>
+                                    </div>
+                                </div>
+                                <div class="comfirm"><button type="button" class="comfirm" onclick="comfirm('#buy153')">Xác nhận</button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -654,7 +751,7 @@
                         <div class="modal-content">
                             <div class="tit">
                                 <h4>Thông tin sản phẩm</h4>
-                                <span class="close" onclick="infoclose('#infor-product-15max');">&#10539;</span>
+                                <span class="close" onclick="infoclose('#infor-product-15max','#buy154');">&#10539;</span>
                             </div>
                             <div class="img-modal"><img id="color-15max" src="../img/img_iphone/iphone-14-pro-note.jpg" alt=""></div>
                             <h3>iPhone 15 Pro Max</h3>
@@ -664,7 +761,7 @@
                                 <span class="giam" id="giam-15max"></span>
                             </div>
                             <div class="row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-5 pad">
                                     <p>Dung lượng</p>
                                     <div class="d-flex justify-content-center">
                                         <button type="button" class="btn-3 but-modal" onclick="changePrice(256,154)">256GB</button>
@@ -682,7 +779,38 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="cart" onclick="cart()">Thêm vào giỏ hàng <img src="../img/img_iphone/cart.png" alt=""></button>
+                            <div class="row cart-buy">
+                                <button type="button" class="cart col-sm-6" onclick="cart()">Add to cart<img src="../img/img_iphone/cart.png" alt=""></button>
+                                <button type="button" class="cart col-sm-6" onclick="buy('#buy154')">Mua ngay</button>
+                            </div>
+                            <div id="buy154" class="buy">
+                                <h6>Thông tin khách hàng</h6>
+                                <div class="row inf">
+                                    <div class="col-md-12 gender">
+                                        <input type="radio" id="male-154" onclick="check(1,154)">
+                                        <label for="male">Anh</label>
+                                        <input type="radio" class="female" id="female-154" onclick="check(2,154)">
+                                        <label for="female">Chị</label>
+                                    </div>
+                                    <div class="row in4">
+                                        <input class="col-md-6" id="nameuser-154" type="text" placeholder="Họ tên">
+                                        <p class="col-md-6 name2" id="name2-154"></p>
+                                        <input class="col-md-4" type="text" id="numphone-154" placeholder="Số điện thoại">
+                                        <p class="col-md-6 name1" id="name-154"></p>
+                                        <p class="col-md-4" id="phone-154"></p>
+                                        <input class="col-md-11" type="text" id="address-154" placeholder="Địa chỉ">
+                                        <p class="col-md-11" id="add-154"></p>
+                                    </div>
+                                    <div class="pay">
+                                        <p>Hình thức thanh toán</p>
+                                        <input type="radio" id="cash-154" onclick="check(3,154)">
+                                        <label for="cash">Tiền mặt</label>
+                                        <input type="radio" id="bank-154" onclick="check(4,154)">
+                                        <label for="bank">Chuyển khoản</label>
+                                    </div>
+                                </div>
+                                <div class="comfirm"><button type="button" class="comfirm" onclick="comfirm('#buy154')">Xác nhận</button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -693,7 +821,7 @@
                         <div class="modal-content">
                             <div class="tit">
                                 <h4>Thông tin sản phẩm</h4>
-                                <span class="close" onclick="infoclose('#infor-product-14max');">&#10539;</span>
+                                <span class="close" onclick="infoclose('#infor-product-14max','#buy144');">&#10539;</span>
                             </div>
                             <div class="img-modal"><img id="color-14max" src="../img/img_iphone/iphone-14-pro-max-note.jpg" alt=""></div>
                             <h3>iPhone 14 Pro Max</h3>
@@ -703,7 +831,7 @@
                                 <span class="giam" id="giam-14max"></span>
                             </div>
                             <div class="row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-5 pad">
                                     <p>Dung lượng</p>
                                     <div class="d-flex justify-content-center">
                                         <button type="button" class="btn-3 but-modal" onclick="changePrice(128,144)">128GB</button>
@@ -722,7 +850,38 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="cart" onclick="cart()">Thêm vào giỏ hàng <img src="../img/img_iphone/cart.png" alt=""></button>
+                            <div class="row cart-buy">
+                                <button type="button" class="cart col-sm-6" onclick="cart()">Add to cart<img src="../img/img_iphone/cart.png" alt=""></button>
+                                <button type="button" class="cart col-sm-6" onclick="buy('#buy144')">Mua ngay</button>
+                            </div>
+                            <div id="buy144" class="buy">
+                                <h6>Thông tin khách hàng</h6>
+                                <div class="row inf">
+                                    <div class="col-md-12 gender">
+                                        <input type="radio" id="male-144" onclick="check(1,'#male-144')">
+                                        <label for="male">Anh</label>
+                                        <input type="radio" class="female" id="female-144" onclick="check(2,'#female-144')">
+                                        <label for="female">Chị</label>
+                                    </div>
+                                    <div class="row in4">
+                                        <input class="col-md-6" id="nameuser-144" type="text" placeholder="Họ tên">
+                                        <p class="col-md-6 name2" id="name2-144"></p>
+                                        <input class="col-md-4" type="text" id="numphone-144" placeholder="Số điện thoại">
+                                        <p class="col-md-6 name1" id="name-144"></p>
+                                        <p class="col-md-4" id="phone-144"></p>
+                                        <input class="col-md-11" type="text" id="address-144" placeholder="Địa chỉ">
+                                        <p class="col-md-11" id="add-144"></p>
+                                    </div>
+                                    <div class="pay">
+                                        <p>Hình thức thanh toán</p>
+                                        <input type="radio" id="cash-144" onclick="check(3,144)">
+                                        <label for="cash">Tiền mặt</label>
+                                        <input type="radio" id="bank-144" onclick="check(4,144)">
+                                        <label for="bank">Chuyển khoản</label>
+                                    </div>
+                                </div>
+                                <div class="comfirm"><button type="button" class="comfirm" onclick="comfirm('#buy144')">Xác nhận</button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -733,7 +892,7 @@
                         <div class="modal-content">
                             <div class="tit">
                                 <h4>Thông tin sản phẩm</h4>
-                                <span class="close" onclick="infoclose('#infor-product-14pro');">&#10539;</span>
+                                <span class="close" onclick="infoclose('#infor-product-14pro','#buy143');">&#10539;</span>
                             </div>
                             <div class="img-modal"><img id="color-14pro" src="../img/img_iphone/iphone-14-pro-note.jpg" alt=""></div>
                             <h3>iPhone 14 Pro</h3>
@@ -743,7 +902,7 @@
                                 <span class="giam" id="giam-14pro"></span>
                             </div>
                             <div class="row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-5 pad">
                                     <p>Dung lượng</p>
                                     <div class="d-flex justify-content-center">
                                         <button type="button" class="btn-3 but-modal" onclick="changePrice(128,143)">128GB</button>
@@ -762,7 +921,38 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="cart" onclick="cart()">Thêm vào giỏ hàng <img src="../img/img_iphone/cart.png" alt=""></button>
+                            <div class="row cart-buy">
+                                <button type="button" class="cart col-sm-6" onclick="cart()">Add to cart<img src="../img/img_iphone/cart.png" alt=""></button>
+                                <button type="button" class="cart col-sm-6" onclick="buy('#buy143')">Mua ngay</button>
+                            </div>
+                            <div id="buy143" class="buy">
+                                <h6>Thông tin khách hàng</h6>
+                                <div class="row inf">
+                                    <div class="col-md-12 gender">
+                                        <input type="radio" id="male-143" onclick="check(1,143)">
+                                        <label for="male">Anh</label>
+                                        <input type="radio" class="female" id="female-143" onclick="check(2,143)">
+                                        <label for="female">Chị</label>
+                                    </div>
+                                    <div class="row in4">
+                                        <input class="col-md-6" id="nameuser-143" type="text" placeholder="Họ tên">
+                                        <p class="col-md-6 name2" id="name2-143"></p>
+                                        <input class="col-md-4" type="text" id="numphone-143" placeholder="Số điện thoại">
+                                        <p class="col-md-6 name1" id="name-143"></p>
+                                        <p class="col-md-4" id="phone-143"></p>
+                                        <input class="col-md-11" type="text" id="address-143" placeholder="Địa chỉ">
+                                        <p class="col-md-11" id="add-143"></p>
+                                    </div>
+                                    <div class="pay">
+                                        <p>Hình thức thanh toán</p>
+                                        <input type="radio" id="cash-143" onclick="check(3,143)">
+                                        <label for="cash">Tiền mặt</label>
+                                        <input type="radio" id="bank-143" onclick="check(4,143)">
+                                        <label for="bank">Chuyển khoản</label>
+                                    </div>
+                                </div>
+                                <div class="comfirm"><button type="button" class="comfirm" onclick="comfirm('#buy143')">Xác nhận</button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -773,7 +963,7 @@
                         <div class="modal-content">
                             <div class="tit">
                                 <h4>Thông tin sản phẩm</h4>
-                                <span class="close" onclick="infoclose('#infor-product-14plus');">&#10539;</span>
+                                <span class="close" onclick="infoclose('#infor-product-14plus','#buy142');">&#10539;</span>
                             </div>
                             <div class="img-modal"><img id="color-14plus" src="../img/img_iphone/iphone-14-plus-note.jpg" alt=""></div>
                             <h3>iPhone 14 Plus</h3>
@@ -783,7 +973,7 @@
                                 <span class="giam" id="giam-14plus"></span>
                             </div>
                             <div class="row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-5 pad">
                                     <p>Dung lượng</p>
                                     <div class="d-flex justify-content-center">
                                         <button type="button" class="btn-3 but-modal" onclick="changePrice(128,142)">128GB</button>
@@ -803,18 +993,49 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="cart" onclick="cart()">Thêm vào giỏ hàng <img src="../img/img_iphone/cart.png" alt=""></button>
+                            <div class="row cart-buy">
+                                <button type="button" class="cart col-sm-6" onclick="cart()">Add to cart<img src="../img/img_iphone/cart.png" alt=""></button>
+                                <button type="button" class="cart col-sm-6" onclick="buy('#buy142')">Mua ngay</button>
+                            </div>
+                            <div id="buy142" class="buy">
+                                <h6>Thông tin khách hàng</h6>
+                                <div class="row inf">
+                                    <div class="col-md-12 gender">
+                                        <input type="radio" id="male-142" onclick="check(1,142)">
+                                        <label for="male">Anh</label>
+                                        <input type="radio" class="female" id="female" onclick="check(2,142)">
+                                        <label for="female">Chị</label>
+                                    </div>
+                                    <div class="row in4">
+                                        <input class="col-md-6" id="nameuser-142" type="text" placeholder="Họ tên">
+                                        <p class="col-md-6 name2" id="name2-142"></p>
+                                        <input class="col-md-4" type="text" id="numphone-142" placeholder="Số điện thoại">
+                                        <p class="col-md-6 name1" id="name-142"></p>
+                                        <p class="col-md-4" id="phone-142"></p>
+                                        <input class="col-md-11" type="text" id="address-142" placeholder="Địa chỉ">
+                                        <p class="col-md-11" id="add-142"></p>
+                                    </div>
+                                    <div class="pay">
+                                        <p>Hình thức thanh toán</p>
+                                        <input type="radio" id="cash-142" onclick="check(3,142)">
+                                        <label for="cash">Tiền mặt</label>
+                                        <input type="radio" id="bank-142" onclick="check(4,142)">
+                                        <label for="bank">Chuyển khoản</label>
+                                    </div>
+                                </div>
+                                <div class="comfirm"><button type="button" class="comfirm" onclick="comfirm('#buy142')">Xác nhận</button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row" id="modal">
-                <div class="modal fade blur col-md-7 col-sm-7" id="infor-product-14">
+                <div class="modal fade blur col-md-7 col-sm-7" id="infor-product-14" data-backdrop="static">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="tit">
                                 <h4>Thông tin sản phẩm</h4>
-                                <span class="close-ip" onclick="infoclose('#infor-product-14')">&#10539;</span>
+                                <span class="close-ip" onclick="infoclose('#infor-product-14', '#buy141')">&#10539;</span>
                             </div>
                             <div class="img-modal"><img id="color-14" src="../img/img_iphone/iphone-14-note.jpg" alt=""></div>
                             <h3>iPhone 14</h3>
@@ -824,7 +1045,7 @@
                                 <span class="giam" id="giam-14"></span>
                             </div>
                             <div class="row">
-                                <div class="col-sm-5 dl">
+                                <div class="col-sm-5 pad">
                                     <p>Dung lượng</p>
                                     <div class="d-flex justify-content-center">
                                         <button type="button" class="btn-3 but-modal" onclick="changePrice(128,141)">128GB</button>
@@ -844,7 +1065,38 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="cart" onclick="cart()">Thêm vào giỏ hàng <img src="../img/img_iphone/cart.png" alt=""></button>
+                            <div class="row cart-buy">
+                                <button type="button" class="cart col-sm-6" onclick="cart()">Add to cart<img src="../img/img_iphone/cart.png" alt=""></button>
+                                <button type="button" class="cart col-sm-6" onclick="buy('#buy141')">Mua ngay</button>
+                            </div>
+                            <div id="buy141" class="buy">
+                                <h6>Thông tin khách hàng</h6>
+                                <div class="row inf">
+                                    <div class="col-md-12 gender">
+                                        <input type="radio" id="male-141" onclick="check(1,141)">
+                                        <label for="male">Anh</label>
+                                        <input type="radio" class="female" id="female-141" onclick="check(2,141)">
+                                        <label for="female">Chị</label>
+                                    </div>
+                                    <div class="row in4">
+                                        <input class="col-md-6" id="nameuser-141" type="text" placeholder="Họ tên">
+                                        <p class="col-md-6 name2" id="name2-141"></p>
+                                        <input class="col-md-4" type="text" id="numphone-141" placeholder="Số điện thoại">
+                                        <p class="col-md-6 name1" id="name-141"></p>
+                                        <p class="col-md-4" id="phone-141"></p>
+                                        <input class="col-md-11" type="text" id="address-141" placeholder="Địa chỉ">
+                                        <p class="col-md-11" id="add-141"></p>
+                                    </div>
+                                    <div class="pay">
+                                        <p>Hình thức thanh toán</p>
+                                        <input type="radio" id="cash-141" onclick="check(3,141)">
+                                        <label for="cash">Tiền mặt</label>
+                                        <input type="radio" id="bank-141" onclick="check(4,141)">
+                                        <label for="bank">Chuyển khoản</label>
+                                    </div>
+                                </div>
+                                <div class="comfirm"><button type="button" class="comfirm" onclick="comfirm('#buy141')">Xác nhận</button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
