@@ -1,5 +1,5 @@
 function show_infor(){
-    document.getElementById("infor").style.display = "block";
+    document.getElementById("infor").style.display = "flex";
 }
 
 function hide_infor(){
@@ -9,7 +9,7 @@ var buttons = document.querySelectorAll(".buy");
 
 buttons.forEach(function(button){
     button.addEventListener("click",function(){
-        window.location.href = "purchase.html";
+        window.location.href = "../mac/purchase.html";
     });
 });
 
@@ -90,3 +90,27 @@ function validform(f){
     }
     alert("All fields are valid");
 }
+
+var links = document.querySelectorAll(".chapternav_item a");
+
+links.forEach(function(link){
+    link.addEventListener("click",function(event){
+        event.preventDefault();
+        var targetId = link.getAttribute("href").substring(1);
+        var tabContents = document.querySelectorAll(".tab-pane");
+        tabContents.forEach(function(tabContents){
+            tabContents.classList.remove("active");
+            tabContents.classList.add("fade");
+        });
+        var targetTab = document.getElementById(targetId);
+        targetTab.classList.remove("fade");
+        targetTab.classList.add("active");
+
+        var navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach(function(navLink){
+            navLink.classList.remove("active");
+        });
+        link.classList.add("active");
+        window.scrollTo(0,targetTab.offsetTop);
+    });
+});
