@@ -1,5 +1,5 @@
 function show_infor(){
-    document.getElementById("infor").style.display = "block";
+    document.getElementById("infor").style.display = "flex";
 }
 
 function hide_infor(){
