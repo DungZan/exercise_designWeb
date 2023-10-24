@@ -20,6 +20,7 @@ html, body {
     color: white;
     padding: 0;
     margin: 0;
+    overflow: auto;
     > .navbar__watchnav--welcomeslogan {
         text-align: center;
         margin: 15px 0 10px 0;
