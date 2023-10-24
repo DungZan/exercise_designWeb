@@ -657,7 +657,7 @@ function comfirm(a) {
             check(3, 152);
             check(2, 152);
             check(4, 152);
-        } else if (a == '##buy153') {
+        } else if (a == '#buy153') {
             $('#nameuser-153').val('');
             $('#numphone-153').val('');
             $('#address-153').val('');
