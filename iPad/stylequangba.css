@@ -1,0 +1,140 @@
+p {
+    font-size: small;
+}
+
+.sale {
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 55%;
+}
+
+.anhipad {
+    position: fixed;
+    height: auto;
+    left: 30px;
+    width: 60%;
+}
+
+.anhipad1 {
+    display: none;
+    position: fixed;
+    height: auto;
+    left: 30px;
+    width: 60%;
+}
+
+.anhipad2 {
+    display: none;
+    position: fixed;
+    height: auto;
+    left: 30px;
+    width: 60%;
+}
+
+.anhipad3 {
+    display: none;
+    position: fixed;
+    height: auto;
+    left: 30px;
+    width: 60%;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+#luachon1 {
+    position: fixed;
+    right: 30px;
+    width: 35%;
+    text-align: center;
+}
+
+#luachon2 {
+    display: none;
+    position: fixed;
+    right: 30px;
+    width: 35%;
+    text-align: center;
+}
+
+#luachon3 {
+    display: none;
+    position: fixed;
+    right: 30px;
+    width: 35%;
+    text-align: center;
+}
+
+#luachon4 {
+    display: none;
+    position: fixed;
+    right: 30px;
+    width: 35%;
+    text-align: center;
+}
+
+.lc {
+    border: 1px solid black;
+    margin: 20px 30px;
+    border-radius: 10px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.lc11 {
+    border-radius: 10px;
+    background-color: rgb(79, 79, 79);
+    border: 1px solid black;
+    margin: 20px 30px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.lc12 {
+    border-radius: 10px;
+    background: url(../img/Ipad/muaipad/silve-la-mau-gi-1.jpg);
+    border: 1px solid black;
+    margin: 20px 30px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+
+button {
+    float: left;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#trolai4 {
+    display: none;
+    position: fixed;
+    right: 20%;
+}
+
+button:hover {
+    color: blue;
+}
+
+#thanhtoan {
+    position: fixed;
+    top: 50px;
+    right: 20%;
+}
+
+#muane {
+    display: none;
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    padding: 10px;
+    color: aliceblue;
+    background-color: rgb(45, 45, 255);
+}

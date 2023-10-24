@@ -64,9 +64,8 @@
     margin-top: 50px;
 }
 
-.section_ip_2_ div button img {
-    position: static;
-    right: 0;
+.section_ip_2_ div img {
+    cursor: pointer;
     width: 100%;
 }
 
@@ -316,7 +315,6 @@
                 >span:hover {
                     cursor: pointer;
                     color: #010101;
-                    font-size: larger;
                 }
                 margin: 0 auto;
             }
@@ -381,10 +379,6 @@
 
 .but-modal:focus {
     border: #0071e3 solid 2px;
-}
-
-.close {
-    color: #000;
 }
 
 .color div {
@@ -521,6 +515,11 @@
     color: white;
     cursor: pointer;
     border-radius: 50%;
+    opacity: 0.8;
+}
+
+#backtop:hover {
+    opacity: 1;
 }
 
 .chat {
@@ -638,5 +637,38 @@ input {
             cursor: pointer;
             color: #0071e3;
         }
+    }
+}
+
+
+/* modal more prd */
+
+.more-prd {
+    background-color: #fff;
+    width: 500px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+#bo {
+    border: 1px solid black;
+}
+
+.modal-title {
+    font-weight: bolder;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+@media only screen and (max-width:576px) {
+    .more-prd {
+        width: 100%;
+    }
+    #notice-mail,
+    #mail-title {
+        font-size: smaller;
     }
 }
