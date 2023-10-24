@@ -9,7 +9,7 @@ var buttons = document.querySelectorAll(".buy");
 
 buttons.forEach(function(button){
     button.addEventListener("click",function(){
-        window.location.href = "./mac/purchase.html";
+        window.location.href = "../mac/purchase.html";
     });
 });
 
