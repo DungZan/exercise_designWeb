@@ -8,76 +8,14 @@ p {
     width: 55%;
 }
 
-.anhipad {
-    position: fixed;
-    height: auto;
-    left: 30px;
-    width: 60%;
-}
-
-.anhipad1 {
-    display: none;
-    position: fixed;
-    height: auto;
-    left: 30px;
-    width: 60%;
-}
-
-.anhipad2 {
-    display: none;
-    position: fixed;
-    height: auto;
-    left: 30px;
-    width: 60%;
-}
-
-.anhipad3 {
-    display: none;
-    position: fixed;
-    height: auto;
-    left: 30px;
-    width: 60%;
-}
-
 img {
     height: auto;
     width: 100%;
 }
 
-#luachon1 {
-    position: fixed;
-    right: 30px;
-    width: 35%;
-    text-align: center;
-}
-
-#luachon2 {
-    display: none;
-    position: fixed;
-    right: 30px;
-    width: 35%;
-    text-align: center;
-}
-
-#luachon3 {
-    display: none;
-    position: fixed;
-    right: 30px;
-    width: 35%;
-    text-align: center;
-}
-
-#luachon4 {
-    display: none;
-    position: fixed;
-    right: 30px;
-    width: 35%;
-    text-align: center;
-}
-
 .lc {
     border: 1px solid black;
-    margin: 20px 30px;
+    margin: 0 30px 20px;
     border-radius: 10px;
 }
 
@@ -113,12 +51,6 @@ button {
     padding: 0 5px;
 }
 
-#trolai4 {
-    display: none;
-    position: fixed;
-    right: 20%;
-}
-
 button:hover {
     color: blue;
 }
@@ -129,24 +61,168 @@ button:hover {
     right: 20%;
 }
 
-#muane {
-    display: none;
-    position: fixed;
-    right: 20px;
-    top: 100px;
-    padding: 10px;
-    color: aliceblue;
-    background-color: rgb(45, 45, 255);
+@media only screen and (max-width: 3000px) {
+    #luachon1 {
+        position: fixed;
+        right: 30px;
+        width: 35%;
+        text-align: center;
+    }
+    #luachon2 {
+        display: none;
+        position: fixed;
+        right: 30px;
+        width: 35%;
+        text-align: center;
+    }
+    #luachon3 {
+        display: none;
+        position: fixed;
+        right: 30px;
+        width: 35%;
+        text-align: center;
+    }
+    #luachon4 {
+        display: none;
+        position: fixed;
+        right: 30px;
+        width: 35%;
+        text-align: center;
+    }
+    .anhipad {
+        position: fixed;
+        height: auto;
+        left: 30px;
+        width: 60%;
+    }
+    .anhipad1,
+    .anhipad2,
+    .anhipad3 {
+        display: none;
+        position: fixed;
+        height: auto;
+        left: 30px;
+        width: 60%;
+    }
+    #muane {
+        display: none;
+        position: fixed;
+        right: 20px;
+        top: 100px;
+        padding: 10px;
+        color: aliceblue;
+        background-color: rgb(45, 45, 255);
+    }
+    #trolai4 {
+        display: none;
+        position: fixed;
+        right: 20%;
+    }
 }
 
-@media only screen and (max-width: 2560px) {}
+@media only screen and (max-width: 767px) {
+    #luachon1,
+    #luachon2,
+    #luachon3,
+    #luachon4 {
+        position: fixed;
+        right: 10px;
+        width: 35%;
+        text-align: center;
+    }
+    .chu {
+        font-size: smaller;
+        margin-bottom: 0;
+    }
+    #muane {
+        display: none;
+        position: fixed;
+        right: 10px;
+        top: 200px;
+        padding: 10px;
+        color: aliceblue;
+        background-color: rgb(45, 45, 255);
+    }
+    #trolai4 {
+        display: none;
+        position: fixed;
+        right: 25%;
+    }
+}
 
-@media only screen and (max-width: 1440px) {}
+@media only screen and (max-width: 425px) {
+    #luachon1,
+    #luachon2,
+    #luachon3,
+    #luachon4 {
+        position: fixed;
+        top: 110px;
+        right: 10px;
+        width: 35%;
+        text-align: center;
+    }
+    .chu {
+        font-size: smaller;
+        margin-bottom: 0;
+    }
+}
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 375px) {
+    #luachon1,
+    #luachon2,
+    #luachon3,
+    #luachon4 {
+        position: fixed;
+        top: 320px;
+        right: 20px;
+        width: 80%;
+        text-align: center;
+    }
+    .chu {
+        font-size: smaller;
+        margin-bottom: 0;
+    }
+    .chu1 {
+        font-size: large;
+    }
+    .chu3 {
+        font-size: medium;
+        margin-bottom: 0;
+    }
+    .chu4,
+    .chu6 {
+        font-size: small;
+    }
+    .anhipad {
+        position: fixed;
+        height: auto;
+        left: 75px;
+        width: 60%;
+    }
+    .anhipad1,
+    .anhipad2,
+    .anhipad3 {
+        display: none;
+        position: fixed;
+        height: auto;
+        left: 75px;
+        width: 60%;
+    }
+    #muane {
+        display: none;
+        position: fixed;
+        right: 10px;
+        top: 400px;
+        padding: 10px;
+        color: aliceblue;
+        background-color: rgb(45, 45, 255);
+    }
+    #trolai4 {
+        display: none;
+        position: fixed;
+        right: 40%;
+        bottom: 50px;
+    }
+}
 
-@media only screen and (max-width: 786px) {}
-
-@media only screen and (max-width: 425px) {}
-
-@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}
