@@ -1,10 +1,26 @@
-function show_infor(){
-    document.getElementById("infor").style.display = "flex";
-}
 
-function hide_infor(){
-    document.getElementById("infor").style.display = "none";
-}
+
+
+var openButtons = document.querySelectorAll(".more_info");
+var modal = document.querySelector(".information");
+var closeButton = document.getElementById("hideinfor");
+
+openButtons.forEach(function(openButton){
+    openButton.addEventListener("click",function(){
+        modal.style.display = "flex"; 
+    });
+});
+
+closeButton.addEventListener("click",function(){
+    modal.style.display = "none";
+});
+
+window.addEventListener("click",function(event){
+    if(event.target == modal){
+        modal.style.display = "none";
+    }
+})
+
 var buttons = document.querySelectorAll(".buy");
 
 buttons.forEach(function(button){
