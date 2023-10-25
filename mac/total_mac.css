@@ -331,6 +331,9 @@
   .d-block{
     height: 800px;
   }
+  #fullname,#age,#phone,#email{
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 1440px){
@@ -343,6 +346,9 @@
   .d-block{
     height: 800px;
   }
+  #fullname,#age,#phone,#email{
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 1024px){
@@ -354,6 +360,9 @@
   }
   .d-block{
     height: 500px;
+  }
+  #fullname,#age,#phone,#email{
+    width: 80%;
   }
   
 }
@@ -370,6 +379,9 @@
   }
   .information > .information_content{
     width: 691px;
+  }
+  #fullname,#age,#phone,#email{
+    width: 70%;
   }
 }
 @media only screen and (max-width: 430px){
@@ -388,6 +400,9 @@
   }
   .information > .information_content{
     width: 382px;
+  }
+  #fullname,#age,#phone,#email{
+    width: 45%;
   }
 }
 
@@ -411,6 +426,12 @@
   .chapternav_item > a{
     font-size: 10px;
   }
+  .form_customer > table{
+    width: 100%;
+  }
+  #fullname,#age,#phone,#email{
+    width: 80%;
+  }
 } 
 
 @media only screen and (max-width: 320px){
@@ -419,5 +440,11 @@
   }
   .chapternav_item>a{
     font-size: 10px;
+  }
+  .form_customer > table{
+    width: 100%;
+  }
+  #fullname,#age,#phone,#email{
+    width: 80%;
   }
 }

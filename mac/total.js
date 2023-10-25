@@ -1,4 +1,6 @@
 
+
+
 var openButtons = document.querySelectorAll(".more_info");
 var modal = document.querySelector(".information");
 var closeButton = document.getElementById("hideinfor");
@@ -13,8 +15,8 @@ closeButton.addEventListener("click",function(){
     modal.style.display = "none";
 });
 
-window.addEventListener("click",function(event){
-    if(event.target == modal){
+window.addEventListener("click",function(hey){
+    if(hey.target == modal){
         modal.style.display = "none";
     }
 })
@@ -28,7 +30,6 @@ buttons.forEach(function(button){
 });
 
 var check_phone = /^\(\d{2,4}\)[\s\.-]\d{3}[\s\.-]\d{3}$/;
-// var check_phone = /^[0-9]{10}$/;
 var check_email = /^([\w-]+(\?\:\.[\w-]+)*)@((\?\:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(\?\:\.[a-z]{2})?)$/;
 var check_username = /^[A-Za-z0-9_]{1,20}$/;
 var check_password = /^[A-Za-z0-9!@#$%^&*()_]{6,20}$/;
@@ -59,6 +60,7 @@ function StringMatch(txt,reg){
 }
 
 function validform(f){
+    var hasError = false;
     if(checknull(f.fullname)){
         alert(f.fullname.name + " must be not null");
         f.fullname.focus();
@@ -95,7 +97,7 @@ function validform(f){
         alert("Phone is not valid");
         f.phone.value = "";
         f.phone.focus();
-        return;
+        hasError =true;
     }
     if(!StringMatch(f.email, check_email)){
         alert("Email is not valid");
@@ -103,7 +105,7 @@ function validform(f){
         f.email.focus();
         return;
     }
-    alert("All fields are valid");
+    if(!hasError) alert("All fields are valid");
 }
 
 var links = document.querySelectorAll(".chapternav_item a");
