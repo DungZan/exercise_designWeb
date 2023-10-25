@@ -85,19 +85,19 @@ a {
 
 .carousel {
     margin: 0 auto;
-    height: 400px;
+    /* height: 400px; */
     width: 80%;
     border-radius: 10px;
     overflow-y: hidden;
 }
 
 .carousel-item {
-    height: 400px;
+    /* height: 400px; */
     margin: 0 auto;
 }
 
 .d-block {
-    height: 400px;
+    /* height: 400px; */
 }
 
 
@@ -312,22 +312,34 @@ a {
 }
 
 
-/* Quảng cáo */
-
-@media only screen and (max-width: 3000px) {
-    div.qc1 {
-        height: 1300px;
-    }
-}
+/* media*/
 
 @media only screen and (max-width: 2560px) {
     div.qc1 {
-        height: 1000px;
+        height: 1300px;
+    }
+    .carousel {
+        height: 800px;
+    }
+    .carousel-item {
+        height: 800px;
+    }
+    .d-block {
+        height: 800px;
     }
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1440px) {
     div.qc1 {
+        height: 800px;
+    }
+    .carousel {
+        height: 800px;
+    }
+    .carousel-item {
+        height: 800px;
+    }
+    .d-block {
         height: 800px;
     }
 }
@@ -336,17 +348,65 @@ a {
     div.qc1 {
         height: 500px;
     }
+    .carousel {
+        height: 500px;
+    }
+    .carousel-item {
+        height: 500px;
+    }
+    .d-block {
+        height: 500px;
+    }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 786px) {
     div.qc1 {
-        height: 250px;
+        height: 400px;
+    }
+    .carousel {
+        height: 400px;
+    }
+    .carousel-item {
+        height: 400px;
+    }
+    .d-block {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    div.qc1 {
+        height: 260px;
+    }
+    .carousel {
+        height: 300px;
+    }
+    .carousel-item {
+        height: 300px;
+    }
+    .d-block {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    div.qc1 {
+        height: 200px;
+    }
+    .carousel {
+        height: 200px;
+    }
+    .carousel-item {
+        height: 200px;
+    }
+    .d-block {
+        height: 200px;
     }
 }
 
 .qc1 {
     /* position: relative; */
-    background-image: url(/img/123.png);
+    background-image: url(../img/123.png);
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
