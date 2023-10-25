@@ -1,6 +1,4 @@
 
-
-
 var openButtons = document.querySelectorAll(".more_info");
 var modal = document.querySelector(".information");
 var closeButton = document.getElementById("hideinfor");
@@ -30,6 +28,7 @@ buttons.forEach(function(button){
 });
 
 var check_phone = /^\(\d{2,4}\)[\s\.-]\d{3}[\s\.-]\d{3}$/;
+// var check_phone = /^[0-9]{10}$/;
 var check_email = /^([\w-]+(\?\:\.[\w-]+)*)@((\?\:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(\?\:\.[a-z]{2})?)$/;
 var check_username = /^[A-Za-z0-9_]{1,20}$/;
 var check_password = /^[A-Za-z0-9!@#$%^&*()_]{6,20}$/;
