@@ -417,7 +417,6 @@ function cart() {
     dluong = 0;
     msac = 0;
 }
-
 let paytemp;
 
 function buy(a) {
@@ -597,7 +596,6 @@ function test_add() {
         }
     }
 }
-
 $('#address-151').on('input', test_add);
 $('#nameuser-151').on('input', test_name);
 $('#numphone-151').on('input', test_num);
@@ -630,7 +628,6 @@ $('#address-144').on('input', test_add);
 $('#nameuser-144').on('input', test_name);
 $('#numphone-144').on('input', test_num);
 
-a
 
 function comfirm(a) {
     const result = $('#notice-mail');
@@ -934,11 +931,11 @@ function close2() {
 }
 
 function infoclose(x, y) {
+    $(y).css('display', 'none');
     $(x).modal('hide');
 }
-
-var hiden = new bootstrap.Modal(document.getElementById('infor-product-14plus'));
-hiden._element.addEventListener('hidden.bs.modal', function() {
+let hidenn = new bootstrap.Modal(document.getElementById('infor-product-14plus'));
+hidenn._element.addEventListener('hidden.bs.modal', function() {
     $('#buy142').css('display', 'none');
     $('#nameuser-142').val('');
     $('#numphone-142').val('');
@@ -973,6 +970,7 @@ hiden._element.addEventListener('hidden.bs.modal', function() {
 });
 var hiden = new bootstrap.Modal(document.getElementById('infor-product-14pro'));
 hiden._element.addEventListener('hidden.bs.modal', function() {
+    alert('hi');
     $('#buy143').css('display', 'none');
     $('#nameuser-143').val('');
     $('#numphone-143').val('');
