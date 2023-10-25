@@ -105,7 +105,7 @@ function validform(f){
         f.email.focus();
         return;
     }
-    if(!hasError) alert("All fields are valid");
+     alert("All fields are valid");
 }
 
 var links = document.querySelectorAll(".chapternav_item a");
