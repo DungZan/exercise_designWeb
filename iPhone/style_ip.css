@@ -639,14 +639,14 @@
         margin: 0 auto;
         width: 50%;
     }
-    .cart {
+    /* .cart {
         width: 100px;
         height: 30px;
         font-size: smaller;
         >img {
             display: none
         }
-    }
+    } */
 }
 
 @media only screen and (min-width:768px) {
@@ -663,7 +663,7 @@
         display: block;
     }
     .name1 {
-        display: none;
+        display: block;
     }
 }
 
@@ -710,7 +710,7 @@
     height: 30px;
     margin: 0 auto;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .form #result {
