@@ -58,6 +58,12 @@
 .chapternav_item > a{
   text-decoration: none;
   color: #1d1d1f;
+  font-weight: 300;
+}
+@media only screen and (max-width:320px){
+  .chapternav_item>a{
+    font-size: 10px;
+  }
 }
 .chapternav_item:hover{
   background-color: #a1a1a6;
