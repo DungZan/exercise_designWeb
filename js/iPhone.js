@@ -550,6 +550,10 @@ function test_num() {
 function tadd(add) {
     return /^[a-zA-Zàáảãạâầấẩẫậăằắẳẵặèéẻẽẹêềếểễệđìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳỵỷỹý -,/]+$/.test(add);
 }
+$('#infor-product-14').modal({
+    backdrop: 'static',
+    keyboard: false
+});
 
 function test_add() {
     let add;
@@ -954,7 +958,7 @@ function infoclose(x, y) {
         check(3, 152);
         check(2, 152);
         check(4, 152);
-    } else if (a == '##buy153') {
+    } else if (a == '#buy153') {
         $('#nameuser-153').val('');
         $('#numphone-153').val('');
         $('#address-153').val('');
