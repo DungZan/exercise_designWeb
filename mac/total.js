@@ -1,121 +1,124 @@
-
-
-
 var openButtons = document.querySelectorAll(".more_info");
 var modal = document.querySelector(".information");
 var closeButton = document.getElementById("hideinfor");
 
-openButtons.forEach(function(openButton){
-    openButton.addEventListener("click",function(){
-        modal.style.display = "flex"; 
+openButtons.forEach(function(openButton) {
+    openButton.addEventListener("click", function() {
+        modal.style.display = "flex";
     });
 });
 
-closeButton.addEventListener("click",function(){
+closeButton.addEventListener("click", function() {
     modal.style.display = "none";
 });
 
-window.addEventListener("click",function(hey){
-    if(hey.target == modal){
+window.addEventListener("click", function(hey) {
+    if (hey.target == modal) {
         modal.style.display = "none";
     }
 })
 
 var buttons = document.querySelectorAll(".buy");
 
-buttons.forEach(function(button){
-    button.addEventListener("click",function(){
+buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
         window.location.href = "../mac/purchase.html";
     });
 });
 
 var check_phone = /^\(\d{2,4}\)[\s\.-]\d{3}[\s\.-]\d{3}$/;
-var check_email = /^([\w-]+(\?\:\.[\w-]+)*)@((\?\:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(\?\:\.[a-z]{2})?)$/;
+var check_email = /^[\w-]+(?:\.[\w-]+)*@[\w-]+(?:\.[\w-]+)+$/;
 var check_username = /^[A-Za-z0-9_]{1,20}$/;
 var check_password = /^[A-Za-z0-9!@#$%^&*()_]{6,20}$/;
 
-function checknull(txt){
-    if(txt.value.length == 0) return true;
+function checknull(txt) {
+    if (txt.value.length == 0) return true;
     else return false;
 }
 
-function isInteger(txt){
-    if((!isNaN(txt.value)) && (parseInt(txt.value) === Number(txt.value)))
+function isInteger(txt) {
+    if ((!isNaN(txt.value)) && (parseInt(txt.value) === Number(txt.value)))
         return true;
     else
         return false;
 }
 
-function notCheck(radio){
+function notCheck(radio) {
     var rt = true;
-    for(i = 0; i < radio.length; i++)
-        if(radio[i].checked)
+    for (i = 0; i < radio.length; i++)
+        if (radio[i].checked)
             rt = false;
     return rt;
-    
+
 }
 
-function StringMatch(txt,reg){
+function StringMatch(txt, reg) {
     return reg.test(txt.value);
 }
 
-function validform(f){
+function tnum(num) {
+    return /^84+[35789][0-9]{8}$/.test(num) || /^0+[35789][0-9]{8}$/.test(num);
+}
+
+function validform(f) {
+    let xxx = document.getElementById('email').value;
     var hasError = false;
-    if(checknull(f.fullname)){
+    if (checknull(f.fullname)) {
         alert(f.fullname.name + " must be not null");
         f.fullname.focus();
         return;
     }
-    if(checknull(f.age)){
+    if (checknull(f.age)) {
         alert(f.age.name + " must be not null");
         f.age.focus();
         return;
     }
-    if(isNaN(f.age.value)){
+    if (isNaN(f.age.value)) {
         alert(f.age.name + " must be a number");
         f.age.value = "";
         f.age.focus();
         return;
     }
-    if(!isInteger(f.age)){
+    if (!isInteger(f.age)) {
         alert(f.age.name + " must be an integer number");
         f.age.value = "";
         f.age.focus();
         return;
     }
-    if(eval(f.age.value) <= 0 || eval(f.age.value) >= 113){
+    if (eval(f.age.value) <= 0 || eval(f.age.value) >= 113) {
         alert(f.age.name + " must be in (0 - 113)");
         f.age.value = "";
         f.age.focus();
         return;
     }
-    if(notCheck(f.gender)){
+    if (notCheck(f.gender)) {
         alert("Gender must be choosen");
         return;
     }
-    if(!StringMatch(f.phone, check_phone)){
+    if (!tnum(f.phone.value)) {
         alert("Phone is not valid");
         f.phone.value = "";
         f.phone.focus();
-        hasError =true;
+        hasError = true;
+        return;
     }
-    if(!StringMatch(f.email, check_email)){
+    if (!/^[a-zA-z0-9.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/.test(f.email.value)) {
         alert("Email is not valid");
         f.email.value = "";
         f.email.focus();
         return;
-    }
-     alert("All fields are valid");
+    };
+    alert("All fields are valid");
 }
 
 var links = document.querySelectorAll(".chapternav_item a");
 
-links.forEach(function(link){
-    link.addEventListener("click",function(event){
+links.forEach(function(link) {
+    link.addEventListener("click", function(event) {
         event.preventDefault();
         var targetId = link.getAttribute("href").substring(1);
         var tabContents = document.querySelectorAll(".tab-pane");
-        tabContents.forEach(function(tabContents){
+        tabContents.forEach(function(tabContents) {
             tabContents.classList.remove("active");
             tabContents.classList.add("fade");
         });
@@ -124,10 +127,10 @@ links.forEach(function(link){
         targetTab.classList.add("active");
 
         var navLinks = document.querySelectorAll(".nav-link");
-        navLinks.forEach(function(navLink){
+        navLinks.forEach(function(navLink) {
             navLink.classList.remove("active");
         });
         link.classList.add("active");
-        window.scrollTo(0,targetTab.offsetTop);
+        window.scrollTo(0, targetTab.offsetTop);
     });
 });
