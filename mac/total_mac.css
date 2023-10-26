@@ -334,6 +334,7 @@
   #fullname,#age,#phone,#email{
     width: 80%;
   }
+ 
 }
 
 @media only screen and (max-width: 1440px){
@@ -349,6 +350,7 @@
   #fullname,#age,#phone,#email{
     width: 80%;
   }
+  
 }
 
 @media only screen and (max-width: 1024px){
@@ -367,7 +369,7 @@
   
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 786px){
   .carousel{
     height: 405px;
   }
@@ -378,7 +380,7 @@
     height: 400px;
   }
   .information > .information_content{
-    width: 692px;
+    width: 90%;
   }
   #fullname,#age,#phone,#email{
     width: 70%;
@@ -399,7 +401,7 @@
     flex-direction: column;
   }
   .information > .information_content{
-    width: 383px;
+    width: 90%;
   }
   #fullname,#age,#phone,#email{
     width: 45%;
@@ -421,7 +423,7 @@
     flex-direction: column;
   }
   .information >.information_content{
-    width: 338px;
+    width: 90%;
   }
   .chapternav_item > a{
     font-size: 10px;
@@ -436,7 +438,7 @@
 
 @media only screen and (max-width: 320px){
   .information > .information_content{
-    width: 288px;
+    width: 90%;
   }
   .chapternav_item>a{
     font-size: 10px;
