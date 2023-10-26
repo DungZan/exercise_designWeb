@@ -113,21 +113,7 @@
 }
 
 
-/* responsive link navbar */
-
-.nav_res_1 a {
-    text-decoration: none;
-    color: var(--greyLight);
-    font-weight: normal;
-}
-
-.nav_res_1 a:hover {
-    text-decoration: none;
-    color: #fff;
-}
-
-
-/*  */
+/* responsive slide */
 
 @media only screen and (min-width: 769px) {
     .section_ip_slide_mobile {
@@ -146,6 +132,9 @@
         display: none;
     }
 }
+
+
+/* banner */
 
 .section_banner_ip {
     max-width: 1200px;
@@ -455,152 +444,6 @@
     border: none;
 }
 
-@media only screen and (max-width: 576px) {
-    .modal-dialog {
-        width: 100%;
-        max-width: 100%;
-    }
-    .modal-content {
-        >.tit h4 {
-            font-size: smaller;
-        }
-        >h3 {
-            font-size: 15px;
-            padding-left: 15px;
-        }
-    }
-    .modal-dialog.modal-dialog-centered {
-        margin: 0 auto;
-        transform: translate(0, 0);
-    }
-    .pric span {
-        font-size: 12px;
-    }
-    .pric span:first-of-type {
-        padding-left: 15px;
-    }
-}
-
-@media only screen and (max-width: 770px) {
-    .card {
-        margin: auto;
-    }
-    .card_ip {
-        width: 40%;
-        margin: 0 auto 30px auto;
-        display: flex;
-        justify-content: center;
-    }
-    .but-modal {
-        font-size: smaller;
-        height: 26px;
-    }
-}
-
-
-/*  */
-
-
-/* icon chat */
-
-#backtop {
-    display: none;
-    position: fixed;
-    width: 45px;
-    height: 45px;
-    bottom: 200px;
-    right: 9px;
-    z-index: 999999999;
-    font-size: 20px;
-    border: none;
-    background-color: rgb(55, 110, 192);
-    color: white;
-    cursor: pointer;
-    border-radius: 50%;
-    opacity: 0.8;
-}
-
-#backtop:hover {
-    opacity: 1;
-}
-
-.chat {
-    width: 100px;
-    height: 200px;
-    right: 0;
-    bottom: 0;
-    z-index: 9999999;
-    position: fixed;
-    margin: 0;
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
-.chat_ img {
-    border: none;
-    margin-left: 30px;
-    width: 60px;
-    height: auto;
-}
-
-.chat_ button {
-    margin: 0 0 10px 35px;
-    width: 45px;
-    text-align: center;
-    height: 45px;
-    border: none;
-    border-radius: 50%;
-    background-color: #248ece;
-    color: white;
-}
-
-.form {
-    background-color: #f2f2f2;
-    height: 300px;
-}
-
-.form h3 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    padding: 70px 0 5px 0;
-}
-
-.form p {
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.sub-email {
-    width: 360px;
-    margin: 0 auto;
-}
-
-.sub-email button {
-    width: 60px;
-    height: 40px;
-    background-color: #144f74;
-    color: #fff;
-    border: none;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.sub-email button:hover {
-    background-color: #248ece;
-}
-
-#email {
-    background-color: #ffffff;
-    margin: 0 auto;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    width: 290px;
-    height: 40px;
-    padding-left: 20px;
-    border: none;
-}
-
 
 /* mua */
 
@@ -663,7 +506,7 @@
         display: block;
     }
     .name1 {
-        display: block;
+        display: none;
     }
 }
 
@@ -711,6 +554,161 @@
     margin: 0 auto;
     border-radius: 5px;
     margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+    .modal-dialog {
+        width: 100%;
+        max-width: 100%;
+    }
+    .modal-content {
+        >.tit h4 {
+            font-size: smaller;
+        }
+        >h3 {
+            font-size: 15px;
+            padding-left: 15px;
+        }
+    }
+    .modal-dialog.modal-dialog-centered {
+        margin: 0 auto;
+        transform: translate(0, 0);
+    }
+    .pric span {
+        font-size: 12px;
+    }
+    .pric span:first-of-type {
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .card {
+        margin: auto;
+    }
+    .card_ip {
+        width: 40%;
+        margin: 0 auto 30px auto;
+        display: flex;
+        justify-content: center;
+    }
+    .but-modal {
+        font-size: smaller;
+        height: 26px;
+    }
+}
+
+@media only screen and (max-width:363px) {
+    .card_ip {
+        width: 100%;
+    }
+}
+
+
+/*  */
+
+
+/* icon chat */
+
+#backtop {
+    display: none;
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 200px;
+    right: 9px;
+    z-index: 999999999;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(55, 110, 192);
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+#backtop:hover {
+    opacity: 1;
+}
+
+.chat {
+    width: 100px;
+    height: 200px;
+    right: 0;
+    bottom: 0;
+    z-index: 9999999;
+    position: fixed;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.chat_ img {
+    border: none;
+    margin-left: 30px;
+    width: 60px;
+    height: auto;
+}
+
+.chat_ button {
+    margin: 0 0 10px 35px;
+    width: 45px;
+    text-align: center;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #248ece;
+    color: white;
+}
+
+
+/* form email */
+
+.form {
+    background-color: #f2f2f2;
+    height: 300px;
+}
+
+.form h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 70px 0 5px 0;
+}
+
+.form p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sub-email {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.sub-email button {
+    width: 60px;
+    height: 40px;
+    background-color: #144f74;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sub-email button:hover {
+    background-color: #248ece;
+}
+
+#email {
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 290px;
+    height: 40px;
+    padding-left: 20px;
+    border: none;
 }
 
 .form #result {
