@@ -404,6 +404,7 @@ function cart() {
     if (dluong != 0 && msac != 0) {
         result.text("Đã thêm sản phẩm.\n" + ten + "\n" + size + " " + colour);
         result2.text("Thêm thành công!");
+        result2.css('color', 'black');
         $('#more-product').modal('show');
         Gia.textContent = "";
         Goc.textContent = "";
@@ -412,6 +413,7 @@ function cart() {
     } else {
         result.text("Vui lòng chọn đủ thông tin");
         result2.text("Không thành công!");
+        result2.css('color', 'red');
         $('#more-product').modal('show');
     }
     dluong = 0;
@@ -430,6 +432,7 @@ function buy(a) {
         const result2 = $('#mail-title');
         result.text("Vui lòng chọn đủ thông tin");
         result2.text("Không thành công!");
+        result2.css('color', 'red');
         $('#more-product').modal('show');
     }
 }
@@ -635,6 +638,7 @@ function comfirm(a) {
     if (infdchi && infsdt && inften && checkgen() && checkpay()) {
         result.text("\n" + ten + "\n" + size + " " + colour + '\n' + "sẽ được gửi đến quý khách trong thời gian sớm nhất");
         result2.text("Đặt mua thành công!");
+        result2.css('color', 'black');
         $('#more-product').modal('show');
         dluong = 0;
         msac = 0;
@@ -711,6 +715,7 @@ function comfirm(a) {
     } else {
         result.text("Vui lòng chọn đủ thông tin");
         result2.text("Đặt mua không thành công!");
+        result2.css('color', 'red');
         $('#more-product').modal('show');
     }
 }
@@ -917,11 +922,15 @@ function thong_bao() {
     if (sub_email(email)) {
         result.text("Thông tin mới nhất sẽ được gửi đến " + email);
         result2.text("Đăng ký thành công!");
+        result2.css('color', 'black');
         $('#more-product').modal('show');
         $('#email').val('');
         $('#result').text('');
     } else {
-        alert("Email không hợp lệ. Vui lòng nh");
+        result.text("Email không hợp lệ");
+        result2.text("Đăng ký không thành công!");
+        result2.css('color', 'red');
+        $('#more-product').modal('show');
     }
 }
 $('#email').on('input', test_email);
