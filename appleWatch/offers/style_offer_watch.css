@@ -45,17 +45,22 @@
             }
         }
         > .pdpv__full {
-            position: relative;
-            > #pv_full_case {
-                z-index: 1;
-                max-width: 80%;
-                position: absolute;
-                left: 10%;
-                top: -5%;
+            display: flex;
+            > .pdpv__full--outerbox {
+                display: flex;
+                box-sizing: border-box;
+                position: relative;
+                justify-content: center;
+                > img {
+                    max-width: 80%;
+                }
+                > #pv_full_case {
+                    position: absolute;
+                }
             }
-        } 
+        }
     }
-    > .pd__preview img {
+    > .pd__preview > div > img {
         max-width: 80%;
         margin: 0 auto;
         margin-top: 5%;
