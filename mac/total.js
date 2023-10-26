@@ -61,9 +61,8 @@ function tnum(num) {
 }
 
 function validform(f) {
-    let xxx = document.getElementById('email').value;
     var hasError = false;
-    if (checknull(f.fullname)) {
+    if (!/^[a-zA-Zàáảãạâầấẩẫậăằắẳẵặèéẻẽẹêềếểễệđìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳỵỷỹý -]+$/.test(f.fullname.value)) {
         alert(f.fullname.name + " must be not null");
         f.fullname.focus();
         return;
