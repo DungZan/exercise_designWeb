@@ -118,6 +118,7 @@ activeTextpk.onclick = function (){
     if (headerTop.offsetHeight == '50'&& bodyWidth.offsetWidth >=800) {
         headerTop.style="animation: zoomin1 1.5s; animation-fill-mode: forwards;"
         droppk.style="visibility:visible;"
+        dropTv.style="visibility:hidden;"
         dropWatch.style="visibility:hidden;"
         dropMac.style="visibility:hidden;"
         dropIpad.style="visibility:hidden;"
