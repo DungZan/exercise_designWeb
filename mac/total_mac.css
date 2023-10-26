@@ -378,7 +378,7 @@
     height: 400px;
   }
   .information > .information_content{
-    width: 691px;
+    width: 692px;
   }
   #fullname,#age,#phone,#email{
     width: 70%;
@@ -399,7 +399,7 @@
     flex-direction: column;
   }
   .information > .information_content{
-    width: 382px;
+    width: 383px;
   }
   #fullname,#age,#phone,#email{
     width: 45%;
