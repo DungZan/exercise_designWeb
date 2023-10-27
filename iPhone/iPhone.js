@@ -894,6 +894,7 @@ function come() {
     const result2 = $('#mail-title');
     result.text("Hệ thống các sản phẩm khác đang được cập nhật. Vui lòng quay lại sau.");
     result2.text("Comming Soon!");
+    result2.css('color', 'black');
 }
 // test email
 function sub_email(email) {
