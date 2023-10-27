@@ -34,4 +34,4 @@
 
 ---
 ## ⚙ Bug report
-- Just open an issue and give us details about your issue, and we will consider reviewing and fixing them.
+- Just open an "issue" and give us details about your issue, and we will consider reviewing and fixing them.
