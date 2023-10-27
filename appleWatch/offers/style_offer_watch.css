@@ -31,6 +31,13 @@
             }
         }
     }
+    > .pd__preview > div img {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: none;
+    }
     > .pd__preview {
         background-color: #fafafa;
         margin: 20px 0 20px 0;
@@ -59,13 +66,6 @@
                 }
             }
         }
-    }
-    > .pd__preview > div > img {
-        max-width: 80%;
-        margin: 0 auto;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        display: none;
     }
 }
 
