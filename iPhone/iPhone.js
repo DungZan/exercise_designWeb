@@ -398,14 +398,80 @@ function changeImg(x, pban) {
     msac = x;
 }
 
-function cart() {
+function cart(a) {
     const result = $('#notice-mail');
     const result2 = $('#mail-title');
     if (dluong != 0 && msac != 0) {
-        result.text("Đã thêm sản phẩm.\n" + ten + "\n" + size + " " + colour);
+        result.text("Đã thêm sản phẩm \n" + ten + "\n" + size + " " + colour + " vào giỏ hàng");
         result2.text("Thêm thành công!");
         result2.css('color', 'black');
         $('#more-product').modal('show');
+        $(a).css('display', 'none');
+        if (a == '#buy151') {
+            $('#nameuser-151').val('');
+            $('#numphone-151').val('');
+            $('#address-151').val('');
+            check(1, 151);
+            check(3, 151);
+            check(2, 151);
+            check(4, 151);
+        } else if (a == '#buy152') {
+            $('#nameuser-152').val('');
+            $('#numphone-152').val('');
+            $('#address-152').val('');
+            check(1, 152);
+            check(3, 152);
+            check(2, 152);
+            check(4, 152);
+        } else if (a == '#buy153') {
+            $('#nameuser-153').val('');
+            $('#numphone-153').val('');
+            $('#address-153').val('');
+            check(1, 153);
+            check(3, 153);
+            check(2, 153);
+            check(4, 153);
+        } else if (a == '#buy154') {
+            $('#nameuser-154').val('');
+            $('#numphone-154').val('');
+            $('#address-154').val('');
+            check(1, 154);
+            check(3, 154);
+            check(2, 154);
+            check(4, 154);
+        } else if (a == '#buy141') {
+            $('#nameuser-141').val('');
+            $('#numphone-141').val('');
+            $('#address-141').val('');
+            check(1, 141);
+            check(3, 141);
+            check(2, 141);
+            check(4, 141);
+        } else if (a == '#buy142') {
+            $('#nameuser-142').val('');
+            $('#numphone-142').val('');
+            $('#address-142').val('');
+            check(1, 142);
+            check(3, 142);
+            check(2, 142);
+            check(4, 142);
+        } else if (a == '#buy143') {
+            $('#nameuser-143').val('');
+            $('#numphone-143').val('');
+            $('#address-143').val('');
+            check(1, 143);
+            check(3, 143);
+            check(2, 143);
+            check(4, 143);
+        } else if (a == '#buy144') {
+            $('#nameuser-144').val('');
+            $('#numphone-144').val('');
+            $('#address-144').val('');
+            check(1, 144);
+            check(3, 144);
+            check(2, 144);
+            check(4, 144);
+        }
         Gia.textContent = "";
         Goc.textContent = "";
         Giam.textContent = "";
